@@ -1,0 +1,7 @@
+TrainHeader.TrainHdr.Title = "有限元结果管理";
+TrainHeader.TrainHdr.ShortHelp = "有限元结果管理";
+TrainHeader.TrainHdr.Help = "有限元结果管理";
+
+TrainHeader.TrainSndHdr.Title = "力学公式形变分析";
+TrainHeader.TrainSndHdr.ShortHelp = "力学公式形变分析";
+TrainHeader.TrainSndHdr.Help = "力学公式形变分析";

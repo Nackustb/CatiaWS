@@ -1,0 +1,8 @@
+!<mkhl> v2.0.1
+@TrainFramework\PublicInterfaces
+AxisPointCmd.h
+PadCmd.h
+PointCmd.h
+SwapTextM.h
+TrainModule.h
+TrainModuleCmd.h

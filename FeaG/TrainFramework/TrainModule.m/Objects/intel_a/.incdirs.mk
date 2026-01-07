@@ -1,0 +1,5 @@
+/I"E:\CATIA 二次开发\catia 二次开发 Train\CATIA CAA开发\Train_1 CAA框架\train_code1\.\TrainFramework\TrainModule.m\src"
+/I"E:\CATIA 二次开发\catia 二次开发 Train\CATIA CAA开发\Train_1 CAA框架\train_code1\.\TrainFramework\TrainModule.m\LocalInterfaces"
+/I"E:\CATIA 二次开发\catia 二次开发 Train\CATIA CAA开发\Train_1 CAA框架\train_code1\.\TrainFramework\TrainModule.m\LocalGenerated\intel_a"
+/I"E:\CATIA 二次开发\catia 二次开发 Train\CATIA CAA开发\Train_1 CAA框架\train_code1\.\TrainFramework\PublicInterfaces"
+/I"E:\CATIA 二次开发\catia 二次开发 Train\CATIA CAA开发\Train_1 CAA框架\train_code1\.\TrainFramework\ImportedInterfaces\intel_a"

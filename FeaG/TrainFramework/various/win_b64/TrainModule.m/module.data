@@ -1,0 +1,5 @@
+!<mkRTViewData> v1.0.0
+INT/000/CUS .\win_b64\code\lib\TrainModule.exp|.\TrainFramework\TrainModule.m
+INT/000/CUS .\win_b64\code\bin\TrainModule.pdb|.\TrainFramework\TrainModule.m
+BTV/000/CUS .\win_b64\code\lib\TrainModule.lib|.\TrainFramework\TrainModule.m
+RTV/001/CUS .\win_b64\code\bin\TrainModule.dll|.\TrainFramework\TrainModule.m

@@ -1,0 +1,5 @@
+!<mkRTViewData> v1.0.0
+RTV/001/CUS .\win_b64\code\bin\PadCmd.dll|.\TrainFramework\PadCmd.m
+INT/000/CUS .\win_b64\code\bin\PadCmd.pdb|.\TrainFramework\PadCmd.m
+BTV/000/CUS .\win_b64\code\lib\PadCmd.lib|.\TrainFramework\PadCmd.m
+INT/000/CUS .\win_b64\code\lib\PadCmd.exp|.\TrainFramework\PadCmd.m

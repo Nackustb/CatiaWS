@@ -1,0 +1,5 @@
+!<mkRTViewData> v1.0.0
+INT/000/CUS .\win_b64\code\lib\AxisPointCmd.exp|.\TrainFramework\AxisPointCmd.m
+BTV/000/CUS .\win_b64\code\lib\AxisPointCmd.lib|.\TrainFramework\AxisPointCmd.m
+INT/000/CUS .\win_b64\code\bin\AxisPointCmd.pdb|.\TrainFramework\AxisPointCmd.m
+RTV/001/CUS .\win_b64\code\bin\AxisPointCmd.dll|.\TrainFramework\AxisPointCmd.m

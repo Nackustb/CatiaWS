@@ -1,0 +1,5 @@
+!<mkRTViewData> v1.0.0
+BTV/000/CUS .\win_b64\code\lib\PointCmd.lib|.\TrainFramework\PointCmd.m
+RTV/001/CUS .\win_b64\code\bin\PointCmd.dll|.\TrainFramework\PointCmd.m
+INT/000/CUS .\win_b64\code\bin\PointCmd.pdb|.\TrainFramework\PointCmd.m
+INT/000/CUS .\win_b64\code\lib\PointCmd.exp|.\TrainFramework\PointCmd.m

@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TrainFramework", "TrainFramework.vcproj", "{532B22BF-A4ED-4A75-972E-4CEAF3424A92}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TrainModule.m", "TrainFramework\TrainModule.m.vcproj", "{4EFEF199-32E0-4483-A21C-7952EC32984B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TrainModuleCmd.m", "TrainFramework\TrainModuleCmd.m.vcproj", "{85E9DB1A-7C60-47EA-95B4-29813CCE2E4E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AxisPointCmd.m", "TrainFramework\AxisPointCmd.m.vcproj", "{4829EC58-F302-45AF-BCEC-8461A689D1AB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PointCmd.m", "TrainFramework\PointCmd.m.vcproj", "{0424C033-C181-4456-BACE-773BBF513419}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PadCmd.m", "TrainFramework\PadCmd.m.vcproj", "{E2943194-C065-43EC-A920-38DF854871EF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SwapTextM.m", "TrainFramework\SwapTextM.m.vcproj", "{3A28C271-36C7-42BE-B31A-7EF90FF37426}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{532B22BF-A4ED-4A75-972E-4CEAF3424A92}.Debug|Win32.ActiveCfg = Debug|Win32
+		{532B22BF-A4ED-4A75-972E-4CEAF3424A92}.Release|Win32.ActiveCfg = Release|Win32
+		{4EFEF199-32E0-4483-A21C-7952EC32984B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4EFEF199-32E0-4483-A21C-7952EC32984B}.Release|Win32.ActiveCfg = Release|Win32
+		{85E9DB1A-7C60-47EA-95B4-29813CCE2E4E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{85E9DB1A-7C60-47EA-95B4-29813CCE2E4E}.Release|Win32.ActiveCfg = Release|Win32
+		{4829EC58-F302-45AF-BCEC-8461A689D1AB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4829EC58-F302-45AF-BCEC-8461A689D1AB}.Release|Win32.ActiveCfg = Release|Win32
+		{0424C033-C181-4456-BACE-773BBF513419}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0424C033-C181-4456-BACE-773BBF513419}.Release|Win32.ActiveCfg = Release|Win32
+		{E2943194-C065-43EC-A920-38DF854871EF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E2943194-C065-43EC-A920-38DF854871EF}.Release|Win32.ActiveCfg = Release|Win32
+		{3A28C271-36C7-42BE-B31A-7EF90FF37426}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3A28C271-36C7-42BE-B31A-7EF90FF37426}.Release|Win32.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

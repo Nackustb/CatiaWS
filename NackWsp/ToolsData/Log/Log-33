@@ -1,0 +1,65 @@
+mkmk  -u -g -w  testAddinM.m
+2025/12/26 16:53:14
+
+## start step: CIbuild   at 12/26/2025-16:53:14
+## end   step: CIbuild   at 12/26/2025-16:53:14
+
+## start step: DataUpdate   at 12/26/2025-16:53:14
+# make:  testFrm\IdentityCard\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 12/26/2025-16:53:14
+
+## start step: DataUpdate   at 12/26/2025-16:53:14
+# make:  testFrm\testAddinM.m\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 12/26/2025-16:53:14
+
+## start step: CIcompilation   at 12/26/2025-16:53:14
+## end   step: CIcompilation   at 12/26/2025-16:53:14
+
+## start step: headerlist   at 12/26/2025-16:53:14
+## end   step: headerlist   at 12/26/2025-16:53:14
+
+## start step: headermap   at 12/26/2025-16:53:14
+## end   step: headermap   at 12/26/2025-16:53:14
+
+## start step: fwgrammar   at 12/26/2025-16:53:14
+## end   step: fwgrammar   at 12/26/2025-16:53:14
+
+## start step: grammar1st   at 12/26/2025-16:53:14
+## end   step: grammar1st   at 12/26/2025-16:53:14
+
+## start step: headerlist   at 12/26/2025-16:53:14
+## end   step: headerlist   at 12/26/2025-16:53:14
+
+## start step: headermap   at 12/26/2025-16:53:14
+## end   step: headermap   at 12/26/2025-16:53:14
+
+## start step: grammar2nd   at 12/26/2025-16:53:14
+## end   step: grammar2nd   at 12/26/2025-16:53:14
+
+## start step: typelibgrammar   at 12/26/2025-16:53:14
+## end   step: typelibgrammar   at 12/26/2025-16:53:14
+
+## start step: headerlist   at 12/26/2025-16:53:14
+## end   step: headerlist   at 12/26/2025-16:53:14
+
+## start step: headermap   at 12/26/2025-16:53:14
+## end   step: headermap   at 12/26/2025-16:53:14
+
+## start step: headerruler   at 12/26/2025-16:53:14
+## end   step: headerruler   at 12/26/2025-16:53:14
+
+## start step: compilation   at 12/26/2025-16:53:14
+## end   step: compilation   at 12/26/2025-16:53:14
+
+## start step: sourceruler   at 12/26/2025-16:53:14
+## end   step: sourceruler   at 12/26/2025-16:53:14
+
+## start step: link1st   at 12/26/2025-16:53:14
+## end   step: link1st   at 12/26/2025-16:53:14
+
+## start step: link2nd   at 12/26/2025-16:53:14
+## end   step: link2nd   at 12/26/2025-16:53:14
+
+## start step: dummynls   at 12/26/2025-16:53:14
+# make: testFrm testFrm\CNext\resources\msgcatalog\testAddinHeader.CATNls
+## end   step: dummynls   at 12/26/2025-16:53:14

@@ -1,0 +1,26 @@
+// DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+CATDlgDialog MyDlgB
+{
+  STYLE = CATDlgGridLayout;
+}
+
+CATDlgFrame Frame001
+{
+  FATHER = MyDlgB;
+  STYLE = CATDlgGridLayout;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label002
+{
+  FATHER = Frame001;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor Editor003
+{
+  FATHER = Frame001;
+  GRID = { 0, 1, 1, 1, CATGRID_4SIDES };
+}
+
+// END WIZARD REPLACEMENT ZONE

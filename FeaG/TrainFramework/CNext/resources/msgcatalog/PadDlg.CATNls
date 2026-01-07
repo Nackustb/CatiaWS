@@ -1,0 +1,9 @@
+// DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+Title = "Pad";
+Label001.Title = "Length";
+Label002.Title = "Width";
+Label003.Title = "Height";
+Label007.Title = "mm";
+Label008.Title = "mm";
+Label009.Title = "mm";
+// END WIZARD REPLACEMENT ZONE

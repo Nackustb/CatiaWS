@@ -1,0 +1,437 @@
+// DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+CATDlgDialog BITCreateAssemSndDlg
+{
+  STYLE = CATDlgWndNoButton|CATDlgGridLayout;
+}
+
+CATDlgFrame Frame037
+{
+  FATHER = BITCreateAssemSndDlg;
+  STYLE = CATDlgGridLayout;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label039
+{
+  FATHER = Frame037;
+  GRID = { 1, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor EditorL01
+{
+  FATHER = Frame037;
+  STYLE = CATDlgEdtDouble;
+  PREC = 0;
+  GRID = { 1, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label041
+{
+  FATHER = Frame037;
+  GRID = { 1, 2, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label042
+{
+  FATHER = Frame037;
+  GRID = { 2, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor EditorL02
+{
+  FATHER = Frame037;
+  STYLE = CATDlgEdtDouble;
+  PREC = 0;
+  GRID = { 2, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label044
+{
+  FATHER = Frame037;
+  GRID = { 2, 2, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label045
+{
+  FATHER = Frame037;
+  GRID = { 3, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor EditorL03
+{
+  FATHER = Frame037;
+  STYLE = CATDlgEdtDouble;
+  PREC = 0;
+  GRID = { 3, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label047
+{
+  FATHER = Frame037;
+  GRID = { 3, 2, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgPushButton PushButtonL02
+{
+  FATHER = Frame037;
+  GRID = { 6, 0, 2, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label051
+{
+  FATHER = Frame037;
+  GRID = { 7, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor EditorL05
+{
+  FATHER = Frame037;
+  STYLE = CATDlgEdtDouble;
+  TH = 3;
+  PREC = 0;
+  GRID = { 7, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label054
+{
+  FATHER = Frame037;
+  GRID = { 7, 2, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label067
+{
+  FATHER = Frame037;
+  GRID = { 5, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor EditorL04
+{
+  FATHER = Frame037;
+  STYLE = CATDlgEdtDouble;
+  PREC = 0;
+  GRID = { 5, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label069
+{
+  FATHER = Frame037;
+  GRID = { 5, 2, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgPushButton PushButtonL01
+{
+  FATHER = Frame037;
+  GRID = { 0, 0, 2, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label092
+{
+  FATHER = Frame037;
+  GRID = { 4, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor EditorCD
+{
+  FATHER = Frame037;
+  STYLE = CATDlgEdtDouble;
+  PREC = 0;
+  GRID = { 4, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label094
+{
+  FATHER = Frame037;
+  GRID = { 4, 2, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgFrame Frame098
+{
+  FATHER = Frame037;
+  STYLE = CATDlgGridLayout;
+  GRID = { 0, 3, 1, 8, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label099
+{
+  FATHER = Frame098;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgFrame Frame055
+{
+  FATHER = BITCreateAssemSndDlg;
+  STYLE = CATDlgGridLayout;
+  GRID = { 1, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label058
+{
+  FATHER = Frame055;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgFrame Frame072
+{
+  FATHER = Frame055;
+  STYLE = CATDlgFraNoTitle|CATDlgGridLayout;
+  GRID = { 1, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label064
+{
+  FATHER = Frame072;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor EditorFB
+{
+  FATHER = Frame072;
+  STYLE = CATDlgEdtDouble;
+  PREC = 0;
+  GRID = { 0, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label066
+{
+  FATHER = Frame072;
+  GRID = { 0, 2, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label073
+{
+  FATHER = Frame072;
+  GRID = { 2, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor EditorJZ
+{
+  FATHER = Frame072;
+  STYLE = CATDlgEdtDouble;
+  PREC = 0;
+  GRID = { 2, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label075
+{
+  FATHER = Frame072;
+  GRID = { 2, 2, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgPushButton PushButtonL03
+{
+  FATHER = Frame072;
+  GRID = { 3, 0, 3, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label078
+{
+  FATHER = Frame072;
+  GRID = { 4, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor EditorZA
+{
+  FATHER = Frame072;
+  STYLE = CATDlgEdtDouble;
+  PREC = 0;
+  GRID = { 4, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label080
+{
+  FATHER = Frame072;
+  GRID = { 4, 2, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label081
+{
+  FATHER = Frame072;
+  GRID = { 5, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor EditorZB
+{
+  FATHER = Frame072;
+  STYLE = CATDlgEdtDouble;
+  PREC = 0;
+  GRID = { 5, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label083
+{
+  FATHER = Frame072;
+  GRID = { 5, 2, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label084
+{
+  FATHER = Frame072;
+  GRID = { 6, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor EditorND
+{
+  FATHER = Frame072;
+  STYLE = CATDlgEdtDouble;
+  PREC = 0;
+  GRID = { 6, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label086
+{
+  FATHER = Frame072;
+  GRID = { 6, 2, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel LabelWZ
+{
+  FATHER = Frame072;
+  GRID = { 1, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor EditorWZ
+{
+  FATHER = Frame072;
+  STYLE = CATDlgEdtDouble;
+  PREC = 0;
+  GRID = { 1, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label091
+{
+  FATHER = Frame072;
+  GRID = { 1, 2, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgCombo ComboXS
+{
+  FATHER = Frame055;
+  GRID = { 1, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgFrame Frame095
+{
+  FATHER = BITCreateAssemSndDlg;
+  STYLE = CATDlgGridLayout;
+  GRID = { 2, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label096
+{
+  FATHER = Frame095;
+  STYLE = CATDlgLabCenter;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgFrame Frame100
+{
+  FATHER = BITCreateAssemSndDlg;
+  STYLE = CATDlgGridLayout;
+  GRID = { 3, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label101
+{
+  FATHER = Frame100;
+  GRID = { 0, 0, 1, 6, CATGRID_4SIDES };
+}
+
+CATDlgRadioButton RadioButton102
+{
+  FATHER = Frame100;
+  GRID = { 0, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgRadioButton RadioButton103
+{
+  FATHER = Frame100;
+  GRID = { 0, 2, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label104
+{
+  FATHER = Frame100;
+  GRID = { 1, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor Editor105
+{
+  FATHER = Frame100;
+  STYLE = CATDlgEdtDouble;
+  PREC = 0;
+  GRID = { 1, 2, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label106
+{
+  FATHER = Frame100;
+  GRID = { 2, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor Editor107
+{
+  FATHER = Frame100;
+  STYLE = CATDlgEdtDouble;
+  PREC = 0;
+  GRID = { 2, 2, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label108
+{
+  FATHER = Frame100;
+  GRID = { 3, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label109
+{
+  FATHER = Frame100;
+  GRID = { 4, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor Editor110
+{
+  FATHER = Frame100;
+  STYLE = CATDlgEdtDouble;
+  PREC = 0;
+  GRID = { 3, 2, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor Editor111
+{
+  FATHER = Frame100;
+  STYLE = CATDlgEdtDouble;
+  PREC = 0;
+  GRID = { 4, 2, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgPushButton PushButtonJH
+{
+  FATHER = Frame100;
+  GRID = { 5, 1, 2, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label113
+{
+  FATHER = Frame100;
+  GRID = { 1, 3, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label114
+{
+  FATHER = Frame100;
+  GRID = { 2, 3, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label115
+{
+  FATHER = Frame100;
+  GRID = { 3, 3, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label117
+{
+  FATHER = Frame100;
+  GRID = { 4, 3, 1, 1, CATGRID_4SIDES };
+}
+
+// END WIZARD REPLACEMENT ZONE

@@ -1,0 +1,43 @@
+// DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+CATDlgDialog AxisDlg
+{
+  STYLE = CATDlgWndNoButton|CATDlgGridLayout;
+}
+
+CATDlgPushButton PushButton001
+{
+  FATHER = AxisDlg;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgPushButton PushButton002
+{
+  FATHER = AxisDlg;
+  GRID = { 0, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor Editor003
+{
+  FATHER = AxisDlg;
+  GRID = { 1, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label004
+{
+  FATHER = AxisDlg;
+  GRID = { 1, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgPushButton PushButton005
+{
+  FATHER = AxisDlg;
+  GRID = { 2, 0, 2, 1, CATGRID_4SIDES };
+}
+
+CATDlgPushButton PushButton006
+{
+  FATHER = AxisDlg;
+  GRID = { 3, 0, 2, 1, CATGRID_4SIDES };
+}
+
+// END WIZARD REPLACEMENT ZONE

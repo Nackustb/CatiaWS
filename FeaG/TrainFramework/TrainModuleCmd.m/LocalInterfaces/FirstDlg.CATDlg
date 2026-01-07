@@ -1,0 +1,123 @@
+// DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+CATDlgDialog FirstDlg
+{
+  STYLE = CATDlgWndAutoResize|CATDlgWndNoButton|CATDlgGridLayout;
+}
+
+CATDlgFrame FrameFM1
+{
+  FATHER = FirstDlg;
+  STYLE = CATDlgGridLayout;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel LabelFM1
+{
+  FATHER = FrameFM1;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor EditorFM1
+{
+  FATHER = FrameFM1;
+  GRID = { 0, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgFrame FrameFM2
+{
+  FATHER = FirstDlg;
+  STYLE = CATDlgGridLayout;
+  GRID = { 1, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel LabelFM2
+{
+  FATHER = FrameFM2;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor EditorFM2
+{
+  FATHER = FrameFM2;
+  GRID = { 0, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel LabelFM3
+{
+  FATHER = FrameFM2;
+  GRID = { 1, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor Editor016
+{
+  FATHER = FrameFM2;
+  GRID = { 1, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel LabelFM4
+{
+  FATHER = FrameFM2;
+  GRID = { 0, 2, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel LabelFM5
+{
+  FATHER = FrameFM2;
+  GRID = { 1, 2, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgFrame FrameFM3
+{
+  FATHER = FirstDlg;
+  STYLE = CATDlgGridLayout;
+  GRID = { 2, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgPushButton PushButtonFM1
+{
+  FATHER = FrameFM3;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel LabelFM6
+{
+  FATHER = FrameFM3;
+  GRID = { 1, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor EditorFM4
+{
+  FATHER = FrameFM3;
+  TW = 20;
+  GRID = { 1, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgMultiList MultiListFM1
+{
+  FATHER = FirstDlg;
+  TW = 10;
+  CC = 6;
+  VCC = 6;
+  GRID = { 3, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgFrame Frame020
+{
+  FATHER = FirstDlg;
+  STYLE = CATDlgGridLayout;
+  GRID = { 4, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgPushButton PushButtonFM2
+{
+  FATHER = Frame020;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgPushButton PushButton021
+{
+  FATHER = Frame020;
+  GRID = { 0, 1, 1, 1, CATGRID_4SIDES };
+}
+
+// END WIZARD REPLACEMENT ZONE

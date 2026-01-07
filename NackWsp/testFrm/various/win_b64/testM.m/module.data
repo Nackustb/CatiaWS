@@ -1,0 +1,5 @@
+!<mkRTViewData> v1.0.0
+BTV/000/CUS .\win_b64\code\lib\testM.lib|.\testFrm\testM.m
+RTV/001/CUS .\win_b64\code\bin\testM.dll|.\testFrm\testM.m
+INT/000/CUS .\win_b64\code\lib\testM.exp|.\testFrm\testM.m
+INT/000/CUS .\win_b64\code\bin\testM.pdb|.\testFrm\testM.m

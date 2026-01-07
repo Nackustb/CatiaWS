@@ -1,0 +1,5 @@
+/I"D:\CatiaWS\NackWsp\.\testFrm\testAddinM.m\src"
+/I"D:\CatiaWS\NackWsp\.\testFrm\testAddinM.m\LocalInterfaces"
+/I"D:\CatiaWS\NackWsp\.\testFrm\testAddinM.m\LocalGenerated\win_b64"
+/I"D:\CatiaWS\NackWsp\.\testFrm\PublicInterfaces"
+/I"D:\CatiaWS\NackWsp\.\testFrm\ImportedInterfaces\win_b64"

@@ -1,0 +1,5 @@
+!<mkRTViewData> v1.0.0
+RTV/001/CUS .\win_b64\code\bin\SwapTextM.dll|.\TrainFramework\SwapTextM.m
+INT/000/CUS .\win_b64\code\bin\SwapTextM.pdb|.\TrainFramework\SwapTextM.m
+INT/000/CUS .\win_b64\code\lib\SwapTextM.exp|.\TrainFramework\SwapTextM.m
+BTV/000/CUS .\win_b64\code\lib\SwapTextM.lib|.\TrainFramework\SwapTextM.m

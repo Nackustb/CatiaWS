@@ -1,0 +1,14 @@
+mkrtv -c -d 
+2025/12/26 16:52:32
+
+## start step: DataUpdate   at 12/26/2025-16:52:32
+## end   step: DataUpdate   at 12/26/2025-16:52:33
+# mkmk-INFO: Removing file [D:\CatiaWS\NackWsp\win_b64\code\bin\testAddinM.dll.manifest].
+# mkmk-INFO: Directory [D:\CatiaWS\NackWsp\win_b64\resources\knowledge\knowledgeResources\automation] is empty; Removing directory [D:\CatiaWS\NackWsp\win_b64\resources\knowledge\knowledgeResources\automation].
+# mkmk-INFO: Directory [D:\CatiaWS\NackWsp\win_b64\resources\knowledge\knowledgeResources\html] is empty; Removing directory [D:\CatiaWS\NackWsp\win_b64\resources\knowledge\knowledgeResources\html].
+# mkmk-INFO: Directory [D:\CatiaWS\NackWsp\win_b64\resources\knowledge\knowledgeResources] is empty; Removing directory [D:\CatiaWS\NackWsp\win_b64\resources\knowledge\knowledgeResources].
+# mkmk-INFO: Directory [D:\CatiaWS\NackWsp\win_b64\resources\knowledge\knowledgeResourcesCatalogs] is empty; Removing directory [D:\CatiaWS\NackWsp\win_b64\resources\knowledge\knowledgeResourcesCatalogs].
+# mkmk-INFO: Directory [D:\CatiaWS\NackWsp\win_b64\resources\knowledge\knowledgeTypesCustom] is empty; Removing directory [D:\CatiaWS\NackWsp\win_b64\resources\knowledge\knowledgeTypesCustom].
+# mkmk-INFO: Directory [D:\CatiaWS\NackWsp\win_b64\resources\knowledge\knowledgeTypesDS] is empty; Removing directory [D:\CatiaWS\NackWsp\win_b64\resources\knowledge\knowledgeTypesDS].
+# mkmk-INFO: Directory [D:\CatiaWS\NackWsp\win_b64\resources\knowledge\workbench] is empty; Removing directory [D:\CatiaWS\NackWsp\win_b64\resources\knowledge\workbench].
+# mkmk-INFO: Directory [D:\CatiaWS\NackWsp\win_b64\resources\knowledge] is empty; Removing directory [D:\CatiaWS\NackWsp\win_b64\resources\knowledge].

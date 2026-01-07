@@ -1,0 +1,5 @@
+/I"D:\CatiaWS\FeaG\.\TrainFramework\AxisPointCmd.m\src"
+/I"D:\CatiaWS\FeaG\.\TrainFramework\AxisPointCmd.m\LocalInterfaces"
+/I"D:\CatiaWS\FeaG\.\TrainFramework\AxisPointCmd.m\LocalGenerated\win_b64"
+/I"D:\CatiaWS\FeaG\.\TrainFramework\PublicInterfaces"
+/I"D:\CatiaWS\FeaG\.\TrainFramework\ImportedInterfaces\win_b64"

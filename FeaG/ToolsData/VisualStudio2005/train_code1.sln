@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TrainFramework", "TrainFramework.vcproj", "{532B22BF-A4ED-4A75-972E-4CEAF3424A92}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TrainModule.m", "TrainFramework\TrainModule.m.vcproj", "{4EFEF199-32E0-4483-A21C-7952EC32984B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TrainModuleCmd.m", "TrainFramework\TrainModuleCmd.m.vcproj", "{85E9DB1A-7C60-47EA-95B4-29813CCE2E4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{532B22BF-A4ED-4A75-972E-4CEAF3424A92}.Debug|Win32.ActiveCfg = Debug|Win32
+		{532B22BF-A4ED-4A75-972E-4CEAF3424A92}.Release|Win32.ActiveCfg = Release|Win32
+		{4EFEF199-32E0-4483-A21C-7952EC32984B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4EFEF199-32E0-4483-A21C-7952EC32984B}.Release|Win32.ActiveCfg = Release|Win32
+		{85E9DB1A-7C60-47EA-95B4-29813CCE2E4E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{85E9DB1A-7C60-47EA-95B4-29813CCE2E4E}.Release|Win32.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

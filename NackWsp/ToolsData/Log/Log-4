@@ -1,0 +1,8 @@
+mkCI -a
+2025/12/26 11:50:06
+
+## start step: CIbuild   at 12/26/2025-11:50:06
+## end   step: CIbuild   at 12/26/2025-11:50:06
+
+## start step: DataUpdate   at 12/26/2025-11:50:06
+## end   step: DataUpdate   at 12/26/2025-11:50:06

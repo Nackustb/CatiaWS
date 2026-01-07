@@ -1,0 +1,5 @@
+/I"D:\CatiaWS\FeaG\.\TrainFramework\TrainModuleCmd.m\src"
+/I"D:\CatiaWS\FeaG\.\TrainFramework\TrainModuleCmd.m\LocalInterfaces"
+/I"D:\CatiaWS\FeaG\.\TrainFramework\TrainModuleCmd.m\LocalGenerated\win_b64"
+/I"D:\CatiaWS\FeaG\.\TrainFramework\PublicInterfaces"
+/I"D:\CatiaWS\FeaG\.\TrainFramework\ImportedInterfaces\win_b64"

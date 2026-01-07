@@ -1,0 +1,72 @@
+mkmk  -u -g -w  testAddinM.m
+2025/12/27 11:08:34
+
+## start step: CIbuild   at 12/27/2025-11:08:34
+## end   step: CIbuild   at 12/27/2025-11:08:34
+
+## start step: DataUpdate   at 12/27/2025-11:08:34
+# make:  testFrm\IdentityCard\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 12/27/2025-11:08:34
+
+## start step: DataUpdate   at 12/27/2025-11:08:34
+# mkmk-ERROR: testFrm\testAddinM.m: Module [CATObjectSpecsModeler.m] in LINK_WITH is ignored since it is in framework [D:\Program Files\Dassault Systemes\B18\.\ObjectSpecsModeler] which is not a direct prerequisite.
+# mkmk-ERROR: CATProductStructure: Directory [CATProductStructure.m*] was not found in specified workspace(s), then module [CATProductStructure] does not exist.
+# mkmk-ERROR: testFrm\testAddinM.m: Module [CATProductStructure] in LINK_WITH is ignored since its type 'invalid' is incompatible with type 'SHARED LIBRARY'.
+# make:  testFrm\testAddinM.m\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 12/27/2025-11:08:35
+
+## start step: CIcompilation   at 12/27/2025-11:08:35
+## end   step: CIcompilation   at 12/27/2025-11:08:35
+
+## start step: headerlist   at 12/27/2025-11:08:35
+## end   step: headerlist   at 12/27/2025-11:08:35
+
+## start step: headermap   at 12/27/2025-11:08:35
+## end   step: headermap   at 12/27/2025-11:08:35
+
+## start step: fwgrammar   at 12/27/2025-11:08:35
+## end   step: fwgrammar   at 12/27/2025-11:08:35
+
+## start step: grammar1st   at 12/27/2025-11:08:35
+## end   step: grammar1st   at 12/27/2025-11:08:35
+
+## start step: headerlist   at 12/27/2025-11:08:35
+## end   step: headerlist   at 12/27/2025-11:08:35
+
+## start step: headermap   at 12/27/2025-11:08:35
+## end   step: headermap   at 12/27/2025-11:08:35
+
+## start step: grammar2nd   at 12/27/2025-11:08:35
+## end   step: grammar2nd   at 12/27/2025-11:08:35
+
+## start step: typelibgrammar   at 12/27/2025-11:08:35
+## end   step: typelibgrammar   at 12/27/2025-11:08:35
+
+## start step: headerlist   at 12/27/2025-11:08:35
+## end   step: headerlist   at 12/27/2025-11:08:35
+
+## start step: headermap   at 12/27/2025-11:08:35
+## end   step: headermap   at 12/27/2025-11:08:35
+
+## start step: headerruler   at 12/27/2025-11:08:35
+## end   step: headerruler   at 12/27/2025-11:08:35
+
+## start step: compilation   at 12/27/2025-11:08:35
+# make:  testFrm\testAddinM.m\src\testAddin.cpp
+testAddin.cpp
+## end   step: compilation   at 12/27/2025-11:08:35
+
+## start step: sourceruler   at 12/27/2025-11:08:35
+## end   step: sourceruler   at 12/27/2025-11:08:35
+
+## start step: link1st   at 12/27/2025-11:08:35
+# make: testFrm\testAddinM.m win_b64\code\lib\testAddinM.lib
+   正在创建库 D:\CatiaWS\NackWsp\.\win_b64\code\lib\testAddinM.lib 和对象 D:\CatiaWS\NackWsp\.\win_b64\code\lib\testAddinM.exp
+## end   step: link1st   at 12/27/2025-11:08:35
+
+## start step: link2nd   at 12/27/2025-11:08:35
+# make: testFrm\testAddinM.m win_b64\code\bin\testAddinM.dll
+## end   step: link2nd   at 12/27/2025-11:08:35
+
+## start step: dummynls   at 12/27/2025-11:08:35
+## end   step: dummynls   at 12/27/2025-11:08:35

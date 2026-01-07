@@ -1,0 +1,31 @@
+// DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+Title = "有限元结果管理";
+FrameFM1.Title = "创建可视化任务";
+FrameFM1.LabelFM1.Title = "目标壁板编号";
+FrameFM2.Title = "分析条件";
+FrameFM2.LabelFM2.Title = "载荷(均布）";
+FrameFM2.LabelFM3.Title = "温度（恒温）";
+FrameFM2.LabelFM4.Title = "N";
+FrameFM2.LabelFM5.Title = "℃";
+FrameFM3.Title = "导入数据";
+FrameFM3.PushButtonFM1.Title = "打开文件";
+FrameFM3.LabelFM6.Title = "文件路径";
+ MultiListFM1.ColumnTitle1 = "编号";
+ MultiListFM1.ColumnTitle2 = "X坐标";
+ MultiListFM1.ColumnTitle3 = "Y坐标";
+ MultiListFM1.ColumnTitle4 = "Z坐标";
+ MultiListFM1.ColumnTitle5 = "应力";
+ MultiListFM1.ColumnTitle6 = "应变";
+Frame020.Title = "可视化";
+Frame020.PushButtonFM2.Title = "创建关键点";
+Frame020.PushButton021.Title = "数据导出";
+// END WIZARD REPLACEMENT ZONE
+
+
+// END WIZARD REPLACEMENT ZONE
+
+
+// END WIZARD REPLACEMENT ZONE
+
+
+// END WIZARD REPLACEMENT ZONE

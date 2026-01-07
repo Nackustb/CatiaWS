@@ -1,0 +1,6 @@
+// DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+Title = "Step1";
+Frame001.Title = "Message";
+Frame001.Label002.Title = "Name";
+Frame001.Label003.Title = "Age";
+// END WIZARD REPLACEMENT ZONE

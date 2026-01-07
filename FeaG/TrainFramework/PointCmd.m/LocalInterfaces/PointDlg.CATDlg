@@ -1,0 +1,52 @@
+// DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+CATDlgDialog PointDlg
+{
+  STYLE = CATDlgWndBtnOKApplyClose|CATDlgGridLayout;
+}
+
+CATDlgLabel Label001
+{
+  FATHER = PointDlg;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label002
+{
+  FATHER = PointDlg;
+  GRID = { 1, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label003
+{
+  FATHER = PointDlg;
+  GRID = { 2, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgSelectorList SelectorList004
+{
+  FATHER = PointDlg;
+  TH = 1;
+  TW = 10;
+  GRID = { 1, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgCombo Combo005
+{
+  FATHER = PointDlg;
+  STYLE = CATDlgCmbDropDown;
+  GRID = { 0, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgSpinner Spinner008
+{
+  FATHER = PointDlg;
+  STYLE = CATDlgSpnEntry|CATDlgSpnDouble;
+  MIN = 0.000000;
+  MAX = 10.000000;
+  STEP = 10000.000000;
+  UNIT = Millimeter;
+  PREC = 0;
+  GRID = { 2, 1, 1, 1, CATGRID_4SIDES };
+}
+
+// END WIZARD REPLACEMENT ZONE
