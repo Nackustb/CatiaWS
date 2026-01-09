@@ -1,0 +1,98 @@
+mkmk  -u -g  PointCmd.m
+2026/1/7 22:00:59
+
+## start step: CIbuild   at 01/07/2026-22:00:59
+## end   step: CIbuild   at 01/07/2026-22:00:59
+
+## start step: DataUpdate   at 01/07/2026-22:00:59
+# make:  TrainFramework\IdentityCard\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/07/2026-22:00:59
+
+## start step: DataUpdate   at 01/07/2026-22:00:59
+# make:  TrainFramework\PointCmd.m\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/07/2026-22:00:59
+
+## start step: CIcompilation   at 01/07/2026-22:00:59
+## end   step: CIcompilation   at 01/07/2026-22:00:59
+
+## start step: headerlist   at 01/07/2026-22:00:59
+## end   step: headerlist   at 01/07/2026-22:00:59
+
+## start step: headermap   at 01/07/2026-22:00:59
+## end   step: headermap   at 01/07/2026-22:00:59
+
+## start step: fwgrammar   at 01/07/2026-22:00:59
+## end   step: fwgrammar   at 01/07/2026-22:00:59
+
+## start step: grammar1st   at 01/07/2026-22:00:59
+## end   step: grammar1st   at 01/07/2026-22:00:59
+
+## start step: headerlist   at 01/07/2026-22:00:59
+## end   step: headerlist   at 01/07/2026-22:00:59
+
+## start step: headermap   at 01/07/2026-22:00:59
+## end   step: headermap   at 01/07/2026-22:00:59
+
+## start step: grammar2nd   at 01/07/2026-22:00:59
+## end   step: grammar2nd   at 01/07/2026-22:00:59
+
+## start step: typelibgrammar   at 01/07/2026-22:00:59
+## end   step: typelibgrammar   at 01/07/2026-22:00:59
+
+## start step: headerlist   at 01/07/2026-22:00:59
+## end   step: headerlist   at 01/07/2026-22:00:59
+
+## start step: headermap   at 01/07/2026-22:00:59
+## end   step: headermap   at 01/07/2026-22:00:59
+
+## start step: headerruler   at 01/07/2026-22:00:59
+## end   step: headerruler   at 01/07/2026-22:00:59
+
+## start step: compilation   at 01/07/2026-22:00:59
+# make:  TrainFramework\PointCmd.m\src\PointDlg.cpp
+PointDlg.cpp
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlg.cpp(30) : error C2065: “_ParamFrame”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlg.cpp(61) : error C2065: “CATDlgFrameStyleNone”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlg.cpp(62) : error C2227: “->SetGridConstraints”的左边必须指向类/结构/联合/泛型类型
+        类型是“'unknown-type'”
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlg.cpp(79) : error C2039: “GetSelectNotification”: 不是“CATDlgCombo”的成员
+        D:\Program Files\Dassault Systemes\B18\.\Dialog\PublicInterfaces\CATDlgCombo.h(28) : 参见“CATDlgCombo”的声明
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlg.cpp(80) : error C2039: “OnModeChanged”: 不是“PointDlg”的成员
+        D:\CatiaWS\FeaG\.\TrainFramework\PointCmd.m\LocalInterfaces\PointDlg.h(8) : 参见“PointDlg”的声明
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlg.cpp(80) : error C2065: “OnModeChanged”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlg.cpp(100) : error C3861: “OnModeChanged”: 找不到标识符
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlg.cpp(130) : error C2039: “OnModeChanged”: 不是“PointDlg”的成员
+        D:\CatiaWS\FeaG\.\TrainFramework\PointCmd.m\LocalInterfaces\PointDlg.h(8) : 参见“PointDlg”的声明
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlg.cpp(131) : error C2365: “OnModeChanged”: 重定义；以前的定义是“原先未知的标识符”
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlg.cpp(132) : error C2065: “_Combo005”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlg.cpp(134) : error C2227: “->GetSelect”的左边必须指向类/结构/联合/泛型类型
+        类型是“'unknown-type'”
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlg.cpp(137) : error C2227: “->SetVisibility”的左边必须指向类/结构/联合/泛型类型
+        类型是“'unknown-type'”
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlg.cpp(139) : error C2227: “->SetVisibility”的左边必须指向类/结构/联合/泛型类型
+        类型是“'unknown-type'”
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlg.cpp(141) : error C3861: “RequestUpdate”: 找不到标识符
+# make-ERROR: TrainFramework\PointCmd.m\src\PointDlg.cpp
+# make:  TrainFramework\PointCmd.m\src\PointDlgCmd.cpp
+PointDlgCmd.cpp
+D:\Program Files\Dassault Systemes\B18\.\DialogEngine\PublicInterfaces\CATStateCommand.h(742) : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+## end   step: compilation   at 01/07/2026-22:01:00
+
+## start step: sourceruler   at 01/07/2026-22:01:00
+## end   step: sourceruler   at 01/07/2026-22:01:00
+
+## start step: link1st   at 01/07/2026-22:01:00
+# make: TrainFramework\PointCmd.m win_b64\code\lib\PointCmd.lib
+# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\PointCmd.m\Objects\win_b64\PointDlg.obj: No such file or directory
+# make-ERROR: win_b64\code\lib\PointCmd.lib
+## end   step: link1st   at 01/07/2026-22:01:00
+
+## start step: link2nd   at 01/07/2026-22:01:00
+# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\PointCmd.m\Objects\win_b64\PointDlg.obj: No such file or directory
+# syst-ERROR: D:\CatiaWS\FeaG\.\win_b64\code\lib\PointCmd.exp: No such file or directory
+# make-ERROR: win_b64\code\bin\PointCmd.dll
+# make: TrainFramework\PointCmd.m win_b64\code\bin\PointCmd.dll
+## end   step: link2nd   at 01/07/2026-22:01:00
+
+## start step: dummynls   at 01/07/2026-22:01:00
+## end   step: dummynls   at 01/07/2026-22:01:00

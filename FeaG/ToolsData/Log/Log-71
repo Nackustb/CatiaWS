@@ -1,0 +1,81 @@
+mkmk  -u -g  PointCmd.m
+2026/1/8 15:51:06
+
+## start step: CIbuild   at 01/08/2026-15:51:07
+## end   step: CIbuild   at 01/08/2026-15:51:07
+
+## start step: DataUpdate   at 01/08/2026-15:51:07
+# make:  TrainFramework\IdentityCard\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/08/2026-15:51:07
+
+## start step: DataUpdate   at 01/08/2026-15:51:07
+# make:  TrainFramework\PointCmd.m\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/08/2026-15:51:07
+
+## start step: CIcompilation   at 01/08/2026-15:51:07
+## end   step: CIcompilation   at 01/08/2026-15:51:07
+
+## start step: headerlist   at 01/08/2026-15:51:07
+## end   step: headerlist   at 01/08/2026-15:51:07
+
+## start step: headermap   at 01/08/2026-15:51:07
+## end   step: headermap   at 01/08/2026-15:51:07
+
+## start step: fwgrammar   at 01/08/2026-15:51:07
+## end   step: fwgrammar   at 01/08/2026-15:51:07
+
+## start step: grammar1st   at 01/08/2026-15:51:07
+## end   step: grammar1st   at 01/08/2026-15:51:07
+
+## start step: headerlist   at 01/08/2026-15:51:07
+## end   step: headerlist   at 01/08/2026-15:51:07
+
+## start step: headermap   at 01/08/2026-15:51:07
+## end   step: headermap   at 01/08/2026-15:51:07
+
+## start step: grammar2nd   at 01/08/2026-15:51:07
+## end   step: grammar2nd   at 01/08/2026-15:51:07
+
+## start step: typelibgrammar   at 01/08/2026-15:51:07
+## end   step: typelibgrammar   at 01/08/2026-15:51:07
+
+## start step: headerlist   at 01/08/2026-15:51:07
+## end   step: headerlist   at 01/08/2026-15:51:07
+
+## start step: headermap   at 01/08/2026-15:51:07
+## end   step: headermap   at 01/08/2026-15:51:07
+
+## start step: headerruler   at 01/08/2026-15:51:07
+## end   step: headerruler   at 01/08/2026-15:51:07
+
+## start step: compilation   at 01/08/2026-15:51:07
+# make:  TrainFramework\PointCmd.m\src\PointDlgCmd.cpp
+PointDlgCmd.cpp
+D:\Program Files\Dassault Systemes\B18\.\DialogEngine\PublicInterfaces\CATStateCommand.h(742) : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(476) : error C2039: “GetCurve”: 不是“CATI2DCurve”的成员
+        D:\Program Files\Dassault Systemes\B18\.\SketcherInterfaces\PublicInterfaces\CATI2DCurve.h(28) : 参见“CATI2DCurve”的声明
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(485) : error C2660: “CATCrvLimits::GetStartParam”: 函数不接受 1 个参数
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(489) : error C2039: “GetParamAtLength”: 不是“CATCurve”的成员
+        d:\program files\dassault systemes\b18\geometricobjects\publicinterfaces\CATCurve.h(72) : 参见“CATCurve”的声明
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(493) : error C2660: “CATCurve::EvalPoint”: 函数不接受 2 个参数
+# make-ERROR: TrainFramework\PointCmd.m\src\PointDlgCmd.cpp
+## end   step: compilation   at 01/08/2026-15:51:08
+
+## start step: sourceruler   at 01/08/2026-15:51:08
+## end   step: sourceruler   at 01/08/2026-15:51:08
+
+## start step: link1st   at 01/08/2026-15:51:08
+# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\PointCmd.m\Objects\win_b64\PointDlgCmd.obj: No such file or directory
+# make: TrainFramework\PointCmd.m win_b64\code\lib\PointCmd.lib
+# make-ERROR: win_b64\code\lib\PointCmd.lib
+## end   step: link1st   at 01/08/2026-15:51:08
+
+## start step: link2nd   at 01/08/2026-15:51:08
+# make: TrainFramework\PointCmd.m win_b64\code\bin\PointCmd.dll
+# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\PointCmd.m\Objects\win_b64\PointDlgCmd.obj: No such file or directory
+# syst-ERROR: D:\CatiaWS\FeaG\.\win_b64\code\lib\PointCmd.exp: No such file or directory
+# make-ERROR: win_b64\code\bin\PointCmd.dll
+## end   step: link2nd   at 01/08/2026-15:51:08
+
+## start step: dummynls   at 01/08/2026-15:51:08
+## end   step: dummynls   at 01/08/2026-15:51:08

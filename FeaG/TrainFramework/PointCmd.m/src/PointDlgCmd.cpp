@@ -5,10 +5,13 @@
 #include "CATApplicationFrame.h"
 #include "CATCreateExternalObject.h"
 #include "CATDialogState.h"
+#include "CATDialogAgent.h"
+#include "CATPathElementAgent.h"
 #include "CATDlgGridConstraints.h"
 #include "CATMsgCatalog.h"
 #include "CATUnicodeString.h"
 #include <windows.h>
+
 //=================================================================
 // Editor / Document / Container
 //=================================================================
@@ -19,8 +22,7 @@
 #include "CATInit.h"
 #include "CATIContainerOfDocument.h"
 #include "CATIContainer.h"
-#include "CATDialogAgent.h"
-#include "CATPathElementAgent.h"
+
 //=================================================================
 // Spec / Model 基础接口
 //=================================================================
@@ -31,6 +33,7 @@
 #include "CATIRedrawEvent.h"
 #include "CATModify.h"
 #include "CATLISTV_CATISpecObject.h"
+
 //=================================================================
 // Sketcher（草图体系）
 //=================================================================
@@ -40,6 +43,7 @@
 #include "CATI2DPoint.h"
 #include "CATI2DCurve.h"
 #include "CATI2DCircle.h"
+
 //=================================================================
 // Part Design（零件 / Pad / Prism）
 //=================================================================
@@ -66,6 +70,7 @@
 #include "CATMathVector.h"
 #include "CATMathDirection.h"
 #include "CATMathTransformation.h"
+#include <math.h>
 
 //=================================================================
 // Geometry（低层几何实体）
@@ -85,132 +90,319 @@
 #include "CATIAlias.h"
 #include "CATIMovable.h"
 
-CATCreateClass( PointDlgCmd);
-
-
+CATCreateClass(PointDlgCmd);
 PointDlgCmd::PointDlgCmd() :
-  CATStateCommand ("PointDlgCmd", CATDlgEngOneShot, CATCommandModeExclusive) 
-  ,_pDlg(NULL)
-  , _pEditor(NULL)
-  , _pHSO(NULL)
-  , _pISO(NULL)
-  , _pSelectCurvePathAgent(NULL)
-  , _pCurveFieldAgent(NULL)
-  , _pModelFieldAgent(NULL)
-  , _pOKAgent(NULL)
-  , _pAPPLYAgent(NULL)
-  , _pCLOSEAgent(NULL)
-  , _spSelectCurveObj(NULL_var)
-  , _spSelectCurveProduct(NULL_var)
-  , _spActiveProduct(NULL_var)
-  ,_spSelectedSketch(NULL_var)
-  ,_spSelectedCircle2D(NULL_var)
-  , _spPointObj(NULL_var)
+CATStateCommand("PointDlgCmd", CATDlgEngOneShot, CATCommandModeExclusive)
+, _pDlg(NULL)
+, _pEditor(NULL)
+, _pHSO(NULL)
+, _pISO(NULL)
+, _pSelectCurvePathAgent(NULL)
+, _pCurveFieldAgent(NULL)
+, _pModelFieldAgent(NULL)
+, _pOKAgent(NULL)
+, _pAPPLYAgent(NULL)
+, _pCLOSEAgent(NULL)
+, _pModeAgent(NULL)
+, _spSelectCurveObj(NULL_var)
+, _spSelectCurveProduct(NULL_var)
+, _spActiveProduct(NULL_var)
+, _spSelectedSketch(NULL_var)
+, _spSelectedCircle2D(NULL_var)
+, _spPointObj(NULL_var)
+, _spSelectedCurve2D(NULL_var)
+
 {
 	CATApplicationFrame * pFrame = CATApplicationFrame::GetFrame();
-
-	if (NULL != pFrame)
+	if (pFrame != NULL)
 	{
 		CATDialog * pParent = (CATDialog *)pFrame->GetMainWindow();
-
-		if(pParent != NULL)
+		if (pParent != NULL)
 		{
 			_pDlg = new PointDlg();
-			_pDlg->Build();			  
+			_pDlg->Build();
 		}
 	}
-	RequestStatusChange (CATCommandMsgRequestExclusiveMode);  	  
+	RequestStatusChange(CATCommandMsgRequestExclusiveMode);
 }
 
 PointDlgCmd::~PointDlgCmd()
 {
-   if (_pDlg != NULL) 
-	   _pDlg->RequestDelayedDestruction();
+	if (_pDlg != NULL)
+		_pDlg->RequestDelayedDestruction();
 }
 
-
-CATStatusChangeRC PointDlgCmd::Activate( CATCommand * iFromClient, CATNotification * iEvtDat)
+//=================================================================
+// Command life-cycle
+//=================================================================
+CATStatusChangeRC PointDlgCmd::Activate(CATCommand * iFromClient, CATNotification * iEvtDat)
 {
-	if(_pDlg != NULL)
-		_pDlg->SetVisibility(CATDlgShow);  // 可视化设置
-
-
-	return (CATStatusChangeRCCompleted);
+	if (_pDlg != NULL)
+		_pDlg->SetVisibility(CATDlgShow);
+	return CATStatusChangeRCCompleted;
 }
 
-CATStatusChangeRC PointDlgCmd::Desactivate( CATCommand * iFromClient, CATNotification * iEvtDat)
+CATStatusChangeRC PointDlgCmd::Desactivate(CATCommand * iFromClient, CATNotification * iEvtDat)
 {
-	if(_pDlg != NULL)
+	if (_pDlg != NULL)
 		_pDlg->SetVisibility(CATDlgHide);
-	return (CATStatusChangeRCCompleted);
+	return CATStatusChangeRCCompleted;
 }
 
-CATStatusChangeRC PointDlgCmd::Cancel( CATCommand * iFromClient, CATNotification * iEvtDat)
+CATStatusChangeRC PointDlgCmd::Cancel(CATCommand * iFromClient, CATNotification * iEvtDat)
 {
-	if(_pDlg != NULL)
+	if (_pDlg != NULL)
 		_pDlg->SetVisibility(CATDlgHide);
 	RequestDelayedDestruction();
-	return (CATStatusChangeRCCompleted);
+	return CATStatusChangeRCCompleted;
 }
 
-
+//=================================================================
+// State chart
+//=================================================================
 void PointDlgCmd::BuildGraph()
 {
-
-// SelectCurvePathAgent
+	// -------------------------
+	// Selection agent
+	// -------------------------
 	_pSelectCurvePathAgent = new CATPathElementAgent("SelectCircleAgent");
 	_pSelectCurvePathAgent->AddElementType(IID_CATISpecObject);
-
 	_pSelectCurvePathAgent->SetBehavior(CATDlgEngWithPSO | CATDlgEngWithPrevaluation);
 
-// OK agent
+	// -------------------------
+	// Dialog agents (buttons)
+	// -------------------------
 	_pOKAgent = new CATDialogAgent("ok agent");
 	_pOKAgent->AcceptOnNotify(_pDlg, _pDlg->GetDiaOKNotification());
-// APPLY agent
+
 	_pAPPLYAgent = new CATDialogAgent("apply agent");
 	_pAPPLYAgent->AcceptOnNotify(_pDlg, _pDlg->GetDiaAPPLYNotification());
-// CLOSE agent
+
 	_pCLOSEAgent = new CATDialogAgent("close agent");
 	_pCLOSEAgent->AcceptOnNotify(_pDlg, _pDlg->GetDiaCLOSENotification());
 	_pCLOSEAgent->AcceptOnNotify(_pDlg, _pDlg->GetWindCloseNotification());
 
+	// -------------------------
+	// Mode agent (Combo005)
+	// -------------------------
+	_pModeAgent = NULL;
+
+	CATDlgCombo * pCombo = (_pDlg ? _pDlg->GetCombo(1) : NULL);
+	CATNotification * pNfy = (_pDlg ? _pDlg->GetCombo005SelectNotification() : NULL);
+
+	// -------------------------
+	// Initial state
+	// -------------------------
 	CATDialogState * InitialState = GetInitialState("Initial State");
 	InitialState->AddDialogAgent(_pSelectCurvePathAgent);
 	InitialState->AddDialogAgent(_pOKAgent);
 	InitialState->AddDialogAgent(_pAPPLYAgent);
 	InitialState->AddDialogAgent(_pCLOSEAgent);
-	
-	AddTransition(
-	  InitialState,
-	  NULL,
-	  IsOutputSetCondition(_pOKAgent),
-	  Action((ActionMethod)&PointDlgCmd::ActionOK)
-	);
 
+	// -------------------------
+	// Transitions (buttons)
+	// -------------------------
 	AddTransition(
-	  InitialState,
-	  NULL,
-	  //InitialState,
-	  IsOutputSetCondition(_pAPPLYAgent),
-	  Action((ActionMethod)&PointDlgCmd::ActionAPPLY)
-	);
-
-	AddTransition(
-	  InitialState,
-	  NULL,
-	  IsOutputSetCondition(_pCLOSEAgent),
-	  Action((ActionMethod)&PointDlgCmd::ActionCLOSE)
-	);
+		InitialState,
+		NULL,
+		IsOutputSetCondition(_pOKAgent),
+		Action((ActionMethod)&PointDlgCmd::ActionOK)
+		);
 
 	AddTransition(
 		InitialState,
-		InitialState, 
+		NULL,
+		IsOutputSetCondition(_pAPPLYAgent),
+		Action((ActionMethod)&PointDlgCmd::ActionAPPLY)
+		);
+
+	AddTransition(
+		InitialState,
+		NULL,
+		IsOutputSetCondition(_pCLOSEAgent),
+		Action((ActionMethod)&PointDlgCmd::ActionCLOSE)
+		);
+
+	// -------------------------
+	// Transitions (selection)
+	// -------------------------
+	AddTransition(
+		InitialState,
+		InitialState,
 		IsOutputSetCondition(_pSelectCurvePathAgent),
 		Action((ActionMethod)&PointDlgCmd::ActionSelectCurve)
 		);
+
+	// -------------------------
+	// Transitions (mode change)
+	// -------------------------
+	if (pCombo != NULL && pNfy != NULL)
+	{
+		_pModeAgent = new CATDialogAgent("mode agent");
+		_pModeAgent->AcceptOnNotify(pCombo, pNfy);
+		InitialState->AddDialogAgent(_pModeAgent);
+
+		AddTransition(
+			InitialState,
+			InitialState,
+			IsOutputSetCondition(_pModeAgent),
+			Action((ActionMethod)&PointDlgCmd::ActionModeChanged)
+			);
+	}
 }
 
-CATBoolean PointDlgCmd::ActionAPPLY(void *data)
+//=================================================================
+// Actions: buttons
+//=================================================================
+CATBoolean PointDlgCmd::ActionCLOSE(void * data)
+{
+	return TRUE;
+}
+
+CATBoolean PointDlgCmd::ActionAPPLY(void * data)
+{
+	return ApplyByMode();
+}
+
+CATBoolean PointDlgCmd::ActionOK(void * data)
+{
+	return ApplyByMode();
+}
+
+//=================================================================
+// Mode dispatch
+//=================================================================
+CATBoolean PointDlgCmd::ApplyByMode()
+{
+	const int mode = GetCurrentMode();
+	if (mode == kModeCircleCenter)
+		return ApplyCircleCenter();
+	return ApplyCurveDistance();
+}
+
+//=================================================================
+// Actions: selection
+//=================================================================
+CATBoolean PointDlgCmd::ActionSelectCurve(void * data)
+{
+	CATPathElement * pPath = _pSelectCurvePathAgent->GetValue();
+	if (pPath == NULL) return FALSE;
+
+	CATISketch_var spSketch = pPath->FindElement(IID_CATISketch);
+	if (spSketch == NULL_var)
+	{
+		::MessageBoxA(NULL, "请选择草图内的几何。", "提示", MB_OK);
+		_pSelectCurvePathAgent->InitializeAcquisition();
+		return TRUE;
+	}
+
+	const int mode = GetCurrentMode();
+
+	CATUnicodeString showText("Selected");
+
+	if (mode == kModeCircleCenter)
+	{
+		CATI2DCircle_var spCircle2D = pPath->FindElement(IID_CATI2DCircle);
+		if (spCircle2D == NULL_var)
+		{
+			::MessageBoxA(NULL, "圆心模式：请选择 2D 圆。", "提示", MB_OK);
+			_pSelectCurvePathAgent->InitializeAcquisition();
+			return TRUE;
+		}
+
+		_spSelectedSketch   = spSketch;
+		_spSelectedCircle2D = spCircle2D;
+		_spSelectedCurve2D  = NULL_var;
+
+		showText = "2D Circle";
+	}
+	else
+	{
+		CATI2DCurve_var spCurve2D = pPath->FindElement(IID_CATI2DCurve);
+		if (spCurve2D == NULL_var)
+		{
+			::MessageBoxA(NULL, "曲线距离模式：请选择 2D 曲线。", "提示", MB_OK);
+			_pSelectCurvePathAgent->InitializeAcquisition();
+			return TRUE;
+		}
+
+		_spSelectedSketch   = spSketch;
+		_spSelectedCurve2D  = spCurve2D;
+		_spSelectedCircle2D = NULL_var;
+
+		showText = "2D Curve";
+	}
+
+	if (_pDlg)
+	{
+		CATDlgSelectorList * pList = _pDlg->GetSelectorList(1); 
+		if (pList)
+		{
+			pList->ClearLine();
+			pList->SetLine(showText, -1, CATDlgDataAdd);
+			int iRow = 0;
+			pList->SetSelect(&iRow, 1, 1);
+		}
+	}
+
+	_pSelectCurvePathAgent->InitializeAcquisition();
+	return TRUE;
+}
+
+
+
+//=================================================================
+// Mode helpers
+//=================================================================
+int PointDlgCmd::GetCurrentMode() const
+{
+	if (_pDlg == NULL) return kModeCurveDistance;
+
+	CATDlgCombo * pCombo = _pDlg->GetCombo(1);
+	if (pCombo == NULL) return kModeCurveDistance;
+
+	int sel = 0;
+	sel = pCombo->GetSelect();
+	return sel;
+}
+
+CATBoolean PointDlgCmd::ActionModeChanged(void * data)
+{
+	const int mode = GetCurrentMode();
+	CATDlgSpinner * pSpin = _pDlg->GetSpinner(1);
+	if (_pDlg)
+	{
+		CATDlgSelectorList * pList = _pDlg->GetSelectorList(1);
+		if (pList)
+		{
+			pList->ClearLine();
+			pList->SetLine(CATUnicodeString("No selection"), -1, CATDlgDataAdd);
+		}
+	}
+
+	if (pSpin && mode == kModeCircleCenter)
+
+	{
+
+		pSpin->SetValue(0.0); 
+
+	}
+	_spSelectedCurve2D = NULL_var;
+	_spSelectedSketch = NULL_var;
+	_spSelectedCircle2D = NULL_var;
+
+	if (_pSelectCurvePathAgent)
+		_pSelectCurvePathAgent->InitializeAcquisition();
+	if (_pModeAgent)
+		_pModeAgent->InitializeAcquisition();
+
+	return TRUE;
+}
+
+//=================================================================
+// Mode implementations
+//=================================================================
+CATBoolean PointDlgCmd::ApplyCircleCenter()
 {
 	if (_spSelectedSketch == NULL_var || _spSelectedCircle2D == NULL_var)
 	{
@@ -227,7 +419,12 @@ CATBoolean PointDlgCmd::ActionAPPLY(void *data)
 		return TRUE;
 	}
 
-	_spSelectedSketch->OpenEdition();
+	HRESULT rc = _spSelectedSketch->OpenEdition();
+	if (FAILED(rc))
+	{
+		::MessageBoxA(NULL, "OpenEdition 失败，无法进入草图编辑。", "错误", MB_OK);
+		return TRUE;
+	}
 
 	CATI2DWFFactory_var sp2DFactory = _spSelectedSketch;
 	if (sp2DFactory == NULL_var)
@@ -242,57 +439,90 @@ CATBoolean PointDlgCmd::ActionAPPLY(void *data)
 	_spSelectedSketch->CloseEdition();
 
 	if (spCenterPoint == NULL_var)
+	{
 		::MessageBoxA(NULL, "创建圆心点失败。", "错误", MB_OK);
+	}
+
+
 
 	return TRUE;
 }
 
 
-CATBoolean PointDlgCmd::ActionCLOSE(void *data)
+CATBoolean PointDlgCmd::ApplyCurveDistance()
 {
-	return TRUE;
-}
-
-CATBoolean PointDlgCmd::ActionOK(void *data)
-{
-	return TRUE;
-}
-
-
-CATBoolean PointDlgCmd::ActionSelectCurve(void *data)
-{
-	CATPathElement * pPath = _pSelectCurvePathAgent->GetValue();
-	if (NULL == pPath) return FALSE;
-
-	CATISketch_var spSketch = pPath->FindElement(IID_CATISketch);
-	if (spSketch == NULL_var)
+	if (_spSelectedSketch == NULL_var || _spSelectedCurve2D == NULL_var)
 	{
-		::MessageBoxA(NULL, "请选择草图内部的圆。", "提示", MB_OK);
-		_pSelectCurvePathAgent->InitializeAcquisition();
+		::MessageBoxA(NULL, "请先选择一个草图 2D 曲线。", "提示", MB_OK);
 		return TRUE;
 	}
 
-	CATI2DCircle_var spCircle2D = pPath->FindElement(IID_CATI2DCircle);
-	if (spCircle2D == NULL_var)
+	// 读取距离（保持你现有逻辑：Spinner * 1000）
+	double dist = 0.0;
+	if (_pDlg)
 	{
-		::MessageBoxA(NULL, "选择的对象不是有效的2D圆。", "提示", MB_OK);
-		_pSelectCurvePathAgent->InitializeAcquisition();
+		CATDlgSpinner * pSpin = _pDlg->GetSpinner(1);
+		if (pSpin) dist = pSpin->GetValue();
+		dist = dist * 1000.0;
+	}
+
+	if (dist < 0.0)
+	{
+		::MessageBoxA(NULL, "距离参数必须 >= 0。", "提示", MB_OK);
 		return TRUE;
 	}
 
-	_spSelectedSketch = spSketch;
-	_spSelectedCircle2D = spCircle2D;
-
-	CATDlgSelectorList* pList = _pDlg->GetSelectorList(1);
-	if (pList)
+	// 取参数范围
+	double u0 = 0.0, u1 = 0.0;
+	HRESULT hr = _spSelectedCurve2D->GetParamExtents(&u0, &u1);
+	if (FAILED(hr))
 	{
-		pList->ClearLine();
-		CATUnicodeString name = "2D Circle";
-		pList->SetLine(name, -1, CATDlgDataAdd);
-		int iRow = 0;
-		pList->SetSelect(&iRow, 1, 1);
+		::MessageBoxA(NULL, "无法获取曲线参数范围。", "错误", MB_OK);
+		return TRUE;
 	}
 
-	_pSelectCurvePathAgent->InitializeAcquisition();
+	// 从起点参数 u0 出发，沿曲线逻辑方向走 dist，求目标参数
+	double uTarget = u0;
+	hr = _spSelectedCurve2D->GetParamAtLength(u0, dist, &uTarget);
+	if (FAILED(hr))
+	{
+		// 常见原因：dist 超过曲线总长或曲线不可计算；此时落到末端参数
+		uTarget = u1;
+	}
+
+	// 由参数取点（替换掉不存在的 GetPoint）
+	double pt[2] = { 0.0, 0.0 };
+	hr = _spSelectedCurve2D->GetPointAtParam(uTarget, pt);
+	if (FAILED(hr))
+	{
+		::MessageBoxA(NULL, "曲线取点失败（GetPointAtParam）。", "错误", MB_OK);
+		return TRUE;
+	}
+
+	// 进入草图编辑并创建 2D 点
+	hr = _spSelectedSketch->OpenEdition();
+	if (FAILED(hr))
+	{
+		::MessageBoxA(NULL, "OpenEdition 失败，无法进入草图编辑。", "错误", MB_OK);
+		return TRUE;
+	}
+
+	CATI2DWFFactory_var sp2DFactory = _spSelectedSketch;
+	if (sp2DFactory == NULL_var)
+	{
+		_spSelectedSketch->CloseEdition();
+		::MessageBoxA(NULL, "无法获取 CATI2DWFFactory。", "错误", MB_OK);
+		return TRUE;
+	}
+
+	CATI2DPoint_var spPt = sp2DFactory->CreatePoint(pt);
+
+	_spSelectedSketch->CloseEdition();
+
+	if (spPt == NULL_var)
+	{
+		::MessageBoxA(NULL, "创建曲线距离点失败。", "错误", MB_OK);
+	}
+
 	return TRUE;
 }

@@ -108,6 +108,12 @@ CATDlgSpinner* PointDlg::GetSpinner(int iValue)
 }
 
 
+CATNotification * PointDlg::GetCombo005SelectNotification()
+{
+	if (_Combo005 == NULL) return NULL;
+	return _Combo005->GetComboSelectNotification();
+}
+
 void PointDlg::OnPointDlgWindCloseNotification(CATCommand* cmd, CATNotification* evt, CATCommandClientData data)
 {
 	this -> SetVisibility(CATDlgHide);

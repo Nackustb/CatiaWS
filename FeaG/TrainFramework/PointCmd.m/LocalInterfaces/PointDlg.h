@@ -3,7 +3,7 @@
 
 #include "CATDlgDialog.h"
 #include "CATDlgInclude.h"
-
+#include "CATNotification.h"
 
 class PointDlg: public CATDlgDialog
 {
@@ -22,7 +22,8 @@ class PointDlg: public CATDlgDialog
   CATDlgSpinner*      GetSpinner(int iValue);
 
   virtual void OnPointDlgWindCloseNotification (CATCommand *, CATNotification* , CATCommandClientData data);
-   
+  CATNotification * GetCombo005SelectNotification();
+
   protected:
 
   private:

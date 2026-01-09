@@ -12,6 +12,7 @@
 #include "CATFrmEditor.h"
 #include "CATISketch.h"
 #include "CATI2DCircle.h"
+#include "CATI2DCurve.h"
 
 class CATIndicationAgent;
 
@@ -37,6 +38,11 @@ class PointDlgCmd: public CATStateCommand
 
   void CreateGeometry(CATCommand * iFromClient, CATNotification * iEvtDat);
   
+  enum SelectMode
+  {
+	  kModeCurveDistance = 0,
+	  kModeCircleCenter  = 1
+  };
 
   private:
   PointDlg* _pDlg;
@@ -57,9 +63,17 @@ class PointDlgCmd: public CATStateCommand
   CATIProduct_var     _spActiveProduct;          // 当前激活的 Product
   CATISketch_var  _spSelectedSketch;
   CATI2DCircle_var _spSelectedCircle2D;
+  CATI2DCurve_var _spSelectedCurve2D;
 
   CATISpecObject_var   _spPointObj;               // 创建的点
   CATListValCATISpecObject_var _ListOfCircles;
+  CATDialogAgent * _pModeAgent;
+
+  int GetCurrentMode() const;
+  CATBoolean ActionModeChanged(void * data);
+  CATBoolean ApplyByMode();
+  CATBoolean ApplyCircleCenter();
+  CATBoolean ApplyCurveDistance();
 };
 
 //----------------------------------------------------------------------

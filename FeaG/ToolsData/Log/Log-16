@@ -1,0 +1,69 @@
+mkmk  -u -g  PointCmd.m
+2026/1/7 22:01:12
+
+## start step: CIbuild   at 01/07/2026-22:01:12
+## end   step: CIbuild   at 01/07/2026-22:01:12
+
+## start step: DataUpdate   at 01/07/2026-22:01:12
+# make:  TrainFramework\IdentityCard\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/07/2026-22:01:12
+
+## start step: DataUpdate   at 01/07/2026-22:01:12
+# make:  TrainFramework\PointCmd.m\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/07/2026-22:01:13
+
+## start step: CIcompilation   at 01/07/2026-22:01:13
+## end   step: CIcompilation   at 01/07/2026-22:01:13
+
+## start step: headerlist   at 01/07/2026-22:01:13
+## end   step: headerlist   at 01/07/2026-22:01:13
+
+## start step: headermap   at 01/07/2026-22:01:13
+## end   step: headermap   at 01/07/2026-22:01:13
+
+## start step: fwgrammar   at 01/07/2026-22:01:13
+## end   step: fwgrammar   at 01/07/2026-22:01:13
+
+## start step: grammar1st   at 01/07/2026-22:01:13
+## end   step: grammar1st   at 01/07/2026-22:01:13
+
+## start step: headerlist   at 01/07/2026-22:01:13
+## end   step: headerlist   at 01/07/2026-22:01:13
+
+## start step: headermap   at 01/07/2026-22:01:13
+## end   step: headermap   at 01/07/2026-22:01:13
+
+## start step: grammar2nd   at 01/07/2026-22:01:13
+## end   step: grammar2nd   at 01/07/2026-22:01:13
+
+## start step: typelibgrammar   at 01/07/2026-22:01:13
+## end   step: typelibgrammar   at 01/07/2026-22:01:13
+
+## start step: headerlist   at 01/07/2026-22:01:13
+## end   step: headerlist   at 01/07/2026-22:01:13
+
+## start step: headermap   at 01/07/2026-22:01:13
+## end   step: headermap   at 01/07/2026-22:01:13
+
+## start step: headerruler   at 01/07/2026-22:01:13
+## end   step: headerruler   at 01/07/2026-22:01:13
+
+## start step: compilation   at 01/07/2026-22:01:13
+# make:  TrainFramework\PointCmd.m\src\PointDlg.cpp
+PointDlg.cpp
+## end   step: compilation   at 01/07/2026-22:01:13
+
+## start step: sourceruler   at 01/07/2026-22:01:13
+## end   step: sourceruler   at 01/07/2026-22:01:13
+
+## start step: link1st   at 01/07/2026-22:01:13
+# make: TrainFramework\PointCmd.m win_b64\code\lib\PointCmd.lib
+   正在创建库 D:\CatiaWS\FeaG\.\win_b64\code\lib\PointCmd.lib 和对象 D:\CatiaWS\FeaG\.\win_b64\code\lib\PointCmd.exp
+## end   step: link1st   at 01/07/2026-22:01:13
+
+## start step: link2nd   at 01/07/2026-22:01:13
+# make: TrainFramework\PointCmd.m win_b64\code\bin\PointCmd.dll
+## end   step: link2nd   at 01/07/2026-22:01:13
+
+## start step: dummynls   at 01/07/2026-22:01:13
+## end   step: dummynls   at 01/07/2026-22:01:13
