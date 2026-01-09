@@ -1,0 +1,99 @@
+mkmk  -u -g  PointCmd.m
+2026/1/9 18:06:55
+
+## start step: CIbuild   at 01/09/2026-18:06:55
+## end   step: CIbuild   at 01/09/2026-18:06:55
+
+## start step: DataUpdate   at 01/09/2026-18:06:55
+# make:  TrainFramework\IdentityCard\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/09/2026-18:06:55
+
+## start step: DataUpdate   at 01/09/2026-18:06:55
+# make:  TrainFramework\PointCmd.m\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/09/2026-18:06:55
+
+## start step: CIcompilation   at 01/09/2026-18:06:55
+## end   step: CIcompilation   at 01/09/2026-18:06:55
+
+## start step: headerlist   at 01/09/2026-18:06:55
+## end   step: headerlist   at 01/09/2026-18:06:55
+
+## start step: headermap   at 01/09/2026-18:06:55
+## end   step: headermap   at 01/09/2026-18:06:55
+
+## start step: fwgrammar   at 01/09/2026-18:06:55
+## end   step: fwgrammar   at 01/09/2026-18:06:55
+
+## start step: grammar1st   at 01/09/2026-18:06:55
+## end   step: grammar1st   at 01/09/2026-18:06:56
+
+## start step: headerlist   at 01/09/2026-18:06:56
+## end   step: headerlist   at 01/09/2026-18:06:56
+
+## start step: headermap   at 01/09/2026-18:06:56
+## end   step: headermap   at 01/09/2026-18:06:56
+
+## start step: grammar2nd   at 01/09/2026-18:06:56
+## end   step: grammar2nd   at 01/09/2026-18:06:56
+
+## start step: typelibgrammar   at 01/09/2026-18:06:56
+## end   step: typelibgrammar   at 01/09/2026-18:06:56
+
+## start step: headerlist   at 01/09/2026-18:06:56
+## end   step: headerlist   at 01/09/2026-18:06:56
+
+## start step: headermap   at 01/09/2026-18:06:56
+## end   step: headermap   at 01/09/2026-18:06:56
+
+## start step: headerruler   at 01/09/2026-18:06:56
+## end   step: headerruler   at 01/09/2026-18:06:56
+
+## start step: compilation   at 01/09/2026-18:06:56
+# make:  TrainFramework\PointCmd.m\src\PointDlgCmd.cpp
+PointDlgCmd.cpp
+D:\Program Files\Dassault Systemes\B18\.\DialogEngine\PublicInterfaces\CATStateCommand.h(742) : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(582) : error C2065: “spCkeParm”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(583) : error C2275: “CATIGSMPoint”: 将此类型用作表达式非法
+        d:\program files\dassault systemes\b18\gsminterfaces\publicinterfaces\CATIGSMPoint.h(34) : 参见“CATIGSMPoint”的声明
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(583) : error C2143: 语法错误 : 缺少“)”(在“if”的前面)
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(584) : error C2143: 语法错误 : 缺少“;”(在“{”的前面)
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(612) : error C2059: 语法错误 : “if”
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(613) : error C2143: 语法错误 : 缺少“;”(在“{”的前面)
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(613) : error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(631) : error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(631) : error C2065: “_spSelectCurveObj”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(632) : error C2059: 语法错误 : “if”
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(635) : error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(635) : error C2374: “spAlias”: 重定义；多次初始化
+        D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(631) : 参见“spAlias”的声明
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(635) : error C2065: “spSpecOnTemp”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(636) : error C2059: 语法错误 : “if”
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(640) : error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(642) : error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(642) : error C2059: 语法错误 : “}”
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(642) : error C2143: 语法错误 : 缺少“;”(在“}”的前面)
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(642) : error C2059: 语法错误 : “}”
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(646) : error C2143: 语法错误 : 缺少“;”(在“{”的前面)
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(646) : error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(696) : error C2146: 语法错误 : 缺少“,”(在标识符“CATISpecObject_var”的前面)
+# make-ERROR: TrainFramework\PointCmd.m\src\PointDlgCmd.cpp
+## end   step: compilation   at 01/09/2026-18:06:56
+
+## start step: sourceruler   at 01/09/2026-18:06:56
+## end   step: sourceruler   at 01/09/2026-18:06:56
+
+## start step: link1st   at 01/09/2026-18:06:56
+# make: TrainFramework\PointCmd.m win_b64\code\lib\PointCmd.lib
+# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\PointCmd.m\Objects\win_b64\PointDlgCmd.obj: No such file or directory
+# make-ERROR: win_b64\code\lib\PointCmd.lib
+## end   step: link1st   at 01/09/2026-18:06:56
+
+## start step: link2nd   at 01/09/2026-18:06:56
+# make: TrainFramework\PointCmd.m win_b64\code\bin\PointCmd.dll
+# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\PointCmd.m\Objects\win_b64\PointDlgCmd.obj: No such file or directory
+# syst-ERROR: D:\CatiaWS\FeaG\.\win_b64\code\lib\PointCmd.exp: No such file or directory
+# make-ERROR: win_b64\code\bin\PointCmd.dll
+## end   step: link2nd   at 01/09/2026-18:06:56
+
+## start step: dummynls   at 01/09/2026-18:06:56
+## end   step: dummynls   at 01/09/2026-18:06:56

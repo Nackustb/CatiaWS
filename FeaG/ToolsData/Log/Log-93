@@ -1,0 +1,4 @@
+mkcpl PointDlgCmd.cpp
+2026/1/9 17:44:34
+
+RequestLicensesFromSettings: error: InternalDS license found, not authorized for this product.

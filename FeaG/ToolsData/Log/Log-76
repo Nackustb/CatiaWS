@@ -1,0 +1,627 @@
+mkmk -a  -u -g 
+2026/1/9 15:19:33
+
+## start step: CIbuild   at 01/09/2026-15:19:33
+# make: TrainFramework win_b64\code\productIC\TrainFrameworkIC.script
+ Redefinition line(24) : AddPrereqComponent("ApplicationFrame",Public)
+ Redefinition line(28) : AddPrereqComponent("DialogEngine",Public)
+ Redefinition line(29) : AddPrereqComponent("Mathematics",Public)
+ Redefinition line(30) : AddPrereqComponent("Dialog",Public)
+# mkmk-ERROR: Script Error >>> file: D:\CatiaWS\FeaG\TrainFramework\IdentityCard\IdentityCard.h line: 0 compilation failed <<<
+## end   step: CIbuild   at 01/09/2026-15:19:33
+
+## start step: DataUpdate   at 01/09/2026-15:19:33
+# make:  TrainFramework\IdentityCard\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/09/2026-15:19:35
+
+## start step: DataUpdate   at 01/09/2026-15:19:35
+# make:  TrainFramework\AxisPointCmd.m\Objects\win_b64\.mkdata.mk
+# make:  TrainFramework\PadCmd.m\Objects\win_b64\.mkdata.mk
+# make:  TrainFramework\PointCmd.m\Objects\win_b64\.mkdata.mk
+# make:  TrainFramework\SwapTextM.m\Objects\win_b64\.mkdata.mk
+# make:  TrainFramework\TrainModule.m\Objects\win_b64\.mkdata.mk
+# make:  TrainFramework\TrainModuleCmd.m\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/09/2026-15:19:37
+
+## start step: CIcompilation   at 01/09/2026-15:19:37
+## end   step: CIcompilation   at 01/09/2026-15:19:37
+
+## start step: headerlist   at 01/09/2026-15:19:37
+# make:  TrainFramework\various\win_b64\HList\ProtectedInterfaces.hl
+# make:  TrainFramework\various\win_b64\HList\PublicInterfaces.hl
+# make:  TrainFramework\various\win_b64\HList\PrivateInterfaces.hl
+## end   step: headerlist   at 01/09/2026-15:19:37
+
+## start step: headermap   at 01/09/2026-15:19:37
+# make:  TrainFramework\ImportedInterfaces\win_b64\.HeaderTable.map
+## end   step: headermap   at 01/09/2026-15:19:39
+
+## start step: fwgrammar   at 01/09/2026-15:19:39
+## end   step: fwgrammar   at 01/09/2026-15:19:39
+
+## start step: grammar1st   at 01/09/2026-15:19:39
+# make:  TrainFramework\AxisPointCmd.m\LocalGenerated\win_b64\mkCAAV5Licensing.cpp
+mkCAAV5Licensing.cpp.CPP
+# make:  TrainFramework\PadCmd.m\LocalGenerated\win_b64\mkCAAV5Licensing.cpp
+mkCAAV5Licensing.cpp.CPP
+# make:  TrainFramework\PointCmd.m\LocalGenerated\win_b64\mkCAAV5Licensing.cpp
+mkCAAV5Licensing.cpp.CPP
+# make:  TrainFramework\SwapTextM.m\LocalGenerated\win_b64\mkCAAV5Licensing.cpp
+mkCAAV5Licensing.cpp.CPP
+# make:  TrainFramework\TrainModule.m\LocalGenerated\win_b64\mkCAAV5Licensing.cpp
+mkCAAV5Licensing.cpp.CPP
+# make:  TrainFramework\TrainModuleCmd.m\LocalGenerated\win_b64\mkCAAV5Licensing.cpp
+mkCAAV5Licensing.cpp.CPP
+## end   step: grammar1st   at 01/09/2026-15:19:39
+
+## start step: headerlist   at 01/09/2026-15:19:39
+## end   step: headerlist   at 01/09/2026-15:19:39
+
+## start step: headermap   at 01/09/2026-15:19:39
+## end   step: headermap   at 01/09/2026-15:19:39
+
+## start step: grammar2nd   at 01/09/2026-15:19:39
+## end   step: grammar2nd   at 01/09/2026-15:19:39
+
+## start step: typelibgrammar   at 01/09/2026-15:19:39
+## end   step: typelibgrammar   at 01/09/2026-15:19:39
+
+## start step: headerlist   at 01/09/2026-15:19:39
+## end   step: headerlist   at 01/09/2026-15:19:39
+
+## start step: headermap   at 01/09/2026-15:19:39
+## end   step: headermap   at 01/09/2026-15:19:39
+
+## start step: headerruler   at 01/09/2026-15:19:39
+# make:  TrainFramework\PublicInterfaces\AxisPointCmd.h
+# make:  TrainFramework\PublicInterfaces\PadCmd.h
+# make:  TrainFramework\PublicInterfaces\PointCmd.h
+# make:  TrainFramework\PublicInterfaces\SwapTextM.h
+# make:  TrainFramework\PublicInterfaces\TrainModule.h
+# make:  TrainFramework\PublicInterfaces\TrainModuleCmd.h
+## end   step: headerruler   at 01/09/2026-15:19:39
+
+## start step: compilation   at 01/09/2026-15:19:39
+# make:  TrainFramework\AxisPointCmd.m\src\AxisDlg.cpp
+AxisDlg.cpp
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xlocale(326) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xlocale(341) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xlocale(358) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(610) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\istream(870) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\istream(1075) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(514) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(506): 编译类 模板 成员函数“std::basic_ostream<_Elem,_Traits> &std::basic_ostream<_Elem,_Traits>::put(_Elem)”时
+        with
+        [
+            _Elem=wchar_t,
+            _Traits=std::char_traits<wchar_t>
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(597): 参见对正在编译的类 模板 实例化“std::basic_ostream<_Elem,_Traits>”的引用
+        with
+        [
+            _Elem=wchar_t,
+            _Traits=std::char_traits<wchar_t>
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(417) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(409): 编译类 模板 成员函数“std::basic_ostream<_Elem,_Traits> &std::basic_ostream<_Elem,_Traits>::operator <<(double)”时
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(639): 参见对正在编译的类 模板 实例化“std::basic_ostream<_Elem,_Traits>”的引用
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(514) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(506): 编译类 模板 成员函数“std::basic_ostream<_Elem,_Traits> &std::basic_ostream<_Elem,_Traits>::put(_Elem)”时
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\istream(394) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\istream(387): 编译类 模板 成员函数“std::basic_istream<_Elem,_Traits> &std::basic_istream<_Elem,_Traits>::operator >>(double &)”时
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\istream(886): 参见对正在编译的类 模板 实例化“std::basic_istream<_Elem,_Traits>”的引用
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\vector(489) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\vector(485): 编译类 模板 成员函数“std::vector<_Ty>::vector(const std::vector<_Ty> &)”时
+        with
+        [
+            _Ty=double
+        ]
+        D:\CatiaWS\FeaG\TrainFramework\AxisPointCmd.m\src\AxisDlg.cpp(321): 参见对正在编译的类 模板 实例化“std::vector<_Ty>”的引用
+        with
+        [
+            _Ty=double
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(138) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(137): 编译类 模板 成员函数“void std::basic_ostream<_Elem,_Traits>::_Osfx(void)”时
+        with
+        [
+            _Elem=wchar_t,
+            _Traits=std::char_traits<wchar_t>
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\istream(102) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\istream(92): 编译类 模板 成员函数“bool std::basic_istream<_Elem,_Traits>::_Ipfx(bool)”时
+        with
+        [
+            _Elem=wchar_t,
+            _Traits=std::char_traits<wchar_t>
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\istream(858): 参见对正在编译的类 模板 实例化“std::basic_istream<_Elem,_Traits>”的引用
+        with
+        [
+            _Elem=wchar_t,
+            _Traits=std::char_traits<wchar_t>
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\istream(102) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\istream(92): 编译类 模板 成员函数“bool std::basic_istream<_Elem,_Traits>::_Ipfx(bool)”时
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(138) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(137): 编译类 模板 成员函数“void std::basic_ostream<_Elem,_Traits>::_Osfx(void)”时
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\vector(1141) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\vector(1117): 编译类 模板 成员函数“void std::vector<_Ty>::_Insert_n(std::_Vector_iterator<_Ty,_Alloc>,unsigned __int64,const _Ty &)”时
+        with
+        [
+            _Ty=double,
+            _Alloc=std::allocator<double>
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\vector(1141) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\vector(1117): 编译类 模板 成员函数“void std::vector<_Ty>::_Insert_n(std::_Vector_iterator<_Ty,_Alloc>,unsigned __int64,const _Ty &)”时
+        with
+        [
+            _Ty=Vec3,
+            _Alloc=std::allocator<Vec3>
+        ]
+        D:\CatiaWS\FeaG\TrainFramework\AxisPointCmd.m\src\AxisDlg.cpp(674): 参见对正在编译的类 模板 实例化“std::vector<_Ty>”的引用
+        with
+        [
+            _Ty=Vec3
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\vector(1141) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\vector(1117): 编译类 模板 成员函数“void std::vector<_Ty>::_Insert_n(std::_Vector_iterator<_Ty,_Alloc>,unsigned __int64,const _Ty &)”时
+        with
+        [
+            _Ty=std::vector<double>,
+            _Alloc=std::allocator<std::vector<double>>
+        ]
+        D:\CatiaWS\FeaG\TrainFramework\AxisPointCmd.m\src\AxisDlg.cpp(709): 参见对正在编译的类 模板 实例化“std::vector<_Ty>”的引用
+        with
+        [
+            _Ty=std::vector<double>
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xstring(1971) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xstring(1962): 编译类 模板 成员函数“void std::basic_string<_Elem,_Traits,_Ax>::_Copy(unsigned __int64,unsigned __int64)”时
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xstring(2101): 参见对正在编译的类 模板 实例化“std::basic_string<_Elem,_Traits,_Ax>”的引用
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xstring(1971) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xstring(1962): 编译类 模板 成员函数“void std::basic_string<_Elem,_Traits,_Ax>::_Copy(unsigned __int64,unsigned __int64)”时
+        with
+        [
+            _Elem=wchar_t,
+            _Traits=std::char_traits<wchar_t>,
+            _Ax=std::allocator<wchar_t>
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xstring(2103): 参见对正在编译的类 模板 实例化“std::basic_string<_Elem,_Traits,_Ax>”的引用
+        with
+        [
+            _Elem=wchar_t,
+            _Traits=std::char_traits<wchar_t>,
+            _Ax=std::allocator<wchar_t>
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(751) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\CatiaWS\FeaG\TrainFramework\AxisPointCmd.m\src\AxisDlg.cpp(333): 参见对正在编译的函数 模板 实例化“std::basic_ostream<_Elem,_Traits> &std::operator <<<std::char_traits<char>>(std::basic_ostream<_Elem,_Traits> &,const char *)”的引用
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xlocnum(130) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xlocnum(123): 编译类 模板 成员函数“void std::numpunct<_Elem>::_Init(const std::_Locinfo &)”时
+        with
+        [
+            _Elem=char
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xlocnum(1363): 参见对正在编译的类 模板 实例化“std::numpunct<_Elem>”的引用
+        with
+        [
+            _Elem=char
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xlocnum(130) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xlocnum(123): 编译类 模板 成员函数“void std::numpunct<_Elem>::_Init(const std::_Locinfo &)”时
+        with
+        [
+            _Elem=wchar_t
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xlocnum(1369): 参见对正在编译的类 模板 实例化“std::numpunct<_Elem>”的引用
+        with
+        [
+            _Elem=wchar_t
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\memory(311) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\memory(731): 参见对正在编译的函数 模板 实例化“void std::_Uninit_fill_n<_FwdIt,_Diff,_Tval,_Alloc>(_FwdIt,_Diff,const _Tval &,_Alloc &,std::_Nonscalar_ptr_iterator_tag,std::_Range_checked_iterator_tag)”的引用
+        with
+        [
+            _FwdIt=Vec3 *,
+            _Diff=unsigned __int64,
+            _Tval=Vec3,
+            _Alloc=std::allocator<Vec3>
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\vector(1208): 参见对正在编译的函数 模板 实例化“void stdext::unchecked_uninitialized_fill_n<Vec3*,unsigned __int64,_Ty,std::allocator<_Ty>>(_FwdIt,_Diff,const _Tval &,_Alloc &)”的引用
+        with
+        [
+            _Ty=Vec3,
+            _FwdIt=Vec3 *,
+            _Diff=unsigned __int64,
+            _Tval=Vec3,
+            _Alloc=std::allocator<Vec3>
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\vector(1207): 编译类 模板 成员函数“Vec3 *std::vector<_Ty>::_Ufill(Vec3 *,unsigned __int64,const _Ty &)”时
+        with
+        [
+            _Ty=Vec3
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\memory(311) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\memory(731): 参见对正在编译的函数 模板 实例化“void std::_Uninit_fill_n<_FwdIt,_Diff,_Tval,_Alloc>(_FwdIt,_Diff,const _Tval &,_Alloc &,std::_Nonscalar_ptr_iterator_tag,std::_Range_checked_iterator_tag)”的引用
+        with
+        [
+            _FwdIt=std::vector<double> *,
+            _Diff=unsigned __int64,
+            _Tval=std::vector<double>,
+            _Alloc=std::allocator<std::vector<double>>
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\vector(1208): 参见对正在编译的函数 模板 实例化“void stdext::unchecked_uninitialized_fill_n<std::vector<_Ty>*,unsigned __int64,std::vector<_Ty>,std::allocator<std::vector<_Ty>>>(_FwdIt,_Diff,const _Tval &,_Alloc &)”的引用
+        with
+        [
+            _Ty=double,
+            _FwdIt=std::vector<double> *,
+            _Diff=unsigned __int64,
+            _Tval=std::vector<double>,
+            _Alloc=std::allocator<std::vector<double>>
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\vector(1207): 编译类 模板 成员函数“std::vector<_Ty> *std::vector<std::vector<_Ty>>::_Ufill(std::vector<_Ty> *,unsigned __int64,const std::vector<_Ty> &)”时
+        with
+        [
+            _Ty=double
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\memory(174) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\memory(694): 参见对正在编译的函数 模板 实例化“_FwdIt std::_Uninit_move<std::vector<_Ty>*,_FwdIt,_Alloc>(_InIt,_InIt,_FwdIt,_Alloc &,std::_Swap_move_tag,std::_Range_checked_iterator_tag)”的引用
+        with
+        [
+            _FwdIt=std::vector<double> *,
+            _Ty=double,
+            _Alloc=std::allocator<std::vector<double>>,
+            _InIt=std::vector<double> *
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\vector(1112): 参见对正在编译的函数 模板 实例化“_FwdIt stdext::_Unchecked_uninitialized_move<_Iter,std::vector<_Ty>*,std::allocator<std::vector<_Ty>>>(_InIt,_InIt,_FwdIt,_Alloc &)”的引用
+        with
+        [
+            _FwdIt=std::vector<double> *,
+            _Iter=std::vector<double> *,
+            _Ty=double,
+            _InIt=std::vector<double> *,
+            _Alloc=std::allocator<std::vector<double>>
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\vector(1143): 参见对正在编译的函数 模板 实例化“std::vector<_Ty> *std::vector<std::vector<_Ty>>::_Umove<std::vector<_Ty>*>(_Iter,_Iter,std::vector<_Ty> *)”的引用
+        with
+        [
+            _Ty=double,
+            _Iter=std::vector<double> *
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\vector(1117): 编译类 模板 成员函数“void std::vector<_Ty>::_Insert_n(std::_Vector_iterator<_Ty,_Alloc>,unsigned __int64,const _Ty &)”时
+        with
+        [
+            _Ty=std::vector<double>,
+            _Alloc=std::allocator<std::vector<double>>
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\memory(107) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\memory(674): 参见对正在编译的函数 模板 实例化“_FwdIt std::_Uninit_copy<Vec3*,_FwdIt,_Alloc>(_InIt,_InIt,_FwdIt,_Alloc &,std::_Nonscalar_ptr_iterator_tag,std::_Range_checked_iterator_tag)”的引用
+        with
+        [
+            _FwdIt=Vec3 *,
+            _Alloc=std::allocator<Vec3>,
+            _InIt=Vec3 *
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\memory(160): 参见对正在编译的函数 模板 实例化“_FwdIt stdext::unchecked_uninitialized_copy<_InIt,_FwdIt,_Alloc>(_InIt,_InIt,_FwdIt,_Alloc &)”的引用
+        with
+        [
+            _FwdIt=Vec3 *,
+            _InIt=Vec3 *,
+            _Alloc=std::allocator<Vec3>
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\memory(694): 参见对正在编译的函数 模板 实例化“_FwdIt std::_Uninit_move<Vec3*,_FwdIt,_Alloc,std::_Move_operation_category<_Value>::_Move_cat>(_InIt,_InIt,_FwdIt,_Alloc &,_MoveCatTy,std::_Range_checked_iterator_tag)”的引用
+        with
+        [
+            _FwdIt=Vec3 *,
+            _Alloc=std::allocator<Vec3>,
+            _Value=Vec3,
+            _InIt=Vec3 *,
+            _MoveCatTy=std::_Move_operation_category<Vec3>::_Move_cat
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\vector(1112): 参见对正在编译的函数 模板 实例化“_FwdIt stdext::_Unchecked_uninitialized_move<_Iter,Vec3*,std::allocator<_Ty>>(_InIt,_InIt,_FwdIt,_Alloc &)”的引用
+        with
+        [
+            _FwdIt=Vec3 *,
+            _Iter=Vec3 *,
+            _Ty=Vec3,
+            _InIt=Vec3 *,
+            _Alloc=std::allocator<Vec3>
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\vector(1143): 参见对正在编译的函数 模板 实例化“Vec3 *std::vector<_Ty>::_Umove<Vec3*>(_Iter,_Iter,Vec3 *)”的引用
+        with
+        [
+            _Ty=Vec3,
+            _Iter=Vec3 *
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\vector(1117): 编译类 模板 成员函数“void std::vector<_Ty>::_Insert_n(std::_Vector_iterator<_Ty,_Alloc>,unsigned __int64,const _Ty &)”时
+        with
+        [
+            _Ty=Vec3,
+            _Alloc=std::allocator<Vec3>
+        ]
+# make:  TrainFramework\AxisPointCmd.m\src\AxisDlgCmd.cpp
+AxisDlgCmd.cpp
+D:\Program Files\Dassault Systemes\B18\.\DialogEngine\PublicInterfaces\CATStateCommand.h(742) : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xlocale(326) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xlocale(341) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xlocale(358) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(610) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\istream(870) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\istream(1075) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(514) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(506): 编译类 模板 成员函数“std::basic_ostream<_Elem,_Traits> &std::basic_ostream<_Elem,_Traits>::put(_Elem)”时
+        with
+        [
+            _Elem=wchar_t,
+            _Traits=std::char_traits<wchar_t>
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(597): 参见对正在编译的类 模板 实例化“std::basic_ostream<_Elem,_Traits>”的引用
+        with
+        [
+            _Elem=wchar_t,
+            _Traits=std::char_traits<wchar_t>
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(514) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(506): 编译类 模板 成员函数“std::basic_ostream<_Elem,_Traits> &std::basic_ostream<_Elem,_Traits>::put(_Elem)”时
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(639): 参见对正在编译的类 模板 实例化“std::basic_ostream<_Elem,_Traits>”的引用
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\vector(489) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\vector(485): 编译类 模板 成员函数“std::vector<_Ty>::vector(const std::vector<_Ty> &)”时
+        with
+        [
+            _Ty=double
+        ]
+        D:\CatiaWS\FeaG\TrainFramework\AxisPointCmd.m\src\AxisDlgCmd.cpp(30): 参见对正在编译的类 模板 实例化“std::vector<_Ty>”的引用
+        with
+        [
+            _Ty=double
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(138) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(137): 编译类 模板 成员函数“void std::basic_ostream<_Elem,_Traits>::_Osfx(void)”时
+        with
+        [
+            _Elem=wchar_t,
+            _Traits=std::char_traits<wchar_t>
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\istream(102) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\istream(92): 编译类 模板 成员函数“bool std::basic_istream<_Elem,_Traits>::_Ipfx(bool)”时
+        with
+        [
+            _Elem=wchar_t,
+            _Traits=std::char_traits<wchar_t>
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\istream(858): 参见对正在编译的类 模板 实例化“std::basic_istream<_Elem,_Traits>”的引用
+        with
+        [
+            _Elem=wchar_t,
+            _Traits=std::char_traits<wchar_t>
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\istream(102) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\istream(92): 编译类 模板 成员函数“bool std::basic_istream<_Elem,_Traits>::_Ipfx(bool)”时
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\istream(886): 参见对正在编译的类 模板 实例化“std::basic_istream<_Elem,_Traits>”的引用
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(138) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(137): 编译类 模板 成员函数“void std::basic_ostream<_Elem,_Traits>::_Osfx(void)”时
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xstring(1971) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xstring(1962): 编译类 模板 成员函数“void std::basic_string<_Elem,_Traits,_Ax>::_Copy(unsigned __int64,unsigned __int64)”时
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xstring(2101): 参见对正在编译的类 模板 实例化“std::basic_string<_Elem,_Traits,_Ax>”的引用
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xstring(1971) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xstring(1962): 编译类 模板 成员函数“void std::basic_string<_Elem,_Traits,_Ax>::_Copy(unsigned __int64,unsigned __int64)”时
+        with
+        [
+            _Elem=wchar_t,
+            _Traits=std::char_traits<wchar_t>,
+            _Ax=std::allocator<wchar_t>
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xstring(2103): 参见对正在编译的类 模板 实例化“std::basic_string<_Elem,_Traits,_Ax>”的引用
+        with
+        [
+            _Elem=wchar_t,
+            _Traits=std::char_traits<wchar_t>,
+            _Ax=std::allocator<wchar_t>
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(751) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\CatiaWS\FeaG\TrainFramework\AxisPointCmd.m\src\AxisDlgCmd.cpp(138): 参见对正在编译的函数 模板 实例化“std::basic_ostream<_Elem,_Traits> &std::operator <<<std::char_traits<char>>(std::basic_ostream<_Elem,_Traits> &,const char *)”的引用
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xlocnum(130) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xlocnum(123): 编译类 模板 成员函数“void std::numpunct<_Elem>::_Init(const std::_Locinfo &)”时
+        with
+        [
+            _Elem=char
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xlocnum(1363): 参见对正在编译的类 模板 实例化“std::numpunct<_Elem>”的引用
+        with
+        [
+            _Elem=char
+        ]
+D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xlocnum(130) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xlocnum(123): 编译类 模板 成员函数“void std::numpunct<_Elem>::_Init(const std::_Locinfo &)”时
+        with
+        [
+            _Elem=wchar_t
+        ]
+        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xlocnum(1369): 参见对正在编译的类 模板 实例化“std::numpunct<_Elem>”的引用
+        with
+        [
+            _Elem=wchar_t
+        ]
+# make:  TrainFramework\AxisPointCmd.m\LocalGenerated\win_b64\mkCAAV5Licensing.cpp
+mkCAAV5Licensing.cpp
+# make:  TrainFramework\PadCmd.m\src\PadDlg.cpp
+PadDlg.cpp
+# make:  TrainFramework\PadCmd.m\src\PadDlgCmd.cpp
+PadDlgCmd.cpp
+D:\Program Files\Dassault Systemes\B18\.\DialogEngine\PublicInterfaces\CATStateCommand.h(742) : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+# make:  TrainFramework\PadCmd.m\LocalGenerated\win_b64\mkCAAV5Licensing.cpp
+mkCAAV5Licensing.cpp
+# make:  TrainFramework\PointCmd.m\src\PointDlg.cpp
+PointDlg.cpp
+# make:  TrainFramework\PointCmd.m\src\PointDlgCmd.cpp
+PointDlgCmd.cpp
+D:\Program Files\Dassault Systemes\B18\.\DialogEngine\PublicInterfaces\CATStateCommand.h(742) : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\CatiaWS\FeaG\TrainFramework\PointCm# make-ERROR: TrainFramework\PointCmd.m\src\PointDlgCmd.cpp
+d.m\src\PointDlgCmd.cpp(495) : error C2660: “IDMCurve2D::GetPointAtParam”: 函数不接受 2 个参数
+# make:  TrainFramework\PointCmd.m\LocalGenerated\win_b64\mkCAAV5Licensing.cpp
+mkCAAV5Licensing.cpp
+# make:  TrainFramework\SwapTextM.m\src\MyDlgA.cpp
+MyDlgA.cpp
+# make:  TrainFramework\SwapTextM.m\src\MyDlgB.cpp
+MyDlgB.cpp
+# make:  TrainFramework\SwapTextM.m\src\MyPraTranscmd.cpp
+MyPraTranscmd.cpp
+# make:  TrainFramework\SwapTextM.m\LocalGenerated\win_b64\mkCAAV5Licensing.cpp
+mkCAAV5Licensing.cpp
+# make:  TrainFramework\TrainModule.m\src\TrainAddin.cpp
+TrainAddin.cpp
+# make:  TrainFramework\TrainModule.m\LocalGenerated\win_b64\mkCAAV5Licensing.cpp
+mkCAAV5Licensing.cpp
+# make:  TrainFramework\TrainModuleCmd.m\src\BITCreateAssemSndCmd.cpp
+BITCreateAssemSndCmd.cpp
+# make:  TrainFramework\TrainModuleCmd.m\src\BITCreateAssemSndDlg.cpp
+BITCreateAssemSndDlg.cpp
+# make:  TrainFramework\TrainModuleCmd.m\src\FirstDlg.cpp
+FirstDlg.cpp
+# make:  TrainFramework\TrainModuleCmd.m\src\FirstDlgCmd.cpp
+FirstDlgCmd.cpp
+# make:  TrainFramework\TrainModuleCmd.m\LocalGenerated\win_b64\mkCAAV5Licensing.cpp
+mkCAAV5Licensing.cpp
+## end   step: compilation   at 01/09/2026-15:19:49
+
+## start step: sourceruler   at 01/09/2026-15:19:49
+## end   step: sourceruler   at 01/09/2026-15:19:49
+
+## start step: link1st   at 01/09/2026-15:19:49
+# make: TrainFramework\AxisPointCmd.m win_b64\code\lib\AxisPointCmd.lib
+   正在创建库 D:\CatiaWS\FeaG\.\win_b64\code\lib\AxisPointCmd.lib 和对象 D:\CatiaWS\FeaG\.\win_b64\code\lib\AxisPointCmd.exp
+# make: TrainFramework\PadCmd.m win_b64\code\lib\PadCmd.lib
+   正在创建库 D:\CatiaWS\FeaG\.\win_b64\code\lib\PadCmd.lib 和对象 D:\CatiaWS\FeaG\.\win_b64\code\lib\PadCmd.exp
+# make: TrainFramework\PointCmd.m win_b64\code\lib\PointCmd.lib
+# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\PointCmd.m\Objects\win_b64\PointDlgCmd.obj: No such file or directory
+# make-ERROR: win_b64\code\lib\PointCmd.lib
+# make: TrainFramework\SwapTextM.m win_b64\code\lib\SwapTextM.lib
+   正在创建库 D:\CatiaWS\FeaG\.\win_b64\code\lib\SwapTextM.lib 和对象 D:\CatiaWS\FeaG\.\win_b64\code\lib\SwapTextM.exp
+# make: TrainFramework\TrainModule.m win_b64\code\lib\TrainModule.lib
+   正在创建库 D:\CatiaWS\FeaG\.\win_b64\code\lib\TrainModule.lib 和对象 D:\CatiaWS\FeaG\.\win_b64\code\lib\TrainModule.exp
+# make: TrainFramework\TrainModuleCmd.m win_b64\code\lib\TrainModuleCmd.lib
+   正在创建库 D:\CatiaWS\FeaG\.\win_b64\code\lib\TrainModuleCmd.lib 和对象 D:\CatiaWS\FeaG\.\win_b64\code\lib\TrainModuleCmd.exp
+## end   step: link1st   at 01/09/2026-15:19:49
+
+## start step: link2nd   at 01/09/2026-15:19:49
+# make: TrainFramework\AxisPointCmd.m win_b64\code\bin\AxisPointCmd.dll
+# make: TrainFramework\PadCmd.m win_b64\code\bin\PadCmd.dll
+# make: TrainFramework\PointCmd.m win_b64\code\bin\PointCmd.dll
+# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\PointCmd.m\Objects\win_b64\PointDlgCmd.obj: No such file or directory
+# syst-ERROR: D:\CatiaWS\FeaG\.\win_b64\code\lib\PointCmd.exp: No such file or directory
+# make-ERROR: win_b64\code\bin\PointCmd.dll
+# make: TrainFramework\SwapTextM.m win_b64\code\bin\SwapTextM.dll
+# make: TrainFramework\TrainModule.m win_b64\code\bin\TrainModule.dll
+# make: TrainFramework\TrainModuleCmd.m win_b64\code\bin\TrainModuleCmd.dll
+## end   step: link2nd   at 01/09/2026-15:19:51
+
+## start step: dummynls   at 01/09/2026-15:19:51
+# make: TrainFramework TrainFramework\CNext\resources\msgcatalog\MyDlgB.CATNls
+# make: TrainFramework TrainFramework\CNext\resources\msgcatalog\MyDlgA.CATNls
+# make: TrainFramework TrainFramework\CNext\resources\msgcatalog\PadDlgCmd.CATNls
+# make: TrainFramework TrainFramework\CNext\resources\msgcatalog\PadDlg.CATNls
+# make: TrainFramework TrainFramework\CNext\resources\msgcatalog\MyPraTranscmd.CATNls
+# make: TrainFramework TrainFramework\CNext\resources\msgcatalog\BITCreateAssemSndDlg.CATNls
+# make: TrainFramework TrainFramework\CNext\resources\msgcatalog\FirstDlg.CATNls
+# make: TrainFramework TrainFramework\CNext\resources\msgcatalog\TrainHeader.CATNls
+# make: TrainFramework TrainFramework\CNext\resources\msgcatalog\PointDlg.CATNls
+# make: TrainFramework TrainFramework\CNext\resources\msgcatalog\AxisDlg.CATNls
+# make: TrainFramework TrainFramework\CNext\resources\msgcatalog\PointDlgCmd.CATNls
+# make: TrainFramework TrainFramework\CNext\resources\msgcatalog\AxisDlgCmd.CATNls
+# make: TrainFramework TrainFramework\CNext\resources\msgcatalog\TrainAddin.CATNls
+## end   step: dummynls   at 01/09/2026-15:19:51
