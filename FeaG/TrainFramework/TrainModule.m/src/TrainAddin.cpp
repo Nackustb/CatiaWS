@@ -136,6 +136,7 @@ CATCmdContainer * TrainAddin::CreateToolbars()
 
 		NewAccess(CATCmdSeparator, pCAATPMSCreateLineSepratorStr, CAATPMSCreateLineSepratorStr);
 		SetAccessNext(pCAATPMuAixsAutoSndStr, pCAATPMSCreateLineSepratorStr);
+		SetAccessNext(pCAATPMSCreateLineSepratorStr, pCAATPMuAixsAutoThrStr);
 
 	//4.将菜单和工具条关联
 	SetAddinMenu(pCAAPMSTlb,pCAAPMSMnu);

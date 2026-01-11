@@ -5,3 +5,19 @@ TrainHeader.TrainHdr.Help = "有限元结果管理";
 TrainHeader.TrainSndHdr.Title = "力学公式形变分析";
 TrainHeader.TrainSndHdr.ShortHelp = "力学公式形变分析";
 TrainHeader.TrainSndHdr.Help = "力学公式形变分析";
+
+TrainHeader.TrainHdr.Title = "取点";
+TrainHeader.TrainHdr.ShortHelp = "取点";
+TrainHeader.TrainHdr.Help = "取点";
+
+TrainHeader.TrainHdr.Title = "特征点生成";
+TrainHeader.TrainHdr.ShortHelp = "特征点生成";
+TrainHeader.TrainHdr.Help = "特征点生成";
+
+TrainHeader.TrainHdr.Title = "Step1";
+TrainHeader.TrainHdr.ShortHelp = "Step1";
+TrainHeader.TrainHdr.Help = "Step1";
+
+TrainHeader.TrainHdr.Title = "Pad";
+TrainHeader.TrainHdr.ShortHelp = "Pad";
+TrainHeader.TrainHdr.Help = "Pad";
