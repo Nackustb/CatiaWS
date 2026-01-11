@@ -298,7 +298,6 @@ CATBoolean PointDlgCmd::SelectCurve(void *data)
 	}
 	// 选择对象特征化
 	CATISpecObject_var spSpecOnSelection=pPathElement->FindElement(IID_CATISpecObject);
-	// Featurize(pSelection, spSpecOnSelection);
 	if (spSpecOnSelection==NULL_var)
 	{
 		cout<<"获取选择的对象的Spec失败"<<endl;
@@ -419,8 +418,40 @@ CATBoolean PointDlgCmd::ActionCLOSE( void *data )
 
 void PointDlgCmd::UpdateHSO(CATBaseUnknown_var spSpecObj, CATFrmEditor *pEditor, CATHSO *pHSO)
 {
-	// to do
+	CATFrmEditor * pLocalEditor = pEditor;
+	if (pLocalEditor == NULL)
+		pLocalEditor = CATFrmEditor::GetCurrentEditor();
+	if (pLocalEditor == NULL) return;
+
+	CATHSO * pLocalHSO = pLocalEditor->GetHSO();
+	if (pLocalHSO == NULL) return;
+
+	pLocalHSO->Empty();
+
+	if (spSpecObj == NULL_var) return;
+
+	CATPathElement * pPath = NULL;
+
+	CATIBuildPath_var spBuildPath = spSpecObj;
+	if (spBuildPath != NULL_var)
+	{
+		CATPathElement Context = pLocalEditor->GetUIActiveObject();
+		spBuildPath->ExtractPathElement(&Context, &pPath);
+	}
+
+	if (pPath == NULL)
+	{
+		pPath = new CATPathElement((CATBaseUnknown*)spSpecObj);
+	}
+
+	if (pPath)
+	{
+		pLocalHSO->AddElement(pPath);
+		pLocalHSO->EndAddElements();
+		pPath->Release();
+	}
 }
+
 
 void PointDlgCmd::CreateMsgBoxOptError(CATUnicodeString usMsg, CATUnicodeString title)
 {
@@ -441,26 +472,6 @@ CATBoolean PointDlgCmd::IsProduct(CATIProduct_var ispiPrd)
 	return TRUE; 
 }
 
-CATBoolean PointDlgCmd::Featurize(CATBaseUnknown_var spSelection, CATISpecObject_var& ospSpecOnSelection)
-{
-	ospSpecOnSelection = NULL_var;
-	if (spSelection == NULL_var) return FALSE;
-
-	CATISpecObject_var spSO = spSelection;
-	if (spSO != NULL_var)
-	{
-		ospSpecOnSelection = spSO;
-		return TRUE;
-	}
-
-	CATIFeaturize_var spFeaturize = spSelection;
-	if (spFeaturize == NULL_var) return FALSE;
-
-	CATISpecObject_var spBRepFeature = spFeaturize->FeaturizeR(0);
-	if (spBRepFeature == NULL_var) return FALSE;
-	ospSpecOnSelection = spBRepFeature;
-	return TRUE;
-}
 
 CATBoolean PointDlgCmd::DeleteObject(CATISpecObject_var SpecToRemove)
 {
@@ -544,11 +555,6 @@ CATBoolean PointDlgCmd::CreatePoint()
 	{
 		//设置当前工作对象
 		spPrtPart->SetCurrentFeature(spSpecGeoSet);
-		//CutAndPaste(spSpecGeoSet, _spSelectCurveObj, spSelectCurveObj);
-		CopyWithLink(_spSelectCurveObj, _spSelectCurveProduct, spSpecGeoSet, _spActiveProduct, spSelectCurveObj);
-
-		//隐藏参考线
-		SetHideOrShow(spSelectCurveObj, TRUE);
 	}
 
 	if (spSelectCurveObj == NULL_var)
@@ -777,25 +783,3 @@ CATGeoFactory_var PointDlgCmd::GetProductGeoFactory(CATIProduct_var ispProduct)
 	return spGeoFactory;
 }
 
-
-HRESULT PointDlgCmd::CopyWithLink(CATBaseUnknown_var ispSource,
-								  CATIProduct_var ispInstanceSource,
-								  CATBaseUnknown_var ispTarget,
-								  CATIProduct_var ispInstanceTarget,
-								  CATISpecObject_var spSelectCurveObj)
-{
-	return E_NOTIMPL;
-}
-
-HRESULT PointDlgCmd::SetHideOrShow(CATISpecObject_var spSpecObject, CATBoolean IfHide)
-{
-	return E_NOTIMPL;
-}
-
-HRESULT PointDlgCmd::CutAndPaste(CATISpecObject_var ispSpecOnTarget,
-								 CATISpecObject_var ispSpecOnSource,
-								 CATISpecObject_var &ospSpecOnTarget)
-{
-	ospSpecOnTarget = NULL_var;
-	return E_NOTIMPL;
-}

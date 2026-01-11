@@ -107,8 +107,6 @@ class PointDlgCmd: public CATStateCommand
   //********判断是否为装配********
 	CATBoolean IsProduct(CATIProduct_var ispiPrd);
 
-  //********元素特征化********
-	CATBoolean Featurize(CATBaseUnknown_var spSelection, CATISpecObject_var& ospSpecOnSelection);
 
   //********创建点********
 	CATBoolean DeleteObject(CATISpecObject_var SpecToRemove);
@@ -131,19 +129,6 @@ class PointDlgCmd: public CATStateCommand
   //********获取GeoFactory********
 	CATGeoFactory_var GetProductGeoFactory(CATIProduct_var ispProduct);
 
-  //********关联拷贝********
-	HRESULT CopyWithLink(CATBaseUnknown_var ispSource,
-						 CATIProduct_var ispInstanceSource,
-						 CATBaseUnknown_var ispTarget,
-						 CATIProduct_var ispInstanceTarget,
-						 CATISpecObject_var spSelectCurveObj);
-  //********设置隐藏显示********
-	HRESULT SetHideOrShow(CATISpecObject_var spSpecObject, CATBoolean IfHide);
-
-  //********拷贝元素********
-	HRESULT CutAndPaste(CATISpecObject_var ispSpecOnTarget,
-						CATISpecObject_var ispSpecOnSource,
-						CATISpecObject_var &ospSpecOnTarget);
 
   private:
   PointDlg* _pDlg;
