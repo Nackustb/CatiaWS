@@ -391,7 +391,7 @@ CATBoolean PointDlgCmd::ActionModeFiled( void *data )
 
 CATBoolean PointDlgCmd::ActionOK(void *data)
 {
-	ActionAPPLY(data);
+	//ActionAPPLY(data);
 	ActionCLOSE(data);
 	return TRUE;
 }
@@ -683,8 +683,44 @@ HRESULT PointDlgCmd::GetGSMTool(CATISpecObject_var ispTargetFatherObj,
 								CATBoolean isSame)
 {
 	ospiSpecGeoSet = NULL_var;
-	return E_NOTIMPL;
+
+	if (ispTargetFatherObj == NULL_var)
+		return E_FAIL;
+
+	CATIDescendants_var spDesc = NULL_var;
+	HRESULT hr = ispTargetFatherObj->QueryInterface(IID_CATIDescendants, (void**)&spDesc);
+	if (FAILED(hr) || spDesc == NULL_var)
+		return E_FAIL;
+
+	CATListValCATISpecObject_var lstGSMTool;
+
+	if (isSame)
+		spDesc->GetDirectChildren("CATIGSMTool", lstGSMTool);
+	else
+		spDesc->GetAllChildren("CATIGSMTool", lstGSMTool);
+
+	int n = lstGSMTool.Size();
+	for (int i = 1; i <= n; ++i)
+	{
+		CATISpecObject_var spObj = lstGSMTool[i];
+		if (spObj == NULL_var)
+			continue;
+
+		CATIAlias_var spAlias = spObj;
+		if (spAlias == NULL_var)
+			continue;
+
+		CATUnicodeString aliasName = spAlias->GetAlias();
+		if (aliasName == istrName)
+		{
+			ospiSpecGeoSet = spObj;
+			return S_OK;
+		}
+	}
+
+	return S_FALSE;
 }
+
 
 HRESULT PointDlgCmd::ObjectUpdate(CATISpecObject_var isoSpecObject)
 {
