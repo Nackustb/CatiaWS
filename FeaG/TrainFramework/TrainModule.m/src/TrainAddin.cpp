@@ -60,7 +60,7 @@ void TrainAddin::CreateCommands()
     new TrainHeader("点生成", "PointCmd", "PointDlgCmd", (void*)NULL);
 	new TrainHeader("测试", "SwapTextM", "MyPraTranscmd", (void*)NULL);
 	new TrainHeader("Pad生成", "PadCmd", "PadDlgCmd", (void*)NULL);
-
+	new TrainHeader("导入文件", "AddDocCmd", "AddDocCmd", (void*)NULL);
 }
 CATCmdContainer * TrainAddin::CreateToolbars()
 {
@@ -97,6 +97,9 @@ CATCmdContainer * TrainAddin::CreateToolbars()
 		SetAccessCommand(pCAATPMSCreateLineSixStr,"测试");
 		SetAccessNext(pCAATPMSCreateLineFifStr, pCAATPMSCreateLineSixStr);
 
+		NewAccess(CATCmdStarter, pCAATPMSCreateLineSevStr, CAATPMSCreateLineSevStr);
+		SetAccessCommand(pCAATPMSCreateLineSevStr,"导入文件");
+		SetAccessNext(pCAATPMSCreateLineSixStr, pCAATPMSCreateLineSevStr);
 
 	//4。将工具条添加到视窗中
 	AddToolbarView(pCAAPMSTlb,1,Right);
@@ -133,6 +136,9 @@ CATCmdContainer * TrainAddin::CreateToolbars()
 			SetAccessCommand(pCAATPMuAixsAutoSixStr,"测试");
 			SetAccessNext(pCAATPMuAixsAutoFifStr,pCAATPMuAixsAutoSixStr);
 
+			NewAccess(CATCmdStarter,pCAATPMuAixsAutoSevStr,CAATPMuAixsAutoSevStr);
+			SetAccessCommand(pCAATPMuAixsAutoSevStr,"导入文件");
+			SetAccessNext(pCAATPMuAixsAutoSixStr,pCAATPMuAixsAutoSevStr);
 
 		NewAccess(CATCmdSeparator, pCAATPMSCreateLineSepratorStr, CAATPMSCreateLineSepratorStr);
 		SetAccessNext(pCAATPMuAixsAutoSndStr, pCAATPMSCreateLineSepratorStr);

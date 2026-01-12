@@ -1,4 +1,5 @@
 !<mkRTViewData> v1.0.0
+RTV/000/DSI .\win_b64\resources\msgcatalog\NlsTest\AddDocCmd.CATNls|.\TrainFramework\CNext\resources\msgcatalog\AddDocCmd.CATNls
 RTV/000/DSI .\win_b64\resources\msgcatalog\NlsTest\PadDlg.CATNls|.\TrainFramework\CNext\resources\msgcatalog\PadDlg.CATNls
 DAT/002/CUS .\win_b64\resources\msgcatalog\TrainHeader.CATRsc|.\TrainFramework\CNext\resources\msgcatalog\TrainHeader.CATRsc
 DAT/002/CUS .\win_b64\resources\msgcatalog\PointDlg.CATRsc|.\TrainFramework\CNext\resources\msgcatalog\PointDlg.CATRsc
@@ -7,6 +8,7 @@ DAT/002/CUS .\win_b64\resources\msgcatalog\MyDlgB.CATNls|.\TrainFramework\CNext\
 DAT/002/CUS .\win_b64\resources\msgcatalog\MyDlgA.CATNls|.\TrainFramework\CNext\resources\msgcatalog\MyDlgA.CATNls
 RTV/000/DSI .\win_b64\resources\msgcatalog\DbcsTest\TrainHeader.CATNls|.\TrainFramework\CNext\resources\msgcatalog\TrainHeader.CATNls
 RTV/000/DSI .\win_b64\resources\msgcatalog\NlsTest\TrainAddin.CATNls|.\TrainFramework\CNext\resources\msgcatalog\TrainAddin.CATNls
+DAT/002/CUS .\win_b64\resources\msgcatalog\AddDocCmd.CATNls|.\TrainFramework\CNext\resources\msgcatalog\AddDocCmd.CATNls
 RTV/000/DSI .\win_b64\resources\msgcatalog\NlsTest\AxisDlg.CATNls|.\TrainFramework\CNext\resources\msgcatalog\AxisDlg.CATNls
 RTV/000/DSI .\win_b64\resources\msgcatalog\NlsTest\MyPraTranscmd.CATNls|.\TrainFramework\CNext\resources\msgcatalog\MyPraTranscmd.CATNls
 RTV/000/DSI .\win_b64\resources\msgcatalog\DbcsTest\PadDlgCmd.CATNls|.\TrainFramework\CNext\resources\msgcatalog\PadDlgCmd.CATNls
@@ -22,6 +24,7 @@ DAT/002/CUS .\win_b64\resources\graphic\Icons\ST2.bmp|.\TrainFramework\CNext\res
 RTV/000/DSI .\win_b64\resources\msgcatalog\NlsTest\PadDlgCmd.CATNls|.\TrainFramework\CNext\resources\msgcatalog\PadDlgCmd.CATNls
 DAT/002/CUS .\win_b64\resources\graphic\Icons\ST4.bmp|.\TrainFramework\CNext\resources\graphic\Icons\ST4.bmp
 DAT/002/CUS .\win_b64\resources\msgcatalog\PadDlg.CATNls|.\TrainFramework\CNext\resources\msgcatalog\PadDlg.CATNls
+RTV/000/DSI .\win_b64\resources\msgcatalog\NlsTest\AddDocDlg.CATNls|.\TrainFramework\CNext\resources\msgcatalog\AddDocDlg.CATNls
 RTV/000/DSI .\win_b64\resources\msgcatalog\DbcsTest\MyDlgB.CATNls|.\TrainFramework\CNext\resources\msgcatalog\MyDlgB.CATNls
 DAT/002/CUS .\win_b64\resources\msgcatalog\PadDlg.CATRsc|.\TrainFramework\CNext\resources\msgcatalog\PadDlg.CATRsc
 DAT/002/CUS .\win_b64\resources\msgcatalog\AxisDlg.CATRsc|.\TrainFramework\CNext\resources\msgcatalog\AxisDlg.CATRsc
@@ -30,6 +33,7 @@ RTV/000/DSI .\win_b64\resources\msgcatalog\NlsTest\MyDlgA.CATNls|.\TrainFramewor
 RTV/000/DSI .\win_b64\resources\msgcatalog\NlsTest\MyDlgB.CATNls|.\TrainFramework\CNext\resources\msgcatalog\MyDlgB.CATNls
 RTV/000/DSI .\win_b64\resources\msgcatalog\DbcsTest\BITCreateAssemSndDlg.CATNls|.\TrainFramework\CNext\resources\msgcatalog\BITCreateAssemSndDlg.CATNls
 BTV/002/DSI .\win_b64\code\productIC\TrainFrameworkIC.xml|.\TrainFramework
+DAT/002/CUS .\win_b64\resources\msgcatalog\AddDocDlg.CATNls|.\TrainFramework\CNext\resources\msgcatalog\AddDocDlg.CATNls
 DAT/002/CUS .\win_b64\resources\msgcatalog\MyPraTranscmd.CATNls|.\TrainFramework\CNext\resources\msgcatalog\MyPraTranscmd.CATNls
 DAT/002/CUS .\win_b64\resources\graphic\Diagram\ST3.png|.\TrainFramework\CNext\resources\graphic\Diagram\ST3.png
 RTV/000/DSI .\win_b64\resources\msgcatalog\NlsTest\PointDlg.CATNls|.\TrainFramework\CNext\resources\msgcatalog\PointDlg.CATNls
@@ -47,14 +51,17 @@ DAT/002/CUS .\win_b64\resources\msgcatalog\FirstDlg.CATNls|.\TrainFramework\CNex
 DAT/002/CUS .\win_b64\resources\msgcatalog\TrainHeader.CATNls|.\TrainFramework\CNext\resources\msgcatalog\TrainHeader.CATNls
 DAT/002/CUS .\win_b64\resources\msgcatalog\PointDlg.CATNls|.\TrainFramework\CNext\resources\msgcatalog\PointDlg.CATNls
 DAT/002/CUS .\win_b64\resources\msgcatalog\AxisDlg.CATNls|.\TrainFramework\CNext\resources\msgcatalog\AxisDlg.CATNls
+RTV/000/DSI .\win_b64\resources\msgcatalog\DbcsTest\AddDocCmd.CATNls|.\TrainFramework\CNext\resources\msgcatalog\AddDocCmd.CATNls
 RTV/000/DSI .\win_b64\resources\msgcatalog\NlsTest\AxisDlgCmd.CATNls|.\TrainFramework\CNext\resources\msgcatalog\AxisDlgCmd.CATNls
 RTV/000/DSI .\win_b64\resources\msgcatalog\DbcsTest\AxisDlgCmd.CATNls|.\TrainFramework\CNext\resources\msgcatalog\AxisDlgCmd.CATNls
 DAT/002/CUS .\win_b64\resources\msgcatalog\PointDlgCmd.CATNls|.\TrainFramework\CNext\resources\msgcatalog\PointDlgCmd.CATNls
+DAT/002/CUS .\win_b64\resources\msgcatalog\AddDocDlg.CATRsc|.\TrainFramework\CNext\resources\msgcatalog\AddDocDlg.CATRsc
 RTV/000/DSI .\win_b64\resources\msgcatalog\DbcsTest\FirstDlg.CATNls|.\TrainFramework\CNext\resources\msgcatalog\FirstDlg.CATNls
 DAT/002/CUS .\win_b64\resources\msgcatalog\TrainAddin.CATRsc|.\TrainFramework\CNext\resources\msgcatalog\TrainAddin.CATRsc
 RTV/000/DSI .\win_b64\resources\msgcatalog\DbcsTest\MyPraTranscmd.CATNls|.\TrainFramework\CNext\resources\msgcatalog\MyPraTranscmd.CATNls
 RTV/000/DSI .\win_b64\resources\msgcatalog\DbcsTest\MyDlgA.CATNls|.\TrainFramework\CNext\resources\msgcatalog\MyDlgA.CATNls
 DAT/002/CUS .\win_b64\code\dictionary\TrainFramework.dico|.\TrainFramework\CNext\code\dictionary\TrainFramework.dico
+RTV/000/DSI .\win_b64\resources\msgcatalog\DbcsTest\AddDocDlg.CATNls|.\TrainFramework\CNext\resources\msgcatalog\AddDocDlg.CATNls
 DAT/002/CUS .\win_b64\resources\graphic\Diagram\ST1.png|.\TrainFramework\CNext\resources\graphic\Diagram\ST1.png
 DAT/002/CUS .\win_b64\resources\msgcatalog\MyDlgB.CATRsc|.\TrainFramework\CNext\resources\msgcatalog\MyDlgB.CATRsc
 DAT/002/CUS .\win_b64\resources\msgcatalog\MyDlgA.CATRsc|.\TrainFramework\CNext\resources\msgcatalog\MyDlgA.CATRsc

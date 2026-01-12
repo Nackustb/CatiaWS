@@ -1,0 +1,69 @@
+mkmk  -u -g  AddDocCmd.m
+2026/1/12 11:25:58
+
+## start step: CIbuild   at 01/12/2026-11:25:58
+## end   step: CIbuild   at 01/12/2026-11:25:58
+
+## start step: DataUpdate   at 01/12/2026-11:25:58
+# make:  TrainFramework\IdentityCard\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/12/2026-11:25:58
+
+## start step: DataUpdate   at 01/12/2026-11:25:58
+# make:  TrainFramework\AddDocCmd.m\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/12/2026-11:25:58
+
+## start step: CIcompilation   at 01/12/2026-11:25:58
+## end   step: CIcompilation   at 01/12/2026-11:25:58
+
+## start step: headerlist   at 01/12/2026-11:25:58
+## end   step: headerlist   at 01/12/2026-11:25:58
+
+## start step: headermap   at 01/12/2026-11:25:58
+## end   step: headermap   at 01/12/2026-11:25:58
+
+## start step: fwgrammar   at 01/12/2026-11:25:58
+## end   step: fwgrammar   at 01/12/2026-11:25:58
+
+## start step: grammar1st   at 01/12/2026-11:25:58
+## end   step: grammar1st   at 01/12/2026-11:25:58
+
+## start step: headerlist   at 01/12/2026-11:25:58
+## end   step: headerlist   at 01/12/2026-11:25:58
+
+## start step: headermap   at 01/12/2026-11:25:58
+## end   step: headermap   at 01/12/2026-11:25:58
+
+## start step: grammar2nd   at 01/12/2026-11:25:58
+## end   step: grammar2nd   at 01/12/2026-11:25:58
+
+## start step: typelibgrammar   at 01/12/2026-11:25:58
+## end   step: typelibgrammar   at 01/12/2026-11:25:58
+
+## start step: headerlist   at 01/12/2026-11:25:58
+## end   step: headerlist   at 01/12/2026-11:25:58
+
+## start step: headermap   at 01/12/2026-11:25:58
+## end   step: headermap   at 01/12/2026-11:25:58
+
+## start step: headerruler   at 01/12/2026-11:25:58
+## end   step: headerruler   at 01/12/2026-11:25:58
+
+## start step: compilation   at 01/12/2026-11:25:58
+# make:  TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp
+AddDocDlg.cpp
+## end   step: compilation   at 01/12/2026-11:25:59
+
+## start step: sourceruler   at 01/12/2026-11:25:59
+## end   step: sourceruler   at 01/12/2026-11:25:59
+
+## start step: link1st   at 01/12/2026-11:25:59
+# make: TrainFramework\AddDocCmd.m win_b64\code\lib\AddDocCmd.lib
+   正在创建库 D:\CatiaWS\FeaG\.\win_b64\code\lib\AddDocCmd.lib 和对象 D:\CatiaWS\FeaG\.\win_b64\code\lib\AddDocCmd.exp
+## end   step: link1st   at 01/12/2026-11:25:59
+
+## start step: link2nd   at 01/12/2026-11:25:59
+# make: TrainFramework\AddDocCmd.m win_b64\code\bin\AddDocCmd.dll
+## end   step: link2nd   at 01/12/2026-11:25:59
+
+## start step: dummynls   at 01/12/2026-11:25:59
+## end   step: dummynls   at 01/12/2026-11:25:59

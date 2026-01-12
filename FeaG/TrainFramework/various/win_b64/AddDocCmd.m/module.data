@@ -1,0 +1,5 @@
+!<mkRTViewData> v1.0.0
+INT/000/CUS .\win_b64\code\bin\AddDocCmd.pdb|.\TrainFramework\AddDocCmd.m
+BTV/000/CUS .\win_b64\code\lib\AddDocCmd.lib|.\TrainFramework\AddDocCmd.m
+INT/000/CUS .\win_b64\code\lib\AddDocCmd.exp|.\TrainFramework\AddDocCmd.m
+RTV/001/CUS .\win_b64\code\bin\AddDocCmd.dll|.\TrainFramework\AddDocCmd.m

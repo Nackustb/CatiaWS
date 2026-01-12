@@ -1,6 +1,7 @@
 /TrainFramework
 SwapTextM.dll
 TrainModule.dll
+AddDocCmd.dll
 PointCmd.dll
 AxisPointCmd.dll
 TrainModuleCmd.dll

@@ -1,0 +1,16 @@
+mkrtv -c -d 
+2026/1/11 15:44:57
+
+## start step: DataUpdate   at 01/11/2026-15:44:57
+## end   step: DataUpdate   at 01/11/2026-15:44:57
+# mkmk-INFO: Removing file [D:\CatiaWS\FeaG\win_b64\code\bin\AddDocCmd.dll.manifest].
+# mkmk-INFO: Removing file [D:\CatiaWS\FeaG\win_b64\code\bin\CNEXT.exe].
+# mkmk-INFO: Removing file [D:\CatiaWS\FeaG\win_b64\code\bin\TrainModule.dll.manifest].
+# mkmk-INFO: Directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\knowledgeResources\automation] is empty; Removing directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\knowledgeResources\automation].
+# mkmk-INFO: Directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\knowledgeResources\html] is empty; Removing directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\knowledgeResources\html].
+# mkmk-INFO: Directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\knowledgeResources] is empty; Removing directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\knowledgeResources].
+# mkmk-INFO: Directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\knowledgeResourcesCatalogs] is empty; Removing directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\knowledgeResourcesCatalogs].
+# mkmk-INFO: Directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\knowledgeTypesCustom] is empty; Removing directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\knowledgeTypesCustom].
+# mkmk-INFO: Directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\knowledgeTypesDS] is empty; Removing directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\knowledgeTypesDS].
+# mkmk-INFO: Directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\workbench] is empty; Removing directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\workbench].
+# mkmk-INFO: Directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge] is empty; Removing directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge].

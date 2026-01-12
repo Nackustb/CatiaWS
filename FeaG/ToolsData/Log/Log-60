@@ -1,0 +1,78 @@
+mkmk  -u -g  AddDocCmd.m
+2026/1/11 16:31:20
+
+## start step: CIbuild   at 01/11/2026-16:31:20
+## end   step: CIbuild   at 01/11/2026-16:31:20
+
+## start step: DataUpdate   at 01/11/2026-16:31:20
+# make:  TrainFramework\IdentityCard\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/11/2026-16:31:20
+
+## start step: DataUpdate   at 01/11/2026-16:31:20
+# make:  TrainFramework\AddDocCmd.m\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/11/2026-16:31:20
+
+## start step: CIcompilation   at 01/11/2026-16:31:20
+## end   step: CIcompilation   at 01/11/2026-16:31:20
+
+## start step: headerlist   at 01/11/2026-16:31:20
+## end   step: headerlist   at 01/11/2026-16:31:20
+
+## start step: headermap   at 01/11/2026-16:31:20
+## end   step: headermap   at 01/11/2026-16:31:20
+
+## start step: fwgrammar   at 01/11/2026-16:31:20
+## end   step: fwgrammar   at 01/11/2026-16:31:20
+
+## start step: grammar1st   at 01/11/2026-16:31:20
+## end   step: grammar1st   at 01/11/2026-16:31:20
+
+## start step: headerlist   at 01/11/2026-16:31:20
+## end   step: headerlist   at 01/11/2026-16:31:20
+
+## start step: headermap   at 01/11/2026-16:31:20
+## end   step: headermap   at 01/11/2026-16:31:20
+
+## start step: grammar2nd   at 01/11/2026-16:31:20
+## end   step: grammar2nd   at 01/11/2026-16:31:20
+
+## start step: typelibgrammar   at 01/11/2026-16:31:20
+## end   step: typelibgrammar   at 01/11/2026-16:31:20
+
+## start step: headerlist   at 01/11/2026-16:31:20
+## end   step: headerlist   at 01/11/2026-16:31:20
+
+## start step: headermap   at 01/11/2026-16:31:20
+## end   step: headermap   at 01/11/2026-16:31:20
+
+## start step: headerruler   at 01/11/2026-16:31:20
+## end   step: headerruler   at 01/11/2026-16:31:20
+
+## start step: compilation   at 01/11/2026-16:31:20
+# make:  TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp
+AddDocDlg.cpp
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(102) : error C2664: “CATIEditor_var::CATIEditor_var(CATBaseUnknown *)”: 不能将参数 1 从“CATDocument *”转换为“CATBaseUnknown *”
+        与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(116) : error C2664: “CATIDocumentEdit_var::CATIDocumentEdit_var(CATBaseUnknown *)”: 不能将参数 1 从“CATDocument *”转换为“CATBaseUnknown *”
+        与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+# make-ERROR: TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp
+## end   step: compilation   at 01/11/2026-16:31:21
+
+## start step: sourceruler   at 01/11/2026-16:31:21
+## end   step: sourceruler   at 01/11/2026-16:31:21
+
+## start step: link1st   at 01/11/2026-16:31:21
+# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\AddDocCmd.m\Objects\win_b64\AddDocDlg.obj: No such file or directory
+# make-ERROR: win_b64\code\lib\AddDocCmd.lib
+# make: TrainFramework\AddDocCmd.m win_b64\code\lib\AddDocCmd.lib
+## end   step: link1st   at 01/11/2026-16:31:21
+
+## start step: link2nd   at 01/11/2026-16:31:21
+# make: TrainFramework\AddDocCmd.m win_b64\code\bin\AddDocCmd.dll
+# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\AddDocCmd.m\Objects\win_b64\AddDocDlg.obj: No such file or directory
+# syst-ERROR: D:\CatiaWS\FeaG\.\win_b64\code\lib\AddDocCmd.exp: No such file or directory
+# make-ERROR: win_b64\code\bin\AddDocCmd.dll
+## end   step: link2nd   at 01/11/2026-16:31:21
+
+## start step: dummynls   at 01/11/2026-16:31:21
+## end   step: dummynls   at 01/11/2026-16:31:21

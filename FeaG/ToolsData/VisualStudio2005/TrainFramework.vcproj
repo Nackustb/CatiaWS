@@ -169,6 +169,10 @@
 			Name="PublicInterfaces"
 			>
 			<File
+				RelativePath="..\..\TrainFramework\PublicInterfaces\AddDocCmd.h"
+				>
+			</File>
+			<File
 				RelativePath="..\..\TrainFramework\PublicInterfaces\AxisPointCmd.h"
 				>
 			</File>
@@ -178,6 +182,10 @@
 			</File>
 			<File
 				RelativePath="..\..\TrainFramework\PublicInterfaces\PointCmd.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\TrainFramework\PublicInterfaces\SwapTextM.h"
 				>
 			</File>
 			<File
@@ -191,10 +199,6 @@
 		</Filter>
 		<Filter
 			Name="ProtectedInterfaces"
-			>
-		</Filter>
-		<Filter
-			Name="PrivateInterfaces"
 			>
 		</Filter>
 		<Filter
@@ -215,10 +219,6 @@
 			<Filter
 				Name="resources"
 				>
-				<Filter
-					Name="dialog"
-					>
-				</Filter>
 				<Filter
 					Name="graphic"
 					>
@@ -274,6 +274,18 @@
 				<Filter
 					Name="msgcatalog"
 					>
+					<File
+						RelativePath="..\..\TrainFramework\CNext\resources\msgcatalog\AddDocCmd.CATNls"
+						>
+					</File>
+					<File
+						RelativePath="..\..\TrainFramework\CNext\resources\msgcatalog\AddDocDlg.CATNls"
+						>
+					</File>
+					<File
+						RelativePath="..\..\TrainFramework\CNext\resources\msgcatalog\AddDocDlg.CATRsc"
+						>
+					</File>
 					<File
 						RelativePath="..\..\TrainFramework\CNext\resources\msgcatalog\AxisDlg.CATNls"
 						>

@@ -377,5 +377,6 @@ CATBoolean PadDlgCmd::ActionCLOSE(void *data)
 
 CATBoolean PadDlgCmd::ActionOK(void *data)
 {
+	ActionCLOSE(data);
 	return TRUE;
 }

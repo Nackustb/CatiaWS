@@ -1,0 +1,64 @@
+mkmk  -u -g  PointCmd.m
+2026/1/12 10:52:56
+
+## start step: CIbuild   at 01/12/2026-10:52:56
+## end   step: CIbuild   at 01/12/2026-10:52:56
+
+## start step: DataUpdate   at 01/12/2026-10:52:56
+# make:  TrainFramework\IdentityCard\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/12/2026-10:52:56
+
+## start step: DataUpdate   at 01/12/2026-10:52:56
+# make:  TrainFramework\PointCmd.m\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/12/2026-10:52:56
+
+## start step: CIcompilation   at 01/12/2026-10:52:56
+## end   step: CIcompilation   at 01/12/2026-10:52:56
+
+## start step: headerlist   at 01/12/2026-10:52:56
+## end   step: headerlist   at 01/12/2026-10:52:56
+
+## start step: headermap   at 01/12/2026-10:52:56
+## end   step: headermap   at 01/12/2026-10:52:56
+
+## start step: fwgrammar   at 01/12/2026-10:52:56
+## end   step: fwgrammar   at 01/12/2026-10:52:56
+
+## start step: grammar1st   at 01/12/2026-10:52:56
+## end   step: grammar1st   at 01/12/2026-10:52:56
+
+## start step: headerlist   at 01/12/2026-10:52:56
+## end   step: headerlist   at 01/12/2026-10:52:56
+
+## start step: headermap   at 01/12/2026-10:52:56
+## end   step: headermap   at 01/12/2026-10:52:56
+
+## start step: grammar2nd   at 01/12/2026-10:52:56
+## end   step: grammar2nd   at 01/12/2026-10:52:56
+
+## start step: typelibgrammar   at 01/12/2026-10:52:56
+## end   step: typelibgrammar   at 01/12/2026-10:52:56
+
+## start step: headerlist   at 01/12/2026-10:52:56
+## end   step: headerlist   at 01/12/2026-10:52:56
+
+## start step: headermap   at 01/12/2026-10:52:56
+## end   step: headermap   at 01/12/2026-10:52:56
+
+## start step: headerruler   at 01/12/2026-10:52:56
+## end   step: headerruler   at 01/12/2026-10:52:56
+
+## start step: compilation   at 01/12/2026-10:52:56
+## end   step: compilation   at 01/12/2026-10:52:56
+
+## start step: sourceruler   at 01/12/2026-10:52:56
+## end   step: sourceruler   at 01/12/2026-10:52:56
+
+## start step: link1st   at 01/12/2026-10:52:56
+## end   step: link1st   at 01/12/2026-10:52:56
+
+## start step: link2nd   at 01/12/2026-10:52:56
+## end   step: link2nd   at 01/12/2026-10:52:56
+
+## start step: dummynls   at 01/12/2026-10:52:56
+## end   step: dummynls   at 01/12/2026-10:52:56

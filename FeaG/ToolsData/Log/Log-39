@@ -1,0 +1,72 @@
+mkmk  -u -g  AddDocCmd.m
+2026/1/11 15:55:42
+
+## start step: CIbuild   at 01/11/2026-15:55:42
+## end   step: CIbuild   at 01/11/2026-15:55:42
+
+## start step: DataUpdate   at 01/11/2026-15:55:42
+# make:  TrainFramework\IdentityCard\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/11/2026-15:55:42
+
+## start step: DataUpdate   at 01/11/2026-15:55:42
+# make:  TrainFramework\AddDocCmd.m\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/11/2026-15:55:42
+
+## start step: CIcompilation   at 01/11/2026-15:55:42
+## end   step: CIcompilation   at 01/11/2026-15:55:42
+
+## start step: headerlist   at 01/11/2026-15:55:42
+## end   step: headerlist   at 01/11/2026-15:55:42
+
+## start step: headermap   at 01/11/2026-15:55:42
+## end   step: headermap   at 01/11/2026-15:55:42
+
+## start step: fwgrammar   at 01/11/2026-15:55:42
+## end   step: fwgrammar   at 01/11/2026-15:55:42
+
+## start step: grammar1st   at 01/11/2026-15:55:42
+## end   step: grammar1st   at 01/11/2026-15:55:42
+
+## start step: headerlist   at 01/11/2026-15:55:42
+## end   step: headerlist   at 01/11/2026-15:55:42
+
+## start step: headermap   at 01/11/2026-15:55:42
+## end   step: headermap   at 01/11/2026-15:55:42
+
+## start step: grammar2nd   at 01/11/2026-15:55:42
+## end   step: grammar2nd   at 01/11/2026-15:55:42
+
+## start step: typelibgrammar   at 01/11/2026-15:55:42
+## end   step: typelibgrammar   at 01/11/2026-15:55:42
+
+## start step: headerlist   at 01/11/2026-15:55:42
+## end   step: headerlist   at 01/11/2026-15:55:42
+
+## start step: headermap   at 01/11/2026-15:55:42
+## end   step: headermap   at 01/11/2026-15:55:42
+
+## start step: headerruler   at 01/11/2026-15:55:42
+## end   step: headerruler   at 01/11/2026-15:55:42
+
+## start step: compilation   at 01/11/2026-15:55:42
+# make:  TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp
+AddDocCmd.cpp
+D:\Program Files\Dassault Systemes\B18\.\DialogEngine\PublicInterfaces\CATStateCommand.h(742) : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+# make:  TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp
+AddDocDlg.cpp
+## end   step: compilation   at 01/11/2026-15:55:43
+
+## start step: sourceruler   at 01/11/2026-15:55:43
+## end   step: sourceruler   at 01/11/2026-15:55:43
+
+## start step: link1st   at 01/11/2026-15:55:43
+# make: TrainFramework\AddDocCmd.m win_b64\code\lib\AddDocCmd.lib
+   正在创建库 D:\CatiaWS\FeaG\.\win_b64\code\lib\AddDocCmd.lib 和对象 D:\CatiaWS\FeaG\.\win_b64\code\lib\AddDocCmd.exp
+## end   step: link1st   at 01/11/2026-15:55:43
+
+## start step: link2nd   at 01/11/2026-15:55:43
+# make: TrainFramework\AddDocCmd.m win_b64\code\bin\AddDocCmd.dll
+## end   step: link2nd   at 01/11/2026-15:55:43
+
+## start step: dummynls   at 01/11/2026-15:55:43
+## end   step: dummynls   at 01/11/2026-15:55:43

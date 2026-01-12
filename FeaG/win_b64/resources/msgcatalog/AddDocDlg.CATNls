@@ -1,0 +1,6 @@
+// DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+Title = "加载文件";
+PushButton002.Title = "确定导入";
+PushButton003.Title = "选择导入文件路径";
+Label004.Title = "文件路径";
+// END WIZARD REPLACEMENT ZONE
