@@ -1,71 +1,70 @@
-mkmk  -u -g  TrainModule.m
-2026/1/11 13:56:53
+mkmk  -u -g  AddDocCmd.m
+2026/1/13 14:49:45
 
-## start step: CIbuild   at 01/11/2026-13:56:53
-## end   step: CIbuild   at 01/11/2026-13:56:53
+## start step: CIbuild   at 01/13/2026-14:49:45
+## end   step: CIbuild   at 01/13/2026-14:49:45
 
-## start step: DataUpdate   at 01/11/2026-13:56:53
+## start step: DataUpdate   at 01/13/2026-14:49:45
 # make:  TrainFramework\IdentityCard\Objects\win_b64\.mkdata.mk
-## end   step: DataUpdate   at 01/11/2026-13:56:54
+## end   step: DataUpdate   at 01/13/2026-14:49:45
 
-## start step: DataUpdate   at 01/11/2026-13:56:54
-# make:  TrainFramework\TrainModule.m\Objects\win_b64\.mkdata.mk
-## end   step: DataUpdate   at 01/11/2026-13:56:54
+## start step: DataUpdate   at 01/13/2026-14:49:45
+# make:  TrainFramework\AddDocCmd.m\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/13/2026-14:49:45
 
-## start step: CIcompilation   at 01/11/2026-13:56:54
-## end   step: CIcompilation   at 01/11/2026-13:56:54
+## start step: CIcompilation   at 01/13/2026-14:49:45
+## end   step: CIcompilation   at 01/13/2026-14:49:45
 
-## start step: headerlist   at 01/11/2026-13:56:54
-## end   step: headerlist   at 01/11/2026-13:56:54
+## start step: headerlist   at 01/13/2026-14:49:45
+## end   step: headerlist   at 01/13/2026-14:49:45
 
-## start step: headermap   at 01/11/2026-13:56:54
-## end   step: headermap   at 01/11/2026-13:56:54
+## start step: headermap   at 01/13/2026-14:49:45
+## end   step: headermap   at 01/13/2026-14:49:45
 
-## start step: fwgrammar   at 01/11/2026-13:56:54
-## end   step: fwgrammar   at 01/11/2026-13:56:54
+## start step: fwgrammar   at 01/13/2026-14:49:45
+## end   step: fwgrammar   at 01/13/2026-14:49:45
 
-## start step: grammar1st   at 01/11/2026-13:56:54
-## end   step: grammar1st   at 01/11/2026-13:56:54
+## start step: grammar1st   at 01/13/2026-14:49:45
+## end   step: grammar1st   at 01/13/2026-14:49:45
 
-## start step: headerlist   at 01/11/2026-13:56:54
-## end   step: headerlist   at 01/11/2026-13:56:54
+## start step: headerlist   at 01/13/2026-14:49:45
+## end   step: headerlist   at 01/13/2026-14:49:45
 
-## start step: headermap   at 01/11/2026-13:56:54
-## end   step: headermap   at 01/11/2026-13:56:54
+## start step: headermap   at 01/13/2026-14:49:45
+## end   step: headermap   at 01/13/2026-14:49:45
 
-## start step: grammar2nd   at 01/11/2026-13:56:54
-## end   step: grammar2nd   at 01/11/2026-13:56:54
+## start step: grammar2nd   at 01/13/2026-14:49:45
+## end   step: grammar2nd   at 01/13/2026-14:49:45
 
-## start step: typelibgrammar   at 01/11/2026-13:56:54
-## end   step: typelibgrammar   at 01/11/2026-13:56:54
+## start step: typelibgrammar   at 01/13/2026-14:49:45
+## end   step: typelibgrammar   at 01/13/2026-14:49:45
 
-## start step: headerlist   at 01/11/2026-13:56:54
-## end   step: headerlist   at 01/11/2026-13:56:54
+## start step: headerlist   at 01/13/2026-14:49:45
+## end   step: headerlist   at 01/13/2026-14:49:45
 
-## start step: headermap   at 01/11/2026-13:56:54
-## end   step: headermap   at 01/11/2026-13:56:54
+## start step: headermap   at 01/13/2026-14:49:45
+## end   step: headermap   at 01/13/2026-14:49:45
 
-## start step: headerruler   at 01/11/2026-13:56:54
-## end   step: headerruler   at 01/11/2026-13:56:54
+## start step: headerruler   at 01/13/2026-14:49:45
+## end   step: headerruler   at 01/13/2026-14:49:45
 
-## start step: compilation   at 01/11/2026-13:56:54
-# make:  TrainFramework\TrainModule.m\src\TrainAddin.cpp
-TrainAddin.cpp
-## end   step: compilation   at 01/11/2026-13:56:55
+## start step: compilation   at 01/13/2026-14:49:45
+# make:  TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp
+AddDocDlg.cpp
+d:\program files\dassault systemes\b18\visualizationbase\publicinterfaces\CAT3DRep.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+## end   step: compilation   at 01/13/2026-14:49:46
 
-## start step: sourceruler   at 01/11/2026-13:56:55
-## end   step: sourceruler   at 01/11/2026-13:56:55
+## start step: sourceruler   at 01/13/2026-14:49:46
+## end   step: sourceruler   at 01/13/2026-14:49:46
 
-## start step: link1st   at 01/11/2026-13:56:55
-# make: TrainFramework\TrainModule.m win_b64\code\lib\TrainModule.lib
-   正在创建库 D:\CatiaWS\FeaG\.\win_b64\code\lib\TrainModule.lib 和对象 D:\CatiaWS\FeaG\.\win_b64\code\lib\TrainModule.exp
-## end   step: link1st   at 01/11/2026-13:56:55
+## start step: link1st   at 01/13/2026-14:49:46
+# make: TrainFramework\AddDocCmd.m win_b64\code\lib\AddDocCmd.lib
+   正在创建库 D:\CatiaWS\FeaG\.\win_b64\code\lib\AddDocCmd.lib 和对象 D:\CatiaWS\FeaG\.\win_b64\code\lib\AddDocCmd.exp
+## end   step: link1st   at 01/13/2026-14:49:46
 
-## start step: link2nd   at 01/11/2026-13:56:55
-# make: TrainFramework\TrainModule.m win_b64\code\bin\TrainModule.dll
-## end   step: link2nd   at 01/11/2026-13:56:55
+## start step: link2nd   at 01/13/2026-14:49:46
+# make: TrainFramework\AddDocCmd.m win_b64\code\bin\AddDocCmd.dll
+## end   step: link2nd   at 01/13/2026-14:49:46
 
-## start step: dummynls   at 01/11/2026-13:56:55
-# make: TrainFramework TrainFramework\CNext\resources\msgcatalog\TrainHeader.CATNls
-# make: TrainFramework TrainFramework\CNext\resources\msgcatalog\TrainAddin.CATNls
-## end   step: dummynls   at 01/11/2026-13:56:55
+## start step: dummynls   at 01/13/2026-14:49:46
+## end   step: dummynls   at 01/13/2026-14:49:46

@@ -1,4 +1,14 @@
 Title = "[\\\\ˆê\ƒ\ƒ`|¼ÓÔØÎÄ¼ş]";
-Label004.Title = "[\\\\ˆê\ƒ\ƒ`|ÎÄ¼şÂ·¾¶]";
-PushButton003.Title = "[\\\\\\\\ˆê\ƒ\ƒ`|Ñ¡Ôñµ¼È/ÎÄ¼şÂ·¾¶]";
-PushButton002.Title = "[\\\\ˆê\ƒ\ƒ`|È·¶¨µ¼È/]";
+Frame006.Frame007.Label013.Title = "[\\\\ˆê\ƒ\ƒ`|ZÏòĞı×ª]";
+Frame006.Frame007.Label011.Title = "[\\\\ˆê\ƒ\ƒ`|XÏòĞı×ª]";
+Frame006.Frame007.Label008.Title = "[\\\\ˆê\ƒ\ƒ`|XÏòÆ«ÒÆ]";
+Frame006.PushButton003.Title = "[\\\\\\\\ˆê\ƒ\ƒ`|Ñ¡Ôñµ¼È/ÎÄ¼şÂ·¾¶]";
+Frame006.Frame007.Label012.Title = "[\\\\ˆê\ƒ\ƒ`|YÏòĞı×ª]";
+Frame006.Title = "[\\\\ˆê\ƒ\ƒ`|ÎÄ¼şµ¼È/]";
+Frame006.Frame007.Title = "[\\\\ˆê\ƒ\ƒ`|Î»×Ëµ÷Õû]";
+Frame006.Frame007.Label010.Title = "[\\\\ˆê\ƒ\ƒ`|ZÏòÆ«ÒÆ]";
+Frame006.Frame007.Label030.Title = "[\\\\ˆê\ƒ\ƒ`|µ÷Õû¶ÔÏó]";
+Frame006.PushButton028.Title = "[\\\\ˆê\ƒ\ƒ`|È·¶¨µ÷Õû]";
+Frame006.Frame007.Label009.Title = "[\\\\ˆê\ƒ\ƒ`|YÏòÆ«ÒÆ]";
+Frame006.PushButton002.Title = "[\\\\ˆê\ƒ\ƒ`|È·¶¨µ¼È/]";
+Frame006.Label004.Title = "[\\\\ˆê\ƒ\ƒ`|ÎÄ¼şÂ·¾¶]";

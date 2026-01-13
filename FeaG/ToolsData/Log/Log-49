@@ -1,196 +1,82 @@
 mkmk  -u -g  AddDocCmd.m
-2026/1/11 16:08:03
+2026/1/13 17:04:40
 
-## start step: CIbuild   at 01/11/2026-16:08:03
-## end   step: CIbuild   at 01/11/2026-16:08:03
+## start step: CIbuild   at 01/13/2026-17:04:40
+## end   step: CIbuild   at 01/13/2026-17:04:40
 
-## start step: DataUpdate   at 01/11/2026-16:08:03
+## start step: DataUpdate   at 01/13/2026-17:04:40
 # make:  TrainFramework\IdentityCard\Objects\win_b64\.mkdata.mk
-## end   step: DataUpdate   at 01/11/2026-16:08:03
+## end   step: DataUpdate   at 01/13/2026-17:04:40
 
-## start step: DataUpdate   at 01/11/2026-16:08:03
+## start step: DataUpdate   at 01/13/2026-17:04:40
 # make:  TrainFramework\AddDocCmd.m\Objects\win_b64\.mkdata.mk
-## end   step: DataUpdate   at 01/11/2026-16:08:03
+## end   step: DataUpdate   at 01/13/2026-17:04:40
 
-## start step: CIcompilation   at 01/11/2026-16:08:03
-## end   step: CIcompilation   at 01/11/2026-16:08:03
+## start step: CIcompilation   at 01/13/2026-17:04:40
+## end   step: CIcompilation   at 01/13/2026-17:04:40
 
-## start step: headerlist   at 01/11/2026-16:08:03
-## end   step: headerlist   at 01/11/2026-16:08:03
+## start step: headerlist   at 01/13/2026-17:04:40
+## end   step: headerlist   at 01/13/2026-17:04:40
 
-## start step: headermap   at 01/11/2026-16:08:03
-## end   step: headermap   at 01/11/2026-16:08:03
+## start step: headermap   at 01/13/2026-17:04:40
+## end   step: headermap   at 01/13/2026-17:04:40
 
-## start step: fwgrammar   at 01/11/2026-16:08:03
-## end   step: fwgrammar   at 01/11/2026-16:08:03
+## start step: fwgrammar   at 01/13/2026-17:04:40
+## end   step: fwgrammar   at 01/13/2026-17:04:40
 
-## start step: grammar1st   at 01/11/2026-16:08:03
-## end   step: grammar1st   at 01/11/2026-16:08:03
+## start step: grammar1st   at 01/13/2026-17:04:40
+## end   step: grammar1st   at 01/13/2026-17:04:40
 
-## start step: headerlist   at 01/11/2026-16:08:03
-## end   step: headerlist   at 01/11/2026-16:08:03
+## start step: headerlist   at 01/13/2026-17:04:40
+## end   step: headerlist   at 01/13/2026-17:04:40
 
-## start step: headermap   at 01/11/2026-16:08:03
-## end   step: headermap   at 01/11/2026-16:08:03
+## start step: headermap   at 01/13/2026-17:04:40
+## end   step: headermap   at 01/13/2026-17:04:40
 
-## start step: grammar2nd   at 01/11/2026-16:08:03
-## end   step: grammar2nd   at 01/11/2026-16:08:03
+## start step: grammar2nd   at 01/13/2026-17:04:40
+## end   step: grammar2nd   at 01/13/2026-17:04:40
 
-## start step: typelibgrammar   at 01/11/2026-16:08:03
-## end   step: typelibgrammar   at 01/11/2026-16:08:03
+## start step: typelibgrammar   at 01/13/2026-17:04:40
+## end   step: typelibgrammar   at 01/13/2026-17:04:40
 
-## start step: headerlist   at 01/11/2026-16:08:03
-## end   step: headerlist   at 01/11/2026-16:08:03
+## start step: headerlist   at 01/13/2026-17:04:40
+## end   step: headerlist   at 01/13/2026-17:04:40
 
-## start step: headermap   at 01/11/2026-16:08:03
-## end   step: headermap   at 01/11/2026-16:08:03
+## start step: headermap   at 01/13/2026-17:04:40
+## end   step: headermap   at 01/13/2026-17:04:40
 
-## start step: headerruler   at 01/11/2026-16:08:03
-## end   step: headerruler   at 01/11/2026-16:08:03
+## start step: headerruler   at 01/13/2026-17:04:40
+## end   step: headerruler   at 01/13/2026-17:04:40
 
-## start step: compilation   at 01/11/2026-16:08:03
+## start step: compilation   at 01/13/2026-17:04:40
+# make:  TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp
+AddDocCmd.cpp
+D:\Program Files\Dassault Systemes\B18\.\DialogEngine\PublicInterfaces\CATStateCommand.h(742) : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 # make:  TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp
 AddDocDlg.cpp
-D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xlocale(326) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
-D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xlocale(341) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
-D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\xlocale(358) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
-D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(610) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
-D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\istream(870) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
-D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\istream(1075) : warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(84) : error C2065: “PipePathFile”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(84) : error C2079: “pathfile”使用未定义的 class“std::basic_ofstream<_Elem,_Traits>”
-        with
-        [
-            _Elem=char,
-            _Traits=std::char_traits<char>
-        ]
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(84) : error C2078: 初始值设定项太多
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(85) : error C2297: “<<”: 非法，右操作数包含“const char *”类型
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(85) : error C2563: 在形参表中不匹配
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(85) : error C2568: “<<”: 无法解析函数重载
-        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(971): 可能是“std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)”
-        with
-        [
-            _Elem=wchar_t,
-            _Traits=std::char_traits<wchar_t>
-        ]
-        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(963): 或“std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)”
-        with
-        [
-            _Elem=char,
-            _Traits=std::char_traits<char>
-        ]
-        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(937): 或“std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)”
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(86) : error C2228: “.close”的左边必须有类/结构/联合
-        类型是“int”
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(90) : error C2065: “CATFrmEditor”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(90) : error C2065: “pEditor”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(90) : error C2064: 项不会计算为接受 0 个参数的函数
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(91) : error C2065: “CATDocument”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(91) : error C2065: “pDoc”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(91) : error C2227: “->GetDocument”的左边必须指向类/结构/联合/泛型类型
-        类型是“'unknown-type'”
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(92) : error C2065: “CATIDocRoots”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(92) : error C2065: “piDocRootsDoc”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(93) : error C2227: “->QueryInterface”的左边必须指向类/结构/联合/泛型类型
-        类型是“'unknown-type'”
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(93) : error C2065: “IID_CATIDocRoots”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(94) : error C2065: “CATIProduct_var”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(94) : error C2146: 语法错误 : 缺少“;”(在标识符“spRootProduct”的前面)
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(94) : error C2065: “spRootProduct”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(96) : error C2227: “->GiveDocRoots”的左边必须指向类/结构/联合/泛型类型
-        类型是“'unknown-type'”
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(104) : error C2227: “->Release”的左边必须指向类/结构/联合/泛型类型
-        类型是“'unknown-type'”
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(109) : error C2065: “pInsertDoc”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(110) : error C2653: “CATDocumentServices”: 不是类或命名空间名称
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(110) : error C3861: “OpenDocument”: 找不到标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(113) : error C2065: “piInDocRoots”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(114) : error C2227: “->QueryInterface”的左边必须指向类/结构/联合/泛型类型
-        类型是“'unknown-type'”
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(115) : error C2227: “->GiveDocRoots”的左边必须指向类/结构/联合/泛型类型
-        类型是“'unknown-type'”
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(116) : error C2146: 语法错误 : 缺少“;”(在标识符“spInsRootPro”的前面)
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(116) : error C2065: “spInsRootPro”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(120) : error C2227: “->Release”的左边必须指向类/结构/联合/泛型类型
-        类型是“'unknown-type'”
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(123) : error C2146: 语法错误 : 缺少“;”(在标识符“spInsProduct”的前面)
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(123) : error C2065: “spInsProduct”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(125) : error C2227: “->AddProduct”的左边必须指向类/结构/联合/泛型类型
-        类型是“'unknown-type'”
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(129) : error C2065: “CATISpecObject_var”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(129) : error C2146: 语法错误 : 缺少“;”(在标识符“pPartRenew”的前面)
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(129) : error C2065: “pPartRenew”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(129) : error C2146: 语法错误 : 缺少“;”(在标识符“spRootProduct”的前面)
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(130) : error C2227: “->Update”的左边必须指向类/结构/联合/泛型类型
-        类型是“'unknown-type'”
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(131) : error C2065: “CATIModelEvents_var”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(131) : error C2146: 语法错误 : 缺少“;”(在标识符“spEvents”的前面)
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(131) : error C2065: “spEvents”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(132) : error C2065: “CATModify”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(132) : error C2146: 语法错误 : 缺少“;”(在标识符“ModifyEvent”的前面)
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(132) : error C3861: “ModifyEvent”: 找不到标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(133) : error C2227: “->Dispatch”的左边必须指向类/结构/联合/泛型类型
-        类型是“'unknown-type'”
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(134) : error C2065: “CATIRedrawEvent_var”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(134) : error C2146: 语法错误 : 缺少“;”(在标识符“spRedraw”的前面)
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(134) : error C2065: “spRedraw”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(135) : error C2227: “->Redraw”的左边必须指向类/结构/联合/泛型类型
-        类型是“'unknown-type'”
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(139) : error C2065: “_Editor047”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(139) : error C2227: “->GetText”的左边必须指向类/结构/联合/泛型类型
-        类型是“'unknown-type'”
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(142) : error C2227: “->GetPartNumber”的左边必须指向类/结构/联合/泛型类型
-        类型是“'unknown-type'”
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(143) : error C2227: “->SetText”的左边必须指向类/结构/联合/泛型类型
-        类型是“'unknown-type'”
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(146) : error C2227: “->SetPartNumber”的左边必须指向类/结构/联合/泛型类型
-        类型是“'unknown-type'”
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(148) : error C2065: “PipeName”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(152) : error C2065: “PipeNameFile”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(152) : error C2079: “namefile”使用未定义的 class“std::basic_ofstream<_Elem,_Traits>”
-        with
-        [
-            _Elem=char,
-            _Traits=std::char_traits<char>
-        ]
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(152) : error C2078: 初始值设定项太多
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(153) : error C2297: “<<”: 非法，右操作数包含“const char *”类型
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(153) : error C2563: 在形参表中不匹配
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(153) : error C2568: “<<”: 无法解析函数重载
-        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(971): 可能是“std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)”
-        with
-        [
-            _Elem=wchar_t,
-            _Traits=std::char_traits<wchar_t>
-        ]
-        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(963): 或“std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)”
-        with
-        [
-            _Elem=char,
-            _Traits=std::char_traits<char>
-        ]
-        D:\Program Files (x86)\Microsoft Visual Studio 8\VC\include\ostream(937): 或“std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)”
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(154) : error C2228: “.close”的左边必须有类/结构/联合
-        类型是“int”
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(428) : error C2196: case 值“1”已使用
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(429) : error C2196: case 值“1”已使用
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(430) : error C2196: case 值“1”已使用
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(431) : error C2196: case 值“1”已使用
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(432) : error C2196: case 值“1”已使用
 # make-ERROR: TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp
-## end   step: compilation   at 01/11/2026-16:08:04
+## end   step: compilation   at 01/13/2026-17:04:41
 
-## start step: sourceruler   at 01/11/2026-16:08:04
-## end   step: sourceruler   at 01/11/2026-16:08:04
+## start step: sourceruler   at 01/13/2026-17:04:41
+## end   step: sourceruler   at 01/13/2026-17:04:41
 
-## start step: link1st   at 01/11/2026-16:08:04
+## start step: link1st   at 01/13/2026-17:04:41
 # make: TrainFramework\AddDocCmd.m win_b64\code\lib\AddDocCmd.lib
 # syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\AddDocCmd.m\Objects\win_b64\AddDocDlg.obj: No such file or directory
 # make-ERROR: win_b64\code\lib\AddDocCmd.lib
-## end   step: link1st   at 01/11/2026-16:08:04
+## end   step: link1st   at 01/13/2026-17:04:41
 
-## start step: link2nd   at 01/11/2026-16:08:04
+## start step: link2nd   at 01/13/2026-17:04:41
 # syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\AddDocCmd.m\Objects\win_b64\AddDocDlg.obj: No such file or directory
 # syst-ERROR: D:\CatiaWS\FeaG\.\win_b64\code\lib\AddDocCmd.exp: No such file or directory
 # make-ERROR: win_b64\code\bin\AddDocCmd.dll
 # make: TrainFramework\AddDocCmd.m win_b64\code\bin\AddDocCmd.dll
-## end   step: link2nd   at 01/11/2026-16:08:04
+## end   step: link2nd   at 01/13/2026-17:04:41
 
-## start step: dummynls   at 01/11/2026-16:08:04
-## end   step: dummynls   at 01/11/2026-16:08:04
+## start step: dummynls   at 01/13/2026-17:04:41
+## end   step: dummynls   at 01/13/2026-17:04:41

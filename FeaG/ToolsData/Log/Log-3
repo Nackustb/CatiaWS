@@ -1,85 +1,69 @@
-mkmk  -u -g  PointCmd.m
-2026/1/11 13:00:17
+mkmk  -u -g  AddDocCmd.m
+2026/1/13 13:46:48
 
-## start step: CIbuild   at 01/11/2026-13:00:18
-## end   step: CIbuild   at 01/11/2026-13:00:18
+## start step: CIbuild   at 01/13/2026-13:46:48
+## end   step: CIbuild   at 01/13/2026-13:46:49
 
-## start step: DataUpdate   at 01/11/2026-13:00:18
+## start step: DataUpdate   at 01/13/2026-13:46:49
 # make:  TrainFramework\IdentityCard\Objects\win_b64\.mkdata.mk
-## end   step: DataUpdate   at 01/11/2026-13:00:18
+## end   step: DataUpdate   at 01/13/2026-13:46:49
 
-## start step: DataUpdate   at 01/11/2026-13:00:18
-# make:  TrainFramework\PointCmd.m\Objects\win_b64\.mkdata.mk
-## end   step: DataUpdate   at 01/11/2026-13:00:18
+## start step: DataUpdate   at 01/13/2026-13:46:49
+# make:  TrainFramework\AddDocCmd.m\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/13/2026-13:46:49
 
-## start step: CIcompilation   at 01/11/2026-13:00:18
-## end   step: CIcompilation   at 01/11/2026-13:00:18
+## start step: CIcompilation   at 01/13/2026-13:46:49
+## end   step: CIcompilation   at 01/13/2026-13:46:49
 
-## start step: headerlist   at 01/11/2026-13:00:18
-## end   step: headerlist   at 01/11/2026-13:00:18
+## start step: headerlist   at 01/13/2026-13:46:49
+## end   step: headerlist   at 01/13/2026-13:46:49
 
-## start step: headermap   at 01/11/2026-13:00:18
-## end   step: headermap   at 01/11/2026-13:00:18
+## start step: headermap   at 01/13/2026-13:46:49
+## end   step: headermap   at 01/13/2026-13:46:49
 
-## start step: fwgrammar   at 01/11/2026-13:00:18
-## end   step: fwgrammar   at 01/11/2026-13:00:18
+## start step: fwgrammar   at 01/13/2026-13:46:49
+## end   step: fwgrammar   at 01/13/2026-13:46:49
 
-## start step: grammar1st   at 01/11/2026-13:00:18
-## end   step: grammar1st   at 01/11/2026-13:00:18
+## start step: grammar1st   at 01/13/2026-13:46:49
+## end   step: grammar1st   at 01/13/2026-13:46:49
 
-## start step: headerlist   at 01/11/2026-13:00:18
-## end   step: headerlist   at 01/11/2026-13:00:18
+## start step: headerlist   at 01/13/2026-13:46:49
+## end   step: headerlist   at 01/13/2026-13:46:49
 
-## start step: headermap   at 01/11/2026-13:00:18
-## end   step: headermap   at 01/11/2026-13:00:18
+## start step: headermap   at 01/13/2026-13:46:49
+## end   step: headermap   at 01/13/2026-13:46:49
 
-## start step: grammar2nd   at 01/11/2026-13:00:18
-## end   step: grammar2nd   at 01/11/2026-13:00:18
+## start step: grammar2nd   at 01/13/2026-13:46:49
+## end   step: grammar2nd   at 01/13/2026-13:46:49
 
-## start step: typelibgrammar   at 01/11/2026-13:00:18
-## end   step: typelibgrammar   at 01/11/2026-13:00:18
+## start step: typelibgrammar   at 01/13/2026-13:46:49
+## end   step: typelibgrammar   at 01/13/2026-13:46:49
 
-## start step: headerlist   at 01/11/2026-13:00:18
-## end   step: headerlist   at 01/11/2026-13:00:18
+## start step: headerlist   at 01/13/2026-13:46:49
+## end   step: headerlist   at 01/13/2026-13:46:49
 
-## start step: headermap   at 01/11/2026-13:00:18
-## end   step: headermap   at 01/11/2026-13:00:18
+## start step: headermap   at 01/13/2026-13:46:49
+## end   step: headermap   at 01/13/2026-13:46:49
 
-## start step: headerruler   at 01/11/2026-13:00:18
-## end   step: headerruler   at 01/11/2026-13:00:18
+## start step: headerruler   at 01/13/2026-13:46:49
+## end   step: headerruler   at 01/13/2026-13:46:49
 
-## start step: compilation   at 01/11/2026-13:00:18
-# make:  TrainFramework\PointCmd.m\src\PointDlgCmd.cpp
-PointDlgCmd.cpp
-D:\Program Files\Dassault Systemes\B18\.\DialogEngine\PublicInterfaces\CATStateCommand.h(742) : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(328) : error C2664: “PointDlgCmd::UpdateHSO”: 不能将参数 1 从“CATBaseUnknown *”转换为“CATPathElement *”
-        与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
-D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(361) : error C2664: “PointDlgCmd::UpdateHSO”: 不能将参数 1 从“CATISpecObject_var”转换为“CATPathElement *”
-        没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
-D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(424) : error C2562: “PointDlgCmd::UpdateHSO”: “void”函数返回值
-        D:\CatiaWS\FeaG\.\TrainFramework\PointCmd.m\LocalInterfaces\PointDlgCmd.h(102) : 参见“PointDlgCmd::UpdateHSO”的声明
-D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(428) : error C2562: “PointDlgCmd::UpdateHSO”: “void”函数返回值
-        D:\CatiaWS\FeaG\.\TrainFramework\PointCmd.m\LocalInterfaces\PointDlgCmd.h(102) : 参见“PointDlgCmd::UpdateHSO”的声明
-D:\CatiaWS\FeaG\TrainFramework\PointCmd.m\src\PointDlgCmd.cpp(430) : error C2039: “RemoveAllElements”: 不是“CATHSO”的成员
-        D:\Program Files\Dassault Systemes\B18\.\Visualization\PublicInterfaces\CATHSO.h(32) : 参见“CATHSO”的声明
-# make-ERROR: TrainFramework\PointCmd.m\src\PointDlgCmd.cpp
-## end   step: compilation   at 01/11/2026-13:00:19
+## start step: compilation   at 01/13/2026-13:46:49
+# make:  TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp
+AddDocDlg.cpp
+## end   step: compilation   at 01/13/2026-13:46:49
 
-## start step: sourceruler   at 01/11/2026-13:00:19
-## end   step: sourceruler   at 01/11/2026-13:00:19
+## start step: sourceruler   at 01/13/2026-13:46:49
+## end   step: sourceruler   at 01/13/2026-13:46:49
 
-## start step: link1st   at 01/11/2026-13:00:19
-# make: TrainFramework\PointCmd.m win_b64\code\lib\PointCmd.lib
-# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\PointCmd.m\Objects\win_b64\PointDlgCmd.obj: No such file or directory
-# make-ERROR: win_b64\code\lib\PointCmd.lib
-## end   step: link1st   at 01/11/2026-13:00:19
+## start step: link1st   at 01/13/2026-13:46:49
+# make: TrainFramework\AddDocCmd.m win_b64\code\lib\AddDocCmd.lib
+   正在创建库 D:\CatiaWS\FeaG\.\win_b64\code\lib\AddDocCmd.lib 和对象 D:\CatiaWS\FeaG\.\win_b64\code\lib\AddDocCmd.exp
+## end   step: link1st   at 01/13/2026-13:46:49
 
-## start step: link2nd   at 01/11/2026-13:00:19
-# make: TrainFramework\PointCmd.m win_b64\code\bin\PointCmd.dll
-# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\PointCmd.m\Objects\win_b64\PointDlgCmd.obj: No such file or directory
-# syst-ERROR: D:\CatiaWS\FeaG\.\win_b64\code\lib\PointCmd.exp: No such file or directory
-# make-ERROR: win_b64\code\bin\PointCmd.dll
-## end   step: link2nd   at 01/11/2026-13:00:19
+## start step: link2nd   at 01/13/2026-13:46:49
+# make: TrainFramework\AddDocCmd.m win_b64\code\bin\AddDocCmd.dll
+## end   step: link2nd   at 01/13/2026-13:46:50
 
-## start step: dummynls   at 01/11/2026-13:00:19
-## end   step: dummynls   at 01/11/2026-13:00:19
+## start step: dummynls   at 01/13/2026-13:46:50
+## end   step: dummynls   at 01/13/2026-13:46:50

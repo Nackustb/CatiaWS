@@ -1,6 +1,16 @@
 // DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
 Title = "加载文件";
-PushButton002.Title = "确定导入";
-PushButton003.Title = "选择导入文件路径";
-Label004.Title = "文件路径";
+Frame006.Title = "文件导入";
+Frame006.PushButton003.Title = "选择导入文件路径";
+Frame006.Label004.Title = "文件路径";
+Frame006.PushButton002.Title = "确定导入";
+Frame006.Frame007.Title = "位姿调整";
+Frame006.Frame007.Label008.Title = "X向偏移";
+Frame006.Frame007.Label009.Title = "Y向偏移";
+Frame006.Frame007.Label011.Title = "X向旋转";
+Frame006.Frame007.Label010.Title = "Z向偏移";
+Frame006.Frame007.Label012.Title = "Y向旋转";
+Frame006.Frame007.Label013.Title = "Z向旋转";
+Frame006.Frame007.Label030.Title = "调整对象";
+Frame006.PushButton028.Title = "确定调整";
 // END WIZARD REPLACEMENT ZONE

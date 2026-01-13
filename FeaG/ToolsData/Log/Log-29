@@ -1,81 +1,90 @@
 mkmk  -u -g  AddDocCmd.m
-2026/1/11 15:39:41
+2026/1/13 15:10:51
 
-## start step: CIbuild   at 01/11/2026-15:39:42
-## end   step: CIbuild   at 01/11/2026-15:39:42
+## start step: CIbuild   at 01/13/2026-15:10:51
+## end   step: CIbuild   at 01/13/2026-15:10:51
 
-## start step: DataUpdate   at 01/11/2026-15:39:42
+## start step: DataUpdate   at 01/13/2026-15:10:51
 # make:  TrainFramework\IdentityCard\Objects\win_b64\.mkdata.mk
-## end   step: DataUpdate   at 01/11/2026-15:39:42
+## end   step: DataUpdate   at 01/13/2026-15:10:51
 
-## start step: DataUpdate   at 01/11/2026-15:39:42
+## start step: DataUpdate   at 01/13/2026-15:10:51
 # make:  TrainFramework\AddDocCmd.m\Objects\win_b64\.mkdata.mk
-## end   step: DataUpdate   at 01/11/2026-15:39:42
+## end   step: DataUpdate   at 01/13/2026-15:10:51
 
-## start step: CIcompilation   at 01/11/2026-15:39:42
-## end   step: CIcompilation   at 01/11/2026-15:39:42
+## start step: CIcompilation   at 01/13/2026-15:10:51
+## end   step: CIcompilation   at 01/13/2026-15:10:51
 
-## start step: headerlist   at 01/11/2026-15:39:42
-# make:  TrainFramework\various\win_b64\HList\PublicInterfaces.hl
-## end   step: headerlist   at 01/11/2026-15:39:42
+## start step: headerlist   at 01/13/2026-15:10:51
+## end   step: headerlist   at 01/13/2026-15:10:51
 
-## start step: headermap   at 01/11/2026-15:39:42
-# make:  TrainFramework\ImportedInterfaces\win_b64\.HeaderTable.map
-## end   step: headermap   at 01/11/2026-15:39:42
+## start step: headermap   at 01/13/2026-15:10:51
+## end   step: headermap   at 01/13/2026-15:10:51
 
-## start step: fwgrammar   at 01/11/2026-15:39:42
-## end   step: fwgrammar   at 01/11/2026-15:39:42
+## start step: fwgrammar   at 01/13/2026-15:10:51
+## end   step: fwgrammar   at 01/13/2026-15:10:51
 
-## start step: grammar1st   at 01/11/2026-15:39:42
-# make:  TrainFramework\AddDocCmd.m\LocalGenerated\win_b64\mkCAAV5Licensing.cpp
-mkCAAV5Licensing.cpp.CPP
-## end   step: grammar1st   at 01/11/2026-15:39:42
+## start step: grammar1st   at 01/13/2026-15:10:51
+## end   step: grammar1st   at 01/13/2026-15:10:51
 
-## start step: headerlist   at 01/11/2026-15:39:42
-## end   step: headerlist   at 01/11/2026-15:39:42
+## start step: headerlist   at 01/13/2026-15:10:51
+## end   step: headerlist   at 01/13/2026-15:10:51
 
-## start step: headermap   at 01/11/2026-15:39:42
-## end   step: headermap   at 01/11/2026-15:39:42
+## start step: headermap   at 01/13/2026-15:10:51
+## end   step: headermap   at 01/13/2026-15:10:51
 
-## start step: grammar2nd   at 01/11/2026-15:39:42
-## end   step: grammar2nd   at 01/11/2026-15:39:42
+## start step: grammar2nd   at 01/13/2026-15:10:51
+## end   step: grammar2nd   at 01/13/2026-15:10:51
 
-## start step: typelibgrammar   at 01/11/2026-15:39:42
-## end   step: typelibgrammar   at 01/11/2026-15:39:42
+## start step: typelibgrammar   at 01/13/2026-15:10:51
+## end   step: typelibgrammar   at 01/13/2026-15:10:51
 
-## start step: headerlist   at 01/11/2026-15:39:42
-## end   step: headerlist   at 01/11/2026-15:39:42
+## start step: headerlist   at 01/13/2026-15:10:51
+## end   step: headerlist   at 01/13/2026-15:10:51
 
-## start step: headermap   at 01/11/2026-15:39:42
-## end   step: headermap   at 01/11/2026-15:39:42
+## start step: headermap   at 01/13/2026-15:10:51
+## end   step: headermap   at 01/13/2026-15:10:51
 
-## start step: headerruler   at 01/11/2026-15:39:42
-# make:  TrainFramework\PublicInterfaces\AddDocCmd.h
-## end   step: headerruler   at 01/11/2026-15:39:42
+## start step: headerruler   at 01/13/2026-15:10:51
+## end   step: headerruler   at 01/13/2026-15:10:51
 
-## start step: compilation   at 01/11/2026-15:39:42
+## start step: compilation   at 01/13/2026-15:10:51
 # make:  TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp
 AddDocCmd.cpp
 D:\Program Files\Dassault Systemes\B18\.\DialogEngine\PublicInterfaces\CATStateCommand.h(742) : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\program files\dassault systemes\b18\visualizationbase\publicinterfaces\CAT3DRep.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 # make:  TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp
 AddDocDlg.cpp
-# make:  TrainFramework\AddDocCmd.m\LocalGenerated\win_b64\mkCAAV5Licensing.cpp
-mkCAAV5Licensing.cpp
-## end   step: compilation   at 01/11/2026-15:39:43
+d:\program files\dassault systemes\b18\visualizationbase\publicinterfaces\CAT3DRep.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(40) : error C2065: “_spImportedProduct”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(314) : error C2227: “->QueryInterface”的左边必须指向类/结构/联合/泛型类型
+        类型是“'unknown-type'”
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(370) : error C2227: “->QueryInterface”的左边必须指向类/结构/联合/泛型类型
+        类型是“'unknown-type'”
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(403) : error C2065: “pBagRepLine”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(403) : error C2227: “->AddChild”的左边必须指向类/结构/联合/泛型类型
+        类型是“'unknown-type'”
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(404) : error C2065: “pViewer”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(404) : error C2227: “->Draw”的左边必须指向类/结构/联合/泛型类型
+        类型是“'unknown-type'”
+# make-ERROR: TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp
+## end   step: compilation   at 01/13/2026-15:10:53
 
-## start step: sourceruler   at 01/11/2026-15:39:43
-## end   step: sourceruler   at 01/11/2026-15:39:43
+## start step: sourceruler   at 01/13/2026-15:10:53
+## end   step: sourceruler   at 01/13/2026-15:10:53
 
-## start step: link1st   at 01/11/2026-15:39:43
+## start step: link1st   at 01/13/2026-15:10:53
 # make: TrainFramework\AddDocCmd.m win_b64\code\lib\AddDocCmd.lib
-   正在创建库 D:\CatiaWS\FeaG\.\win_b64\code\lib\AddDocCmd.lib 和对象 D:\CatiaWS\FeaG\.\win_b64\code\lib\AddDocCmd.exp
-## end   step: link1st   at 01/11/2026-15:39:43
+# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\AddDocCmd.m\Objects\win_b64\AddDocDlg.obj: No such file or directory
+# make-ERROR: win_b64\code\lib\AddDocCmd.lib
+## end   step: link1st   at 01/13/2026-15:10:53
 
-## start step: link2nd   at 01/11/2026-15:39:43
+## start step: link2nd   at 01/13/2026-15:10:53
 # make: TrainFramework\AddDocCmd.m win_b64\code\bin\AddDocCmd.dll
-## end   step: link2nd   at 01/11/2026-15:39:43
+# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\AddDocCmd.m\Objects\win_b64\AddDocDlg.obj: No such file or directory
+# syst-ERROR: D:\CatiaWS\FeaG\.\win_b64\code\lib\AddDocCmd.exp: No such file or directory
+# make-ERROR: win_b64\code\bin\AddDocCmd.dll
+## end   step: link2nd   at 01/13/2026-15:10:53
 
-## start step: dummynls   at 01/11/2026-15:39:43
-# make: TrainFramework TrainFramework\CNext\resources\msgcatalog\AddDocCmd.CATNls
-# make: TrainFramework TrainFramework\CNext\resources\msgcatalog\AddDocDlg.CATNls
-## end   step: dummynls   at 01/11/2026-15:39:43
+## start step: dummynls   at 01/13/2026-15:10:53
+## end   step: dummynls   at 01/13/2026-15:10:53

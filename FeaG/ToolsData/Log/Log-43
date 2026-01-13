@@ -1,69 +1,102 @@
 mkmk  -u -g  AddDocCmd.m
-2026/1/11 16:03:35
+2026/1/13 17:01:57
 
-## start step: CIbuild   at 01/11/2026-16:03:35
-## end   step: CIbuild   at 01/11/2026-16:03:35
+## start step: CIbuild   at 01/13/2026-17:01:57
+## end   step: CIbuild   at 01/13/2026-17:01:57
 
-## start step: DataUpdate   at 01/11/2026-16:03:35
+## start step: DataUpdate   at 01/13/2026-17:01:57
 # make:  TrainFramework\IdentityCard\Objects\win_b64\.mkdata.mk
-## end   step: DataUpdate   at 01/11/2026-16:03:36
+## end   step: DataUpdate   at 01/13/2026-17:01:57
 
-## start step: DataUpdate   at 01/11/2026-16:03:36
+## start step: DataUpdate   at 01/13/2026-17:01:57
 # make:  TrainFramework\AddDocCmd.m\Objects\win_b64\.mkdata.mk
-## end   step: DataUpdate   at 01/11/2026-16:03:36
+## end   step: DataUpdate   at 01/13/2026-17:01:57
 
-## start step: CIcompilation   at 01/11/2026-16:03:36
-## end   step: CIcompilation   at 01/11/2026-16:03:36
+## start step: CIcompilation   at 01/13/2026-17:01:57
+## end   step: CIcompilation   at 01/13/2026-17:01:57
 
-## start step: headerlist   at 01/11/2026-16:03:36
-## end   step: headerlist   at 01/11/2026-16:03:36
+## start step: headerlist   at 01/13/2026-17:01:57
+## end   step: headerlist   at 01/13/2026-17:01:57
 
-## start step: headermap   at 01/11/2026-16:03:36
-## end   step: headermap   at 01/11/2026-16:03:36
+## start step: headermap   at 01/13/2026-17:01:57
+## end   step: headermap   at 01/13/2026-17:01:57
 
-## start step: fwgrammar   at 01/11/2026-16:03:36
-## end   step: fwgrammar   at 01/11/2026-16:03:36
+## start step: fwgrammar   at 01/13/2026-17:01:57
+## end   step: fwgrammar   at 01/13/2026-17:01:57
 
-## start step: grammar1st   at 01/11/2026-16:03:36
-## end   step: grammar1st   at 01/11/2026-16:03:36
+## start step: grammar1st   at 01/13/2026-17:01:57
+## end   step: grammar1st   at 01/13/2026-17:01:57
 
-## start step: headerlist   at 01/11/2026-16:03:36
-## end   step: headerlist   at 01/11/2026-16:03:36
+## start step: headerlist   at 01/13/2026-17:01:57
+## end   step: headerlist   at 01/13/2026-17:01:57
 
-## start step: headermap   at 01/11/2026-16:03:36
-## end   step: headermap   at 01/11/2026-16:03:36
+## start step: headermap   at 01/13/2026-17:01:57
+## end   step: headermap   at 01/13/2026-17:01:57
 
-## start step: grammar2nd   at 01/11/2026-16:03:36
-## end   step: grammar2nd   at 01/11/2026-16:03:36
+## start step: grammar2nd   at 01/13/2026-17:01:57
+## end   step: grammar2nd   at 01/13/2026-17:01:57
 
-## start step: typelibgrammar   at 01/11/2026-16:03:36
-## end   step: typelibgrammar   at 01/11/2026-16:03:36
+## start step: typelibgrammar   at 01/13/2026-17:01:57
+## end   step: typelibgrammar   at 01/13/2026-17:01:57
 
-## start step: headerlist   at 01/11/2026-16:03:36
-## end   step: headerlist   at 01/11/2026-16:03:36
+## start step: headerlist   at 01/13/2026-17:01:57
+## end   step: headerlist   at 01/13/2026-17:01:57
 
-## start step: headermap   at 01/11/2026-16:03:36
-## end   step: headermap   at 01/11/2026-16:03:36
+## start step: headermap   at 01/13/2026-17:01:57
+## end   step: headermap   at 01/13/2026-17:01:57
 
-## start step: headerruler   at 01/11/2026-16:03:36
-## end   step: headerruler   at 01/11/2026-16:03:36
+## start step: headerruler   at 01/13/2026-17:01:57
+## end   step: headerruler   at 01/13/2026-17:01:57
 
-## start step: compilation   at 01/11/2026-16:03:36
+## start step: compilation   at 01/13/2026-17:01:57
+# make:  TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp
+AddDocCmd.cpp
+D:\Program Files\Dassault Systemes\B18\.\DialogEngine\PublicInterfaces\CATStateCommand.h(742) : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp(43) : error C2612: 基/成员初始值设定项列表中的非法后缀“标识符”
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp(43) : error C2614: “AddDocCmd”: 非法的成员初始化:“_pCLOSEAgent”不是基或成员
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp(43) : error C2614: “AddDocCmd”: 非法的成员初始化:“_pAPPLYAgent”不是基或成员
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp(43) : error C2614: “AddDocCmd”: 非法的成员初始化:“_pOKAgent”不是基或成员
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp(43) : error C2064: 项不会计算为接受 1 个参数的函数
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp(45) : error C2143: 语法错误 : 缺少“;”(在“{”的前面)
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp(55) : error C2143: 语法错误 : 缺少“;”(在“{”的前面)
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp(61) : error C2065: “_pOKAgent”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp(61) : error C2541: “delete”: 不能删除不是指针的对象
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp(62) : error C2065: “_pAPPLYAgent”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp(62) : error C2541: “delete”: 不能删除不是指针的对象
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp(63) : error C2065: “_pCLOSEAgent”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp(63) : error C2541: “delete”: 不能删除不是指针的对象
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp(75) : error C2601: “AddDocCmd::BuildGraph”: 本地函数定义是非法的
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp(111) : error C2958: 左 圆括号“(”(在“d:\catiaws\feag\trainframework\adddoccmd.m\src\adddoccmd.cpp(99)”中找到)未能正确匹配
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp(118) : error C2601: “AddDocCmd::ActionOne”: 本地函数定义是非法的
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp(124) : fatal error C1004: 发现意外的文件尾
+# make-ERROR: TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp
 # make:  TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp
 AddDocDlg.cpp
-## end   step: compilation   at 01/11/2026-16:03:36
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(428) : error C2196: case 值“1”已使用
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(429) : error C2196: case 值“1”已使用
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(430) : error C2196: case 值“1”已使用
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(431) : error C2196: case 值“1”已使用
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(432) : error C2196: case 值“1”已使用
+# make-ERROR: TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp
+## end   step: compilation   at 01/13/2026-17:01:58
 
-## start step: sourceruler   at 01/11/2026-16:03:36
-## end   step: sourceruler   at 01/11/2026-16:03:36
+## start step: sourceruler   at 01/13/2026-17:01:58
+## end   step: sourceruler   at 01/13/2026-17:01:58
 
-## start step: link1st   at 01/11/2026-16:03:36
+## start step: link1st   at 01/13/2026-17:01:58
+# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\AddDocCmd.m\Objects\win_b64\AddDocCmd.obj: No such file or directory
 # make: TrainFramework\AddDocCmd.m win_b64\code\lib\AddDocCmd.lib
-   正在创建库 D:\CatiaWS\FeaG\.\win_b64\code\lib\AddDocCmd.lib 和对象 D:\CatiaWS\FeaG\.\win_b64\code\lib\AddDocCmd.exp
-## end   step: link1st   at 01/11/2026-16:03:36
+# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\AddDocCmd.m\Objects\win_b64\AddDocDlg.obj: No such file or directory
+# make-ERROR: win_b64\code\lib\AddDocCmd.lib
+## end   step: link1st   at 01/13/2026-17:01:58
 
-## start step: link2nd   at 01/11/2026-16:03:36
+## start step: link2nd   at 01/13/2026-17:01:58
 # make: TrainFramework\AddDocCmd.m win_b64\code\bin\AddDocCmd.dll
-## end   step: link2nd   at 01/11/2026-16:03:36
+# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\AddDocCmd.m\Objects\win_b64\AddDocCmd.obj: No such file or directory
+# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\AddDocCmd.m\Objects\win_b64\AddDocDlg.obj: No such file or directory
+# syst-ERROR: D:\CatiaWS\FeaG\.\win_b64\code\lib\AddDocCmd.exp: No such file or directory
+# make-ERROR: win_b64\code\bin\AddDocCmd.dll
+## end   step: link2nd   at 01/13/2026-17:01:58
 
-## start step: dummynls   at 01/11/2026-16:03:36
-## end   step: dummynls   at 01/11/2026-16:03:36
+## start step: dummynls   at 01/13/2026-17:01:58
+## end   step: dummynls   at 01/13/2026-17:01:58

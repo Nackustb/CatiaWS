@@ -4,28 +4,170 @@ CATDlgDialog AddDocDlg
   STYLE = CATDlgWndNoButton|CATDlgGridLayout;
 }
 
-CATDlgPushButton PushButton002
+CATDlgFrame Frame006
 {
   FATHER = AddDocDlg;
-  GRID = { 2, 0, 2, 1, CATGRID_4SIDES };
+  STYLE = CATDlgGridLayout;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
 }
 
 CATDlgPushButton PushButton003
 {
-  FATHER = AddDocDlg;
+  FATHER = Frame006;
   GRID = { 0, 0, 2, 1, CATGRID_4SIDES };
 }
 
 CATDlgLabel Label004
 {
-  FATHER = AddDocDlg;
+  FATHER = Frame006;
+  STYLE = CATDlgLabCenter;
   GRID = { 1, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgPushButton PushButton002
+{
+  FATHER = Frame006;
+  GRID = { 2, 0, 2, 1, CATGRID_4SIDES };
 }
 
 CATDlgEditor Editor005
 {
-  FATHER = AddDocDlg;
+  FATHER = Frame006;
   GRID = { 1, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgFrame Frame007
+{
+  FATHER = Frame006;
+  STYLE = CATDlgGridLayout;
+  GRID = { 3, 0, 2, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label008
+{
+  FATHER = Frame007;
+  GRID = { 1, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label009
+{
+  FATHER = Frame007;
+  GRID = { 2, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label011
+{
+  FATHER = Frame007;
+  GRID = { 4, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label010
+{
+  FATHER = Frame007;
+  GRID = { 3, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label012
+{
+  FATHER = Frame007;
+  GRID = { 5, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label013
+{
+  FATHER = Frame007;
+  GRID = { 6, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgSpinner Spinner020
+{
+  FATHER = Frame007;
+  STYLE = CATDlgSpnEntry|CATDlgSpnDouble;
+  MIN = -10000.000000;
+  MAX = 10000.000000;
+  STEP = 1000000.000000;
+  UNIT = Millimeter;
+  PREC = 0;
+  GRID = { 1, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgSpinner Spinner022
+{
+  FATHER = Frame007;
+  STYLE = CATDlgSpnEntry|CATDlgSpnDouble;
+  MIN = -10000.000000;
+  MAX = 10000.000000;
+  STEP = 1000000.000000;
+  UNIT = Millimeter;
+  PREC = 0;
+  GRID = { 2, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgSpinner Spinner023
+{
+  FATHER = Frame007;
+  STYLE = CATDlgSpnDouble;
+  MIN = -10000.000000;
+  MAX = 10000.000000;
+  STEP = 1000000.000000;
+  UNIT = Millimeter;
+  PREC = 0;
+  GRID = { 3, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgSpinner Spinner024
+{
+  FATHER = Frame007;
+  STYLE = CATDlgSpnDouble;
+  MIN = -360.000000;
+  MAX = 360.000000;
+  STEP = 720.000000;
+  UNIT = Degree;
+  PREC = 0;
+  GRID = { 4, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgSpinner Spinner026
+{
+  FATHER = Frame007;
+  STYLE = CATDlgSpnDouble;
+  MIN = -360.000000;
+  MAX = 360.000000;
+  STEP = 720.000000;
+  UNIT = Degree;
+  PREC = 0;
+  GRID = { 6, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgSpinner Spinner027
+{
+  FATHER = Frame007;
+  STYLE = CATDlgSpnDouble;
+  MIN = -360.000000;
+  MAX = 360.000000;
+  STEP = 720.000000;
+  UNIT = Degree;
+  PREC = 0;
+  GRID = { 5, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgSelectorList SelectorList029
+{
+  FATHER = Frame007;
+  TH = 1;
+  GRID = { 0, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label030
+{
+  FATHER = Frame007;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgPushButton PushButton028
+{
+  FATHER = Frame006;
+  GRID = { 4, 0, 2, 1, CATGRID_4SIDES };
 }
 
 // END WIZARD REPLACEMENT ZONE

@@ -1,14 +1,79 @@
-mkrtv -c -d 
-2026/1/11 13:47:56
+mkmk  -u -g  AddDocCmd.m
+2026/1/13 14:48:36
 
-## start step: DataUpdate   at 01/11/2026-13:47:56
-## end   step: DataUpdate   at 01/11/2026-13:47:56
-# mkmk-INFO: Removing file [D:\CatiaWS\FeaG\win_b64\code\bin\PointCmd.dll.manifest].
-# mkmk-INFO: Directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\knowledgeResources\automation] is empty; Removing directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\knowledgeResources\automation].
-# mkmk-INFO: Directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\knowledgeResources\html] is empty; Removing directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\knowledgeResources\html].
-# mkmk-INFO: Directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\knowledgeResources] is empty; Removing directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\knowledgeResources].
-# mkmk-INFO: Directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\knowledgeResourcesCatalogs] is empty; Removing directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\knowledgeResourcesCatalogs].
-# mkmk-INFO: Directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\knowledgeTypesCustom] is empty; Removing directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\knowledgeTypesCustom].
-# mkmk-INFO: Directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\knowledgeTypesDS] is empty; Removing directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\knowledgeTypesDS].
-# mkmk-INFO: Directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\workbench] is empty; Removing directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge\workbench].
-# mkmk-INFO: Directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge] is empty; Removing directory [D:\CatiaWS\FeaG\win_b64\resources\knowledge].
+## start step: CIbuild   at 01/13/2026-14:48:37
+## end   step: CIbuild   at 01/13/2026-14:48:37
+
+## start step: DataUpdate   at 01/13/2026-14:48:37
+# make:  TrainFramework\IdentityCard\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/13/2026-14:48:37
+
+## start step: DataUpdate   at 01/13/2026-14:48:37
+# make:  TrainFramework\AddDocCmd.m\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/13/2026-14:48:37
+
+## start step: CIcompilation   at 01/13/2026-14:48:37
+## end   step: CIcompilation   at 01/13/2026-14:48:37
+
+## start step: headerlist   at 01/13/2026-14:48:37
+## end   step: headerlist   at 01/13/2026-14:48:37
+
+## start step: headermap   at 01/13/2026-14:48:37
+## end   step: headermap   at 01/13/2026-14:48:37
+
+## start step: fwgrammar   at 01/13/2026-14:48:37
+## end   step: fwgrammar   at 01/13/2026-14:48:37
+
+## start step: grammar1st   at 01/13/2026-14:48:37
+## end   step: grammar1st   at 01/13/2026-14:48:37
+
+## start step: headerlist   at 01/13/2026-14:48:37
+## end   step: headerlist   at 01/13/2026-14:48:37
+
+## start step: headermap   at 01/13/2026-14:48:37
+## end   step: headermap   at 01/13/2026-14:48:37
+
+## start step: grammar2nd   at 01/13/2026-14:48:37
+## end   step: grammar2nd   at 01/13/2026-14:48:37
+
+## start step: typelibgrammar   at 01/13/2026-14:48:37
+## end   step: typelibgrammar   at 01/13/2026-14:48:37
+
+## start step: headerlist   at 01/13/2026-14:48:37
+## end   step: headerlist   at 01/13/2026-14:48:37
+
+## start step: headermap   at 01/13/2026-14:48:37
+## end   step: headermap   at 01/13/2026-14:48:37
+
+## start step: headerruler   at 01/13/2026-14:48:37
+## end   step: headerruler   at 01/13/2026-14:48:37
+
+## start step: compilation   at 01/13/2026-14:48:37
+# make:  TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp
+AddDocDlg.cpp
+d:\program files\dassault systemes\b18\visualizationbase\publicinterfaces\CAT3DRep.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(271) : error C2039: “AddLine”: 不是“CATDlgSelectorList”的成员
+        d:\program files\dassault systemes\b18\dialog\publicinterfaces\CATDlgSelectorList.h(32) : 参见“CATDlgSelectorList”的声明
+D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(272) : error C2039: “SetSelectLine”: 不是“CATDlgSelectorList”的成员
+        d:\program files\dassault systemes\b18\dialog\publicinterfaces\CATDlgSelectorList.h(32) : 参见“CATDlgSelectorList”的声明
+# make-ERROR: TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp
+## end   step: compilation   at 01/13/2026-14:48:37
+
+## start step: sourceruler   at 01/13/2026-14:48:37
+## end   step: sourceruler   at 01/13/2026-14:48:38
+
+## start step: link1st   at 01/13/2026-14:48:38
+# make: TrainFramework\AddDocCmd.m win_b64\code\lib\AddDocCmd.lib
+# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\AddDocCmd.m\Objects\win_b64\AddDocDlg.obj: No such file or directory
+# make-ERROR: win_b64\code\lib\AddDocCmd.lib
+## end   step: link1st   at 01/13/2026-14:48:38
+
+## start step: link2nd   at 01/13/2026-14:48:38
+# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\AddDocCmd.m\Objects\win_b64\AddDocDlg.obj: No such file or directory
+# syst-ERROR: D:\CatiaWS\FeaG\.\win_b64\code\lib\AddDocCmd.exp: No such file or directory
+# make-ERROR: win_b64\code\bin\AddDocCmd.dll
+# make: TrainFramework\AddDocCmd.m win_b64\code\bin\AddDocCmd.dll
+## end   step: link2nd   at 01/13/2026-14:48:38
+
+## start step: dummynls   at 01/13/2026-14:48:38
+## end   step: dummynls   at 01/13/2026-14:48:38
