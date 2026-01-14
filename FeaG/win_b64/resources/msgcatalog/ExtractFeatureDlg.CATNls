@@ -1,0 +1,21 @@
+// DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+Title = "提取管路特征";
+Frame001.Title = "参数类型";
+Frame001.PushButton002.Title = "端面中心";
+Frame001.PushButton003.Title = "圆";
+Frame001.PushButton004.Title = "直线";
+Frame001.PushButton005.Title = "端面";
+Frame006.Title = "直线参数";
+Frame006.Label007.Title = "方向向量";
+Frame009.Title = "轮廓参数";
+Frame009.Label010.Title = "对接端中心";
+Frame009.Label011.Title = "非对接端中心";
+Frame009.Label012.Title = "半径";
+Frame009.PushButton023.Title = "端面偏角";
+Frame009.PushButton024.Title = "管路名称";
+Frame009.PushButton025.Title = "存储数据";
+Frame016.Title = "端面参数";
+Frame016.Label017.Title = "向量1";
+Frame016.Label018.Title = "向量2";
+Frame016.Label019.Title = "法向量";
+// END WIZARD REPLACEMENT ZONE

@@ -1,0 +1,173 @@
+// DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+CATDlgDialog ExtractFeatureDlg
+{
+  STYLE = CATDlgWndNoButton|CATDlgGridLayout;
+}
+
+CATDlgFrame Frame001
+{
+  FATHER = ExtractFeatureDlg;
+  STYLE = CATDlgGridLayout;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgPushButton PushButton002
+{
+  FATHER = Frame001;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgPushButton PushButton003
+{
+  FATHER = Frame001;
+  GRID = { 0, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgPushButton PushButton004
+{
+  FATHER = Frame001;
+  GRID = { 0, 2, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgPushButton PushButton005
+{
+  FATHER = Frame001;
+  GRID = { 0, 3, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgFrame Frame006
+{
+  FATHER = ExtractFeatureDlg;
+  STYLE = CATDlgGridLayout;
+  GRID = { 0, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label007
+{
+  FATHER = Frame006;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor Editor008
+{
+  FATHER = Frame006;
+  GRID = { 0, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgFrame Frame009
+{
+  FATHER = ExtractFeatureDlg;
+  STYLE = CATDlgGridLayout;
+  GRID = { 1, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label010
+{
+  FATHER = Frame009;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label011
+{
+  FATHER = Frame009;
+  GRID = { 1, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label012
+{
+  FATHER = Frame009;
+  GRID = { 2, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor Editor013
+{
+  FATHER = Frame009;
+  GRID = { 0, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor Editor014
+{
+  FATHER = Frame009;
+  GRID = { 1, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor Editor015
+{
+  FATHER = Frame009;
+  GRID = { 2, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgPushButton PushButton023
+{
+  FATHER = Frame009;
+  GRID = { 3, 0, 2, 1, CATGRID_4SIDES };
+}
+
+CATDlgPushButton PushButton024
+{
+  FATHER = Frame009;
+  GRID = { 4, 0, 2, 1, CATGRID_4SIDES };
+}
+
+CATDlgPushButton PushButton025
+{
+  FATHER = Frame009;
+  GRID = { 5, 0, 2, 1, CATGRID_4SIDES };
+}
+
+CATDlgFrame Frame016
+{
+  FATHER = ExtractFeatureDlg;
+  STYLE = CATDlgGridLayout;
+  GRID = { 1, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label017
+{
+  FATHER = Frame016;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label018
+{
+  FATHER = Frame016;
+  GRID = { 1, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label019
+{
+  FATHER = Frame016;
+  GRID = { 2, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor Editor020
+{
+  FATHER = Frame016;
+  GRID = { 0, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor Editor021
+{
+  FATHER = Frame016;
+  GRID = { 1, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor Editor022
+{
+  FATHER = Frame016;
+  GRID = { 2, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor Editor026
+{
+  FATHER = Frame016;
+  GRID = { 3, 0, 2, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor Editor027
+{
+  FATHER = Frame016;
+  GRID = { 4, 0, 2, 1, CATGRID_4SIDES };
+}
+
+// END WIZARD REPLACEMENT ZONE

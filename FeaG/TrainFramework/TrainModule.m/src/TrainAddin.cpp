@@ -61,6 +61,7 @@ void TrainAddin::CreateCommands()
 	new TrainHeader("测试", "SwapTextM", "MyPraTranscmd", (void*)NULL);
 	new TrainHeader("Pad生成", "PadCmd", "PadDlgCmd", (void*)NULL);
 	new TrainHeader("导入文件", "AddDocCmd", "AddDocCmd", (void*)NULL);
+	new TrainHeader("提取管路特征", "ExtractFeatureM", "ExtractfeatureCmd", (void*)NULL);
 }
 CATCmdContainer * TrainAddin::CreateToolbars()
 {
@@ -101,6 +102,9 @@ CATCmdContainer * TrainAddin::CreateToolbars()
 		SetAccessCommand(pCAATPMSCreateLineSevStr,"导入文件");
 		SetAccessNext(pCAATPMSCreateLineSixStr, pCAATPMSCreateLineSevStr);
 
+		NewAccess(CATCmdStarter, pCAATPMSCreateLineEigStr, CAATPMSCreateLineEigStr);
+		SetAccessCommand(pCAATPMSCreateLineEigStr,"提取管路特征");
+		SetAccessNext(pCAATPMSCreateLineSevStr, pCAATPMSCreateLineEigStr);
 	//4。将工具条添加到视窗中
 	AddToolbarView(pCAAPMSTlb,1,Right);
 
@@ -139,6 +143,10 @@ CATCmdContainer * TrainAddin::CreateToolbars()
 			NewAccess(CATCmdStarter,pCAATPMuAixsAutoSevStr,CAATPMuAixsAutoSevStr);
 			SetAccessCommand(pCAATPMuAixsAutoSevStr,"导入文件");
 			SetAccessNext(pCAATPMuAixsAutoSixStr,pCAATPMuAixsAutoSevStr);
+
+			NewAccess(CATCmdStarter,pCAATPMuAixsAutoEigStr,CAATPMuAixsAutoEigStr);
+			SetAccessCommand(pCAATPMuAixsAutoEigStr,"提取管路特征");
+			SetAccessNext(pCAATPMuAixsAutoSevStr,pCAATPMuAixsAutoEigStr);
 
 		NewAccess(CATCmdSeparator, pCAATPMSCreateLineSepratorStr, CAATPMSCreateLineSepratorStr);
 		SetAccessNext(pCAATPMuAixsAutoSndStr, pCAATPMSCreateLineSepratorStr);

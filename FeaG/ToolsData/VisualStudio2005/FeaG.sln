@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SwapTextM.m", "TrainFramewo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AddDocCmd.m", "TrainFramework\AddDocCmd.m.vcproj", "{85A76C0A-DC9B-41EC-800C-FC635CCAFDF7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExtractFeatureM.m", "TrainFramework\ExtractFeatureM.m.vcproj", "{EE42B921-F56A-4D06-9B0A-844F862CCF82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -39,6 +41,8 @@ Global
 		{3A28C271-36C7-42BE-B31A-7EF90FF37426}.Release|Win32.ActiveCfg = Release|Win32
 		{85A76C0A-DC9B-41EC-800C-FC635CCAFDF7}.Debug|Win32.ActiveCfg = Debug|Win32
 		{85A76C0A-DC9B-41EC-800C-FC635CCAFDF7}.Release|Win32.ActiveCfg = Release|Win32
+		{EE42B921-F56A-4D06-9B0A-844F862CCF82}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EE42B921-F56A-4D06-9B0A-844F862CCF82}.Release|Win32.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

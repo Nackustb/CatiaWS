@@ -90,6 +90,8 @@
 .\win_b64\code\bin\PointCmd.pdb
 .\win_b64\resources\msgcatalog\MyDlgA.CATRsc
 .\win_b64\code\bin\AddDocCmd.dll
+.\win_b64\resources\msgcatalog\ExtractFeatureDlg.CATRsc
+.\win_b64\resources\msgcatalog\ExtractFeatureDlg.CATNls
 .\win_b64\code\bin\TrainModule.dll
 .\win_b64\resources\msgcatalog\AxisDlgCmd.CATNls
 .\win_b64\resources\msgcatalog\DbcsTest\PointDlgCmd.CATNls

@@ -1,0 +1,5 @@
+/I"D:\CatiaWS\FeaG\.\TrainFramework\ExtractFeatureM.m\src"
+/I"D:\CatiaWS\FeaG\.\TrainFramework\ExtractFeatureM.m\LocalInterfaces"
+/I"D:\CatiaWS\FeaG\.\TrainFramework\ExtractFeatureM.m\LocalGenerated\win_b64"
+/I"D:\CatiaWS\FeaG\.\TrainFramework\PublicInterfaces"
+/I"D:\CatiaWS\FeaG\.\TrainFramework\ImportedInterfaces\win_b64"

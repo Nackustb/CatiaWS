@@ -1,95 +1,70 @@
-mkmk  -u -g  AddDocCmd.m
-2026/1/13 17:03:35
+mkmk  -u -g  ExtractFeatureM.m
+2026/1/14 19:51:58
 
-## start step: CIbuild   at 01/13/2026-17:03:36
-## end   step: CIbuild   at 01/13/2026-17:03:36
+## start step: CIbuild   at 01/14/2026-19:51:59
+## end   step: CIbuild   at 01/14/2026-19:51:59
 
-## start step: DataUpdate   at 01/13/2026-17:03:36
+## start step: DataUpdate   at 01/14/2026-19:51:59
 # make:  TrainFramework\IdentityCard\Objects\win_b64\.mkdata.mk
-## end   step: DataUpdate   at 01/13/2026-17:03:36
+## end   step: DataUpdate   at 01/14/2026-19:51:59
 
-## start step: DataUpdate   at 01/13/2026-17:03:36
-# make:  TrainFramework\AddDocCmd.m\Objects\win_b64\.mkdata.mk
-## end   step: DataUpdate   at 01/13/2026-17:03:36
+## start step: DataUpdate   at 01/14/2026-19:51:59
+# make:  TrainFramework\ExtractFeatureM.m\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/14/2026-19:51:59
 
-## start step: CIcompilation   at 01/13/2026-17:03:36
-## end   step: CIcompilation   at 01/13/2026-17:03:36
+## start step: CIcompilation   at 01/14/2026-19:51:59
+## end   step: CIcompilation   at 01/14/2026-19:51:59
 
-## start step: headerlist   at 01/13/2026-17:03:36
-## end   step: headerlist   at 01/13/2026-17:03:36
+## start step: headerlist   at 01/14/2026-19:51:59
+## end   step: headerlist   at 01/14/2026-19:51:59
 
-## start step: headermap   at 01/13/2026-17:03:36
-## end   step: headermap   at 01/13/2026-17:03:36
+## start step: headermap   at 01/14/2026-19:51:59
+## end   step: headermap   at 01/14/2026-19:51:59
 
-## start step: fwgrammar   at 01/13/2026-17:03:36
-## end   step: fwgrammar   at 01/13/2026-17:03:36
+## start step: fwgrammar   at 01/14/2026-19:51:59
+## end   step: fwgrammar   at 01/14/2026-19:51:59
 
-## start step: grammar1st   at 01/13/2026-17:03:36
-## end   step: grammar1st   at 01/13/2026-17:03:36
+## start step: grammar1st   at 01/14/2026-19:51:59
+## end   step: grammar1st   at 01/14/2026-19:51:59
 
-## start step: headerlist   at 01/13/2026-17:03:36
-## end   step: headerlist   at 01/13/2026-17:03:36
+## start step: headerlist   at 01/14/2026-19:51:59
+## end   step: headerlist   at 01/14/2026-19:51:59
 
-## start step: headermap   at 01/13/2026-17:03:36
-## end   step: headermap   at 01/13/2026-17:03:36
+## start step: headermap   at 01/14/2026-19:51:59
+## end   step: headermap   at 01/14/2026-19:51:59
 
-## start step: grammar2nd   at 01/13/2026-17:03:36
-## end   step: grammar2nd   at 01/13/2026-17:03:36
+## start step: grammar2nd   at 01/14/2026-19:51:59
+## end   step: grammar2nd   at 01/14/2026-19:51:59
 
-## start step: typelibgrammar   at 01/13/2026-17:03:36
-## end   step: typelibgrammar   at 01/13/2026-17:03:36
+## start step: typelibgrammar   at 01/14/2026-19:51:59
+## end   step: typelibgrammar   at 01/14/2026-19:51:59
 
-## start step: headerlist   at 01/13/2026-17:03:36
-## end   step: headerlist   at 01/13/2026-17:03:36
+## start step: headerlist   at 01/14/2026-19:51:59
+## end   step: headerlist   at 01/14/2026-19:51:59
 
-## start step: headermap   at 01/13/2026-17:03:36
-## end   step: headermap   at 01/13/2026-17:03:36
+## start step: headermap   at 01/14/2026-19:51:59
+## end   step: headermap   at 01/14/2026-19:51:59
 
-## start step: headerruler   at 01/13/2026-17:03:36
-## end   step: headerruler   at 01/13/2026-17:03:36
+## start step: headerruler   at 01/14/2026-19:51:59
+## end   step: headerruler   at 01/14/2026-19:51:59
 
-## start step: compilation   at 01/13/2026-17:03:36
-# make:  TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp
-AddDocCmd.cpp
+## start step: compilation   at 01/14/2026-19:51:59
+# make:  TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp
+ExtractfeatureCmd.cpp
 D:\Program Files\Dassault Systemes\B18\.\DialogEngine\PublicInterfaces\CATStateCommand.h(742) : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp(73) : error C2039: “CheckSelectedCurve”: 不是“AddDocCmd”的成员
-        D:\CatiaWS\FeaG\.\TrainFramework\AddDocCmd.m\LocalInterfaces\AddDocCmd.h(67) : 参见“AddDocCmd”的声明
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp(73) : error C2065: “CheckSelectedCurve”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp(87) : error C2653: “PointDlgCmd”: 不是类或命名空间名称
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp(87) : error C2065: “SelectCurve”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp(90) : error C2653: “PointDlgCmd”: 不是类或命名空间名称
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp(90) : error C2065: “ActionCurveFiled”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp(94) : error C2143: 语法错误 : 缺少“)”(在“;”的前面)
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp(94) : error C2664: “CATDialogTransition *CATStateCommand::AddTransition(CATDialogState *,CATDialogState *,CATStateCondition *,CATDiaAction *)”: 不能将参数 4 从“CATIndicationAgent *”转换为“CATDiaAction *”
-        与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
-# make-ERROR: TrainFramework\AddDocCmd.m\src\AddDocCmd.cpp
-# make:  TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp
-AddDocDlg.cpp
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(428) : error C2196: case 值“1”已使用
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(429) : error C2196: case 值“1”已使用
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(430) : error C2196: case 值“1”已使用
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(431) : error C2196: case 值“1”已使用
-D:\CatiaWS\FeaG\TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp(432) : error C2196: case 值“1”已使用
-# make-ERROR: TrainFramework\AddDocCmd.m\src\AddDocDlg.cpp
-## end   step: compilation   at 01/13/2026-17:03:37
+## end   step: compilation   at 01/14/2026-19:51:59
 
-## start step: sourceruler   at 01/13/2026-17:03:37
-## end   step: sourceruler   at 01/13/2026-17:03:37
+## start step: sourceruler   at 01/14/2026-19:51:59
+## end   step: sourceruler   at 01/14/2026-19:51:59
 
-## start step: link1st   at 01/13/2026-17:03:37
-# make: TrainFramework\AddDocCmd.m win_b64\code\lib\AddDocCmd.lib
-# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\AddDocCmd.m\Objects\win_b64\AddDocCmd.obj: No such file or directory
-# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\AddDocCmd.m\Objects\win_b64\AddDocDlg.obj: No such file or directory
-# make-ERROR: win_b64\code\lib\AddDocCmd.lib
-## end   step: link1st   at 01/13/2026-17:03:37
+## start step: link1st   at 01/14/2026-19:51:59
+# make: TrainFramework\ExtractFeatureM.m win_b64\code\lib\ExtractFeatureM.lib
+   正在创建库 D:\CatiaWS\FeaG\.\win_b64\code\lib\ExtractFeatureM.lib 和对象 D:\CatiaWS\FeaG\.\win_b64\code\lib\ExtractFeatureM.exp
+## end   step: link1st   at 01/14/2026-19:52:00
 
-## start step: link2nd   at 01/13/2026-17:03:37
-# make: TrainFramework\AddDocCmd.m win_b64\code\bin\AddDocCmd.dll
-# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\AddDocCmd.m\Objects\win_b64\AddDocCmd.obj: No such file or directory
-# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\AddDocCmd.m\Objects\win_b64\AddDocDlg.obj: No such file or directory
-# syst-ERROR: D:\CatiaWS\FeaG\.\win_b64\code\lib\AddDocCmd.exp: No such file or directory
-# make-ERROR: win_b64\code\bin\AddDocCmd.dll
-## end   step: link2nd   at 01/13/2026-17:03:37
+## start step: link2nd   at 01/14/2026-19:52:00
+# make: TrainFramework\ExtractFeatureM.m win_b64\code\bin\ExtractFeatureM.dll
+## end   step: link2nd   at 01/14/2026-19:52:00
 
-## start step: dummynls   at 01/13/2026-17:03:37
-## end   step: dummynls   at 01/13/2026-17:03:37
+## start step: dummynls   at 01/14/2026-19:52:00
+## end   step: dummynls   at 01/14/2026-19:52:00

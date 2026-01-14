@@ -1,4 +1,5 @@
 TrainFramework\PublicInterfaces\AddDocCmd.h='OK'
+TrainFramework\PublicInterfaces\ExtractFeatureM.h='OK'
 TrainFramework\PublicInterfaces\PointCmd.h='OK'
 TrainFramework\PublicInterfaces\PadCmd.h='OK'
 TrainFramework\PublicInterfaces\AxisPointCmd.h='OK'

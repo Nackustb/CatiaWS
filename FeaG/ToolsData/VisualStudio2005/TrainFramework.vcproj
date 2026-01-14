@@ -177,6 +177,10 @@
 				>
 			</File>
 			<File
+				RelativePath="..\..\TrainFramework\PublicInterfaces\ExtractFeatureM.h"
+				>
+			</File>
+			<File
 				RelativePath="..\..\TrainFramework\PublicInterfaces\PadCmd.h"
 				>
 			</File>
@@ -307,11 +311,15 @@
 						>
 					</File>
 					<File
-						RelativePath="..\..\TrainFramework\CNext\resources\msgcatalog\ChangePositionDlg.CATNls"
+						RelativePath="..\..\TrainFramework\CNext\resources\msgcatalog\ExtractfeatureCmd.CATNls"
 						>
 					</File>
 					<File
-						RelativePath="..\..\TrainFramework\CNext\resources\msgcatalog\ChangePositionDlg.CATRsc"
+						RelativePath="..\..\TrainFramework\CNext\resources\msgcatalog\ExtractFeatureDlg.CATNls"
+						>
+					</File>
+					<File
+						RelativePath="..\..\TrainFramework\CNext\resources\msgcatalog\ExtractFeatureDlg.CATRsc"
 						>
 					</File>
 					<File
