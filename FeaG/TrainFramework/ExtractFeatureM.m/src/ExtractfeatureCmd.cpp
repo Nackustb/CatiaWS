@@ -6,8 +6,6 @@
 #include "CATCreateExternalObject.h"
 CATCreateClass( ExtractfeatureCmd);
 
-
-
 ExtractfeatureCmd::ExtractfeatureCmd() :
   CATStateCommand ("ExtractfeatureCmd", CATDlgEngOneShot, CATCommandModeExclusive) 
   ,_Indication(NULL)
@@ -26,7 +24,6 @@ ExtractfeatureCmd::ExtractfeatureCmd() :
 	_pDlg->Build();
 	_pDlg->SetVisibility(CATDlgShow);
 }
-
 
 ExtractfeatureCmd::~ExtractfeatureCmd()
 {
@@ -52,14 +49,10 @@ ExtractfeatureCmd::~ExtractfeatureCmd()
 	   _ProDlgAgent->RequestDelayedDestruction();
    if (_ProElementAgent != NULL) 
 	   _ProElementAgent->RequestDelayedDestruction();
-
    if (_pDlg!=NULL)
-   {
 	   _pDlg->RequestDelayedDestruction();
-   }
+   
 }
-
-
 
 void ExtractfeatureCmd::BuildGraph()
 {
@@ -111,6 +104,9 @@ void ExtractfeatureCmd::BuildGraph()
 	_CalDlgAgent=new CATDialogAgent("CalDlg");
 	_CalDlgAgent->AcceptOnNotify(_pDlg->GetPushButton(5),_pDlg->GetPushButton(5)->GetPushBActivateNotification()); 
 
+	_SaveDlgAgent=new CATDialogAgent("SaveDlg");
+	_SaveDlgAgent->AcceptOnNotify(_pDlg->GetPushButton(7),_pDlg->GetPushButton(7)->GetPushBActivateNotification()); 
+
 	CATDialogState * pDlgState=GetInitialState("DlgState");
 
 	pDlgState->AddDialogAgent(_CDlgAgent);
@@ -119,6 +115,7 @@ void ExtractfeatureCmd::BuildGraph()
 	pDlgState->AddDialogAgent(_CPDlgAgent);
 	pDlgState->AddDialogAgent(_ProDlgAgent);
 	pDlgState->AddDialogAgent(_CalDlgAgent);
+	pDlgState->AddDialogAgent(_SaveDlgAgent);
 
 	CATDialogState * pGetCircleState=AddDialogState("getCircle");
 	pGetCircleState->AddDialogAgent(_CElementAgent);
@@ -177,7 +174,11 @@ void ExtractfeatureCmd::BuildGraph()
 
 	AddTransition(pDlgState, pDlgState,
 		IsOutputSetCondition(_CalDlgAgent),
-		Action((ActionMethod)&ExtractfeatureCmd::OnCalButton));
+		Action((ActionMethod)&ExtractfeatureCmd::OnPushButton023PushBActivateNotification));
+
+	AddTransition(pDlgState, pDlgState,
+		IsOutputSetCondition(_SaveDlgAgent),
+		Action((ActionMethod)&ExtractfeatureCmd::OnPushButton035PushBActivateNotification));
 
 }
 
@@ -570,7 +571,7 @@ void ExtractfeatureCmd::SetProParameter(CATUnicodeString name)
 	_pDlg->GetEditor(9)->SetText(NAME);
 }
 
-void ExtractfeatureCmd::OnCalButton(CATCommand* cmd, CATNotification* evt, CATCommandClientData data)
+void ExtractfeatureCmd::OnPushButton023PushBActivateNotification(CATCommand* cmd, CATNotification* evt, CATCommandClientData data)
 {
 	
 	_CalDlgAgent->InitializeAcquisition();
@@ -595,4 +596,269 @@ void ExtractfeatureCmd::OnCalButton(CATCommand* cmd, CATNotification* evt, CATCo
 	_pDlg->GetEditor(8)->SetText(s);
 
 
+}
+
+
+
+void ExtractfeatureCmd::OnPushButton035PushBActivateNotification(CATCommand* cmd, CATNotification* evt, CATCommandClientData data)
+{
+	_SaveDlgAgent->InitializeAcquisition();
+
+	struct ComUtil
+	{
+		static VARIANT VtI4(long v) { VARIANT x; VariantInit(&x); x.vt = VT_I4; x.lVal = v; return x; }
+		static VARIANT VtBool(BOOL v) { VARIANT x; VariantInit(&x); x.vt = VT_BOOL; x.boolVal = v ? VARIANT_TRUE : VARIANT_FALSE; return x; }
+		static VARIANT VtBstr(const wchar_t* ws) { VARIANT x; VariantInit(&x); x.vt = VT_BSTR; x.bstrVal = SysAllocString(ws); return x; }
+
+		static std::wstring AnsiToWide(const char* s)
+		{
+			if (!s) return L"";
+			int n = MultiByteToWideChar(CP_ACP, 0, s, -1, NULL, 0);
+			if (n <= 0) return L"";
+			std::wstring ws; ws.resize(n - 1);
+			MultiByteToWideChar(CP_ACP, 0, s, -1, &ws[0], n);
+			return ws;
+		}
+
+		static std::wstring ToWide(CATUnicodeString us)
+		{
+			const char* p = us.ConvertToChar();
+			std::wstring ws = AnsiToWide(p);
+			return ws;
+		}
+
+		static HRESULT AutoWrap(int autoType, VARIANT* pvResult, IDispatch* pDisp, LPOLESTR ptName, int cArgs, ...)
+		{
+			if (!pDisp) return E_INVALIDARG;
+
+			DISPID dispid;
+			HRESULT hr = pDisp->GetIDsOfNames(IID_NULL, &ptName, 1, LOCALE_USER_DEFAULT, &dispid);
+			if (FAILED(hr)) return hr;
+
+			VARIANT* pArgs = NULL;
+			if (cArgs > 0) pArgs = new VARIANT[cArgs];
+
+			va_list marker;
+			va_start(marker, cArgs);
+			for (int i = 0; i < cArgs; i++) pArgs[i] = va_arg(marker, VARIANT);
+			va_end(marker);
+
+			DISPPARAMS dp;
+			dp.cArgs = cArgs;
+			dp.rgvarg = pArgs;
+
+			DISPID dispidNamed = DISPID_PROPERTYPUT;
+			if (autoType & DISPATCH_PROPERTYPUT)
+			{
+				dp.cNamedArgs = 1;
+				dp.rgdispidNamedArgs = &dispidNamed;
+			}
+			else
+			{
+				dp.cNamedArgs = 0;
+				dp.rgdispidNamedArgs = NULL;
+			}
+
+			if (pvResult) VariantInit(pvResult);
+			hr = pDisp->Invoke(dispid, IID_NULL, LOCALE_USER_DEFAULT, autoType, &dp, pvResult, NULL, NULL);
+
+			if (pArgs) delete[] pArgs;
+			return hr;
+		}
+	};
+
+	// 角度 0~180（与你按钮5一致）
+	double B = lx*A[0] + ly*A[1] + lz*A[2];
+	double C = sqrt(lx*lx + ly*ly + lz*lz);
+	double D = sqrt(A[0]*A[0] + A[1]*A[1] + A[2]*A[2]);
+	double a_deg = 0.0;
+	if (C > 1e-12 && D > 1e-12)
+	{
+		double cosv = B / (C * D);
+		if (cosv > 1.0)  cosv = 1.0;
+		if (cosv < -1.0) cosv = -1.0;
+		double a_rad = acos(fabs(cosv));
+		a_deg = a_rad * (180.0 / 3.14159265358979323846);
+	}
+
+	wchar_t tempPathW[MAX_PATH] = { 0 };
+	GetTempPathW(MAX_PATH, tempPathW);
+	std::wstring savePath = L"D:\\CatiaWS\\FeaG\\ExtractFeature.xls";
+
+	HRESULT hr = CoInitializeEx(NULL, COINIT_APARTMENTTHREADED);
+	if (FAILED(hr))
+	{
+		::MessageBoxA(NULL, "CoInitializeEx failed.", "Error", MB_OK | MB_ICONERROR);
+		return;
+	}
+
+	CLSID clsid;
+	hr = CLSIDFromProgID(L"Excel.Application", &clsid);
+	if (FAILED(hr))
+	{
+		CoUninitialize();
+		::MessageBoxA(NULL, "Excel.Application not found. Please install Microsoft Excel.", "Error", MB_OK | MB_ICONERROR);
+		return;
+	}
+
+	IDispatch* pExcel = NULL;
+	hr = CoCreateInstance(clsid, NULL, CLSCTX_LOCAL_SERVER, IID_IDispatch, (void**)&pExcel);
+	if (FAILED(hr) || !pExcel)
+	{
+		CoUninitialize();
+		::MessageBoxA(NULL, "Failed to start Excel.", "Error", MB_OK | MB_ICONERROR);
+		return;
+	}
+
+	{
+		VARIANT v = ComUtil::VtBool(FALSE);
+		ComUtil::AutoWrap(DISPATCH_PROPERTYPUT, NULL, pExcel, L"Visible", 1, v);
+		VariantClear(&v);
+	}
+
+	VARIANT vWorkbooks;
+	hr = ComUtil::AutoWrap(DISPATCH_PROPERTYGET, &vWorkbooks, pExcel, L"Workbooks", 0);
+	if (FAILED(hr) || vWorkbooks.vt != VT_DISPATCH)
+	{
+		pExcel->Release();
+		CoUninitialize();
+		::MessageBoxA(NULL, "Failed to get Workbooks.", "Error", MB_OK | MB_ICONERROR);
+		return;
+	}
+	IDispatch* pWorkbooks = vWorkbooks.pdispVal;
+
+	VARIANT vWb;
+	hr = ComUtil::AutoWrap(DISPATCH_METHOD, &vWb, pWorkbooks, L"Add", 0);
+	if (FAILED(hr) || vWb.vt != VT_DISPATCH)
+	{
+		pWorkbooks->Release();
+		pExcel->Release();
+		CoUninitialize();
+		::MessageBoxA(NULL, "Failed to add Workbook.", "Error", MB_OK | MB_ICONERROR);
+		return;
+	}
+	IDispatch* pWorkbook = vWb.pdispVal;
+
+	VARIANT vSheet;
+	hr = ComUtil::AutoWrap(DISPATCH_PROPERTYGET, &vSheet, pExcel, L"ActiveSheet", 0);
+	if (FAILED(hr) || vSheet.vt != VT_DISPATCH)
+	{
+		pWorkbook->Release();
+		pWorkbooks->Release();
+		pExcel->Release();
+		CoUninitialize();
+		::MessageBoxA(NULL, "Failed to get ActiveSheet.", "Error", MB_OK | MB_ICONERROR);
+		return;
+	}
+	IDispatch* pSheet = vSheet.pdispVal;
+
+	VARIANT vCells;
+	hr = ComUtil::AutoWrap(DISPATCH_PROPERTYGET, &vCells, pSheet, L"Cells", 0);
+	if (FAILED(hr) || vCells.vt != VT_DISPATCH)
+	{
+		pSheet->Release();
+		pWorkbook->Release();
+		pWorkbooks->Release();
+		pExcel->Release();
+		CoUninitialize();
+		::MessageBoxA(NULL, "Failed to get Cells.", "Error", MB_OK | MB_ICONERROR);
+		return;
+	}
+	IDispatch* pCells = vCells.pdispVal;
+
+	struct WriteCellHelper
+	{
+		static void Write(IDispatch* pCells, long r, long c, const wchar_t* text)
+		{
+			VARIANT vr = ComUtil::VtI4(r);
+			VARIANT vc = ComUtil::VtI4(c);
+			VARIANT vCell;
+			HRESULT hr = ComUtil::AutoWrap(DISPATCH_PROPERTYGET, &vCell, pCells, L"Item", 2, vc, vr);
+			VariantClear(&vr);
+			VariantClear(&vc);
+			if (SUCCEEDED(hr) && vCell.vt == VT_DISPATCH)
+			{
+				IDispatch* pCell = vCell.pdispVal;
+				VARIANT vText = ComUtil::VtBstr(text);
+				ComUtil::AutoWrap(DISPATCH_PROPERTYPUT, NULL, pCell, L"Value2", 1, vText);
+				VariantClear(&vText);
+				pCell->Release();
+			}
+		}
+		static void WriteNum(IDispatch* pCells, long r, long c, double v)
+		{
+			VARIANT vr = ComUtil::VtI4(r);
+			VARIANT vc = ComUtil::VtI4(c);
+			VARIANT vCell;
+			HRESULT hr = ComUtil::AutoWrap(DISPATCH_PROPERTYGET, &vCell, pCells, L"Item", 2, vc, vr);
+			VariantClear(&vr);
+			VariantClear(&vc);
+			if (SUCCEEDED(hr) && vCell.vt == VT_DISPATCH)
+			{
+				IDispatch* pCell = vCell.pdispVal;
+				VARIANT vNum; VariantInit(&vNum); vNum.vt = VT_R8; vNum.dblVal = v;
+				ComUtil::AutoWrap(DISPATCH_PROPERTYPUT, NULL, pCell, L"Value2", 1, vNum);
+				VariantClear(&vNum);
+				pCell->Release();
+			}
+		}
+	};
+
+	WriteCellHelper::Write(pCells, 1, 1, L"Product");
+	WriteCellHelper::Write(pCells, 1, 2, L"CircleCenterX");
+	WriteCellHelper::Write(pCells, 1, 3, L"CircleCenterY");
+	WriteCellHelper::Write(pCells, 1, 4, L"CircleCenterZ");
+	WriteCellHelper::Write(pCells, 1, 5, L"Radius");
+	WriteCellHelper::Write(pCells, 1, 6, L"PointX");
+	WriteCellHelper::Write(pCells, 1, 7, L"PointY");
+	WriteCellHelper::Write(pCells, 1, 8, L"PointZ");
+	WriteCellHelper::Write(pCells, 1, 9, L"LineDirX");
+	WriteCellHelper::Write(pCells, 1, 10, L"LineDirY");
+	WriteCellHelper::Write(pCells, 1, 11, L"LineDirZ");
+	WriteCellHelper::Write(pCells, 1, 12, L"PlaneNormalX");
+	WriteCellHelper::Write(pCells, 1, 13, L"PlaneNormalY");
+	WriteCellHelper::Write(pCells, 1, 14, L"PlaneNormalZ");
+	WriteCellHelper::Write(pCells, 1, 15, L"AngleDeg");
+
+	std::wstring wName = ComUtil::ToWide(NAME);
+	WriteCellHelper::Write(pCells, 2, 1, wName.c_str());
+	WriteCellHelper::WriteNum(pCells, 2, 2, cx2);
+	WriteCellHelper::WriteNum(pCells, 2, 3, cy2);
+	WriteCellHelper::WriteNum(pCells, 2, 4, cz2);
+	WriteCellHelper::WriteNum(pCells, 2, 5, r);
+	WriteCellHelper::WriteNum(pCells, 2, 6, cx);
+	WriteCellHelper::WriteNum(pCells, 2, 7, cy);
+	WriteCellHelper::WriteNum(pCells, 2, 8, cz);
+	WriteCellHelper::WriteNum(pCells, 2, 9, lx);
+	WriteCellHelper::WriteNum(pCells, 2, 10, ly);
+	WriteCellHelper::WriteNum(pCells, 2, 11, lz);
+	WriteCellHelper::WriteNum(pCells, 2, 12, A[0]);
+	WriteCellHelper::WriteNum(pCells, 2, 13, A[1]);
+	WriteCellHelper::WriteNum(pCells, 2, 14, A[2]);
+	WriteCellHelper::WriteNum(pCells, 2, 15, a_deg);
+
+	{
+		VARIANT vPath = ComUtil::VtBstr(savePath.c_str());
+		VARIANT vFmt = ComUtil::VtI4(56);
+		ComUtil::AutoWrap(DISPATCH_METHOD, NULL, pWorkbook, L"SaveAs", 2, vFmt, vPath);
+		VariantClear(&vPath);
+		VariantClear(&vFmt);
+	}
+
+	{
+		VARIANT vFalse = ComUtil::VtBool(FALSE);
+		ComUtil::AutoWrap(DISPATCH_METHOD, NULL, pWorkbook, L"Close", 1, vFalse);
+		VariantClear(&vFalse);
+	}
+
+	ComUtil::AutoWrap(DISPATCH_METHOD, NULL, pExcel, L"Quit", 0);
+
+	pCells->Release();
+	pSheet->Release();
+	pWorkbook->Release();
+	pWorkbooks->Release();
+	pExcel->Release();
+	CoUninitialize();
+
+	::MessageBoxW(NULL, savePath.c_str(), L"Excel saved to:", MB_OK);
 }

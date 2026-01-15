@@ -31,7 +31,9 @@ class ExtractfeatureCmd: public CATStateCommand
   public:
 
   ExtractfeatureCmd();
+
   virtual ~ExtractfeatureCmd();
+
   CATBoolean GetCircleElement(void *data);
 
   CATBoolean GetLineElement(void *data);
@@ -62,7 +64,9 @@ class ExtractfeatureCmd: public CATStateCommand
 
   void SetProParameter(CATUnicodeString name);
 
-  void OnCalButton(CATCommand* cmd, CATNotification* evt, CATCommandClientData data);
+  void OnPushButton023PushBActivateNotification(CATCommand* cmd, CATNotification* evt, CATCommandClientData data);
+
+  void OnPushButton035PushBActivateNotification(CATCommand* cmd, CATNotification* evt, CATCommandClientData data);
 
   double GetCParameter();
 
@@ -71,10 +75,10 @@ class ExtractfeatureCmd: public CATStateCommand
   double GetPParameter();
 
   double r,cx,cy,cz,cx2,cy2,cz2,lx,ly,lz,px1,py1,pz1,px2,py2,pz2,px,py,pz,A[3];
+
   CATUnicodeString R,Cx,Cy,Cz,Cx2,Cy2,Cz2,Lx,Ly,Lz,Px,Py,Pz,A1,A2,A3,NAME;
 
   virtual void     BuildGraph();
-
 
   private:
   ExtractFeatureDlg* _pDlg;
@@ -86,13 +90,12 @@ class ExtractfeatureCmd: public CATStateCommand
   CATDialogAgent * _CPDlgAgent;
   CATDialogAgent * _ProDlgAgent;
   CATDialogAgent * _CalDlgAgent;
+  CATDialogAgent *_SaveDlgAgent;
+
   CATPathElementAgent * _CElementAgent;
   CATPathElementAgent * _LElementAgent;
   CATPathElementAgent * _PElementAgent;
   CATPathElementAgent * _CPElementAgent;
   CATPathElementAgent * _ProElementAgent;
 };
-
-//----------------------------------------------------------------------
-
 #endif

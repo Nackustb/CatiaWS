@@ -1,0 +1,4 @@
+mkcpl AddDocDlg.cpp
+2026/1/15 15:00:23
+
+RequestLicensesFromSettings: error: InternalDS license found, not authorized for this product.

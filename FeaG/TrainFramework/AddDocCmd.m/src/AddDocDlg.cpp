@@ -11,13 +11,15 @@
 
 AddDocDlg::AddDocDlg() :
 CATDlgDialog((CATApplicationFrame::GetApplicationFrame())->GetMainWindow(),
-			 "AddDocDlg", CATDlgWndNoButton | CATDlgGridLayout)
+			 "AddDocDlg",
+			 CATDlgWndNoButton | CATDlgGridLayout)
 {
 	_Frame006 = NULL;
 	_PushButton003 = NULL;
 	_Label004 = NULL;
 	_PushButton002 = NULL;
 	_Editor005 = NULL;
+
 	_Frame007 = NULL;
 	_Label008 = NULL;
 	_Label009 = NULL;
@@ -25,17 +27,19 @@ CATDlgDialog((CATApplicationFrame::GetApplicationFrame())->GetMainWindow(),
 	_Label010 = NULL;
 	_Label012 = NULL;
 	_Label013 = NULL;
+
 	_Spinner020 = NULL;
 	_Spinner022 = NULL;
 	_Spinner023 = NULL;
 	_Spinner024 = NULL;
 	_Spinner026 = NULL;
 	_Spinner027 = NULL;
+
 	_PushButton028 = NULL;
 	_SelectorList029 = NULL;
 	_Label030 = NULL;
 
-	// 记录“最近一次导入”的 Product（用于第二个按钮做位姿调整）
+	_pDlgFile = NULL;
 	_spImportedProduct = NULL_var;
 }
 
@@ -46,6 +50,7 @@ AddDocDlg::~AddDocDlg()
 	_Label004 = NULL;
 	_PushButton002 = NULL;
 	_Editor005 = NULL;
+
 	_Frame007 = NULL;
 	_Label008 = NULL;
 	_Label009 = NULL;
@@ -53,22 +58,25 @@ AddDocDlg::~AddDocDlg()
 	_Label010 = NULL;
 	_Label012 = NULL;
 	_Label013 = NULL;
+
 	_Spinner020 = NULL;
 	_Spinner022 = NULL;
 	_Spinner023 = NULL;
 	_Spinner024 = NULL;
 	_Spinner026 = NULL;
 	_Spinner027 = NULL;
+
 	_PushButton028 = NULL;
 	_SelectorList029 = NULL;
 	_Label030 = NULL;
+
+	_pDlgFile = NULL;
 	_spImportedProduct = NULL_var;
 }
 
 void AddDocDlg::Build()
 {
-	// 文件选择对话框（用于把 CATPart 路径写回 Editor）
-	pDlgFile = new CATDlgFile(this, "选择文件", CATDlgFileSave);
+	_pDlgFile = new CATDlgFile(this, "选择文件", CATDlgFileSave);
 
 	_Frame006 = new CATDlgFrame(this, "Frame006", CATDlgGridLayout);
 	_Frame006->SetGridConstraints(0, 0, 1, 1, CATGRID_4SIDES);
@@ -94,11 +102,11 @@ void AddDocDlg::Build()
 	_Label009 = new CATDlgLabel(_Frame007, "Label009");
 	_Label009->SetGridConstraints(2, 0, 1, 1, CATGRID_4SIDES);
 
-	_Label011 = new CATDlgLabel(_Frame007, "Label011");
-	_Label011->SetGridConstraints(4, 0, 1, 1, CATGRID_4SIDES);
-
 	_Label010 = new CATDlgLabel(_Frame007, "Label010");
 	_Label010->SetGridConstraints(3, 0, 1, 1, CATGRID_4SIDES);
+
+	_Label011 = new CATDlgLabel(_Frame007, "Label011");
+	_Label011->SetGridConstraints(4, 0, 1, 1, CATGRID_4SIDES);
 
 	_Label012 = new CATDlgLabel(_Frame007, "Label012");
 	_Label012->SetGridConstraints(5, 0, 1, 1, CATGRID_4SIDES);
@@ -106,7 +114,6 @@ void AddDocDlg::Build()
 	_Label013 = new CATDlgLabel(_Frame007, "Label013");
 	_Label013->SetGridConstraints(6, 0, 1, 1, CATGRID_4SIDES);
 
-	// 平移：mm
 	_Spinner020 = new CATDlgSpinner(_Frame007, "Spinner020", CATDlgSpnEntry | CATDlgSpnDouble);
 	_Spinner020->SetMinMaxStep(-10000.000000, 10000.000000, 0.0010000);
 	_Spinner020->SetUnit(CATDlgControl::Millimeter);
@@ -125,7 +132,6 @@ void AddDocDlg::Build()
 	_Spinner023->SetPrecision(0);
 	_Spinner023->SetGridConstraints(3, 1, 1, 1, CATGRID_4SIDES);
 
-	// 旋转：Spinner 内部用 rad，显示用 Degree（因此 min/max/step 传 rad）
 	double deg2rad = CATPI / 180.0;
 
 	_Spinner024 = new CATDlgSpinner(_Frame007, "Spinner024", CATDlgSpnEntry | CATDlgSpnDouble);
@@ -146,7 +152,6 @@ void AddDocDlg::Build()
 	_Spinner026->SetPrecision(0);
 	_Spinner026->SetGridConstraints(6, 1, 1, 1, CATGRID_4SIDES);
 
-	// 导入结果列表（当前实现：仅显示最近一次导入的 PartNumber）
 	_SelectorList029 = new CATDlgSelectorList(_Frame007, "SelectorList029");
 	_SelectorList029->SetVisibleTextHeight(1);
 	_SelectorList029->SetGridConstraints(0, 1, 1, 1, CATGRID_4SIDES);
@@ -157,61 +162,52 @@ void AddDocDlg::Build()
 	_PushButton028 = new CATDlgPushButton(_Frame006, "PushButton028");
 	_PushButton028->SetGridConstraints(4, 0, 2, 1, CATGRID_4SIDES);
 
-	// 文件对话框 OK：将路径写入 Editor
-	AddAnalyseNotificationCB(pDlgFile,
-		pDlgFile->GetDiaOKNotification(),
+	AddAnalyseNotificationCB(_pDlgFile,
+		_pDlgFile->GetDiaOKNotification(),
 		(CATCommandMethod)&AddDocDlg::ActOnOK,
 		NULL);
 
-	// 选择文件按钮
 	AddAnalyseNotificationCB(_PushButton003,
 		_PushButton003->GetPushBActivateNotification(),
 		(CATCommandMethod)&AddDocDlg::OnPushButton003PushBActivateNotification,
 		NULL);
 
-	// 导入按钮：OpenDocument + AddProduct
 	AddAnalyseNotificationCB(_PushButton002,
 		_PushButton002->GetPushBActivateNotification(),
 		(CATCommandMethod)&AddDocDlg::OnPushButton002PushBActivateNotification,
 		NULL);
 
-	// 位姿按钮：对 _spImportedProduct 做移动/旋转
 	AddAnalyseNotificationCB(_PushButton028,
 		_PushButton028->GetPushBActivateNotification(),
 		(CATCommandMethod)&AddDocDlg::OnPushButton028PushBActivateNotification,
 		NULL);
 
-	// 关闭窗口
 	AddAnalyseNotificationCB(this,
 		GetWindCloseNotification(),
 		(CATCommandMethod)&AddDocDlg::DocWindCloseNotification,
 		NULL);
-
 }
 
 void AddDocDlg::OnPushButton003PushBActivateNotification(CATCommand* cmd, CATNotification* evt, CATCommandClientData data)
 {
-	// 打开文件选择对话框，并限制为 CATPart
-	pDlgFile->SetVisibility(CATDlgShow);
-	CATUnicodeString nameExtension = CATUnicodeString("CATPart files");
-	CATString filterExtension = CATString("*.CATPart");
-	pDlgFile->SetFilterStrings(&nameExtension, &filterExtension, 1);
-	pDlgFile->SetFileName("Part1.CATPart");
+	_pDlgFile->SetVisibility(CATDlgShow);
+	CATUnicodeString names[2] = { "CATPart files", "CATProduct files" };
+	CATString patterns[2] = { "*.CATPart", "*.CATProduct" };
+	_pDlgFile->SetFilterStrings(names, patterns, 2);
+	_pDlgFile->SetFileName("Part1.CATPart");
 }
 
 void AddDocDlg::OnPushButton002PushBActivateNotification(CATCommand* cmd, CATNotification* evt, CATCommandClientData data)
 {
-	// 1) 取路径
 	if (_Editor005 == NULL) return;
-	CATUnicodeString fileName = _Editor005->GetText();
-	cout << "Open fileName is " << fileName << endl;
 
-	// 2) 打开要插入的文档（加载到会话）
+	CATUnicodeString fileName = _Editor005->GetText();
+	//cout << "Open fileName is " << fileName << endl;
+
 	CATDocument* pInsertDoc = NULL;
 	HRESULT rc = CATDocumentServices::OpenDocument(fileName, pInsertDoc);
 	if (FAILED(rc) || pInsertDoc == NULL) return;
 
-	// 3) 获取当前正在编辑的文档（作为插入目标）
 	CATFrmLayout* pLayout = CATFrmLayout::GetCurrentLayout();
 	if (pLayout == NULL) return;
 	CATFrmWindow* pWindow = pLayout->GetCurrentWindow();
@@ -221,7 +217,6 @@ void AddDocDlg::OnPushButton002PushBActivateNotification(CATCommand* cmd, CATNot
 	CATDocument* pDoc = pEditor->GetDocument();
 	if (pDoc == NULL) return;
 
-	// 4) 获取目标文档根 Product
 	CATIDocRoots* piDocRootsOnDoc = NULL;
 	rc = pDoc->QueryInterface(IID_CATIDocRoots, (void**)&piDocRootsOnDoc);
 	if (FAILED(rc) || piDocRootsOnDoc == NULL) return;
@@ -238,7 +233,6 @@ void AddDocDlg::OnPushButton002PushBActivateNotification(CATCommand* cmd, CATNot
 	piDocRootsOnDoc = NULL;
 	if (spRootProduct == NULL_var) return;
 
-	// 5) 获取被插入文档的根 Product
 	CATIDocRoots* piDocRootsOnNewDoc = NULL;
 	rc = pInsertDoc->QueryInterface(IID_CATIDocRoots, (void**)&piDocRootsOnNewDoc);
 	if (FAILED(rc) || piDocRootsOnNewDoc == NULL) return;
@@ -255,13 +249,10 @@ void AddDocDlg::OnPushButton002PushBActivateNotification(CATCommand* cmd, CATNot
 	piDocRootsOnNewDoc = NULL;
 	if (spProduct == NULL_var) return;
 
-	// 6) 插入到当前根产品结构
 	spRootProduct->AddProduct(spProduct);
 
-	// 保存导入结果（位姿按钮使用）
 	_spImportedProduct = spProduct;
 
-	// 把 PartNumber 显示到列表（当前实现：覆盖显示）
 	CATUnicodeString name;
 	CATIProduct* piProd = NULL;
 	HRESULT hrName = spProduct->QueryInterface(IID_CATIProduct, (void**)&piProd);
@@ -271,12 +262,12 @@ void AddDocDlg::OnPushButton002PushBActivateNotification(CATCommand* cmd, CATNot
 		piProd->Release();
 		piProd = NULL;
 	}
+
 	if (_SelectorList029)
 	{
 		_SelectorList029->SetLine(name);
 	}
 
-	// 7) 刷新
 	CATIProduct* piRootProduct = NULL;
 	rc = spRootProduct->QueryInterface(IID_CATIProduct, (void**)&piRootProduct);
 	if (SUCCEEDED(rc) && piRootProduct != NULL)
@@ -295,21 +286,18 @@ void AddDocDlg::OnPushButton002PushBActivateNotification(CATCommand* cmd, CATNot
 
 void AddDocDlg::OnPushButton028PushBActivateNotification(CATCommand* cmd, CATNotification* evt, CATCommandClientData data)
 {
-	// 必须先导入
 	if (_spImportedProduct == NULL_var) return;
 
-	// 读取平移(mm)与旋转(rad；Spinner 显示 Degree，但 GetValue 返回内部单位 rad)
 	double xm = _Spinner020->GetValue();
 	double ym = _Spinner022->GetValue();
 	double zm = _Spinner023->GetValue();
 	double xr = _Spinner024->GetValue();
 	double yr = _Spinner027->GetValue();
 	double zr = _Spinner026->GetValue();
-	cout << "xm=" << xm << " ym=" << ym << " zm=" << zm << " xr=" << xr << " yr=" << yr << " zr=" << zr << endl;
+	//cout << "xm=" << xm << " ym=" << ym << " zm=" << zm << " xr=" << xr << " yr=" << yr << " zr=" << zr << endl;
 
 	HRESULT rc = E_FAIL;
 
-	// 读取当前绝对位姿
 	CATIMovable* piMovableOnProd = NULL;
 	rc = _spImportedProduct->QueryInterface(IID_CATIMovable, (void**)&piMovableOnProd);
 	if (FAILED(rc) || piMovableOnProd == NULL) return;
@@ -320,39 +308,36 @@ void AddDocDlg::OnPushButton028PushBActivateNotification(CATCommand* cmd, CATNot
 	piMovableOnProd = NULL;
 	if (FAILED(rc)) return;
 
-	// 组装增量变换（平移 + 旋转）
 	double radianAnglex = xr;
 	double radianAngley = yr;
 	double radianAnglez = zr;
 
 	double valuearray[16];
-	valuearray[0] = CATCos(radianAngley) * CATCos(radianAnglez);
-	valuearray[1] = CATCos(radianAngley) * CATSin(radianAnglez);
-	valuearray[2] = -CATSin(radianAngley);
-	valuearray[3] = 0;
+	valuearray[0]  = CATCos(radianAngley) * CATCos(radianAnglez);
+	valuearray[1]  = CATCos(radianAngley) * CATSin(radianAnglez);
+	valuearray[2]  = -CATSin(radianAngley);
+	valuearray[3]  = 0;
 
-	valuearray[4] = CATSin(radianAnglex) * CATSin(radianAngley) * CATCos(radianAnglez) - CATCos(radianAnglex) * CATSin(radianAnglez);
-	valuearray[5] = CATSin(radianAnglex) * CATSin(radianAngley) * CATSin(radianAnglez) + CATCos(radianAnglex) * CATCos(radianAnglez);
-	valuearray[6] = CATSin(radianAnglex) * CATCos(radianAngley);
-	valuearray[7] = 0;
+	valuearray[4]  = CATSin(radianAnglex) * CATSin(radianAngley) * CATCos(radianAnglez) - CATCos(radianAnglex) * CATSin(radianAnglez);
+	valuearray[5]  = CATSin(radianAnglex) * CATSin(radianAngley) * CATSin(radianAnglez) + CATCos(radianAnglex) * CATCos(radianAnglez);
+	valuearray[6]  = CATSin(radianAnglex) * CATCos(radianAngley);
+	valuearray[7]  = 0;
 
-	valuearray[8] = CATCos(radianAnglex) * CATSin(radianAngley) * CATCos(radianAnglez) + CATSin(radianAnglex) * CATSin(radianAnglez);
-	valuearray[9] = CATCos(radianAnglex) * CATSin(radianAngley) * CATSin(radianAnglez) - CATSin(radianAnglex) * CATCos(radianAnglez);
-	valuearray[10]= CATCos(radianAnglex) * CATCos(radianAngley);
-	valuearray[11]= 0;
+	valuearray[8]  = CATCos(radianAnglex) * CATSin(radianAngley) * CATCos(radianAnglez) + CATSin(radianAnglex) * CATSin(radianAnglez);
+	valuearray[9]  = CATCos(radianAnglex) * CATSin(radianAngley) * CATSin(radianAnglez) - CATSin(radianAnglex) * CATCos(radianAnglez);
+	valuearray[10] = CATCos(radianAnglex) * CATCos(radianAngley);
+	valuearray[11] = 0;
 
-	valuearray[12]= xm;
-	valuearray[13]= ym;
-	valuearray[14]= zm;
-	valuearray[15]= 1;
+	valuearray[12] = xm;
+	valuearray[13] = ym;
+	valuearray[14] = zm;
+	valuearray[15] = 1;
 
 	CATMathTransformation MovePosition, ResultPosition;
 	MovePosition.SetCoef(valuearray, 16);
 
-	// 复合：MovePosition * InitialPosition
 	ResultPosition = TwoMatrixesMultiply(MovePosition, InitialPosition);
 
-	// 写回实例位姿
 	CATIMovable* piMovableOnInstPrd = NULL;
 	rc = _spImportedProduct->QueryInterface(IID_CATIMovable, (void**)&piMovableOnInstPrd);
 	if (SUCCEEDED(rc) && piMovableOnInstPrd != NULL)
@@ -371,25 +356,25 @@ CATMathTransformation AddDocDlg::TwoMatrixesMultiply(CATMathTransformation iMatr
 	iMatrix1.GetCoef(v1, 16);
 	iMatrix2.GetCoef(v2, 16);
 
-	vR[0]  = v1[0]*v2[0]  + v1[4]*v2[1]  + v1[8]*v2[2]  + v1[12]*v2[3];
-	vR[1]  = v1[1]*v2[0]  + v1[5]*v2[1]  + v1[9]*v2[2]  + v1[13]*v2[3];
-	vR[2]  = v1[2]*v2[0]  + v1[6]*v2[1]  + v1[10]*v2[2] + v1[14]*v2[3];
-	vR[3]  = v1[3]*v2[0]  + v1[7]*v2[1]  + v1[11]*v2[2] + v1[15]*v2[3];
+	vR[0]  = v1[0]*v2[0]   + v1[4]*v2[1]   + v1[8]*v2[2]   + v1[12]*v2[3];
+	vR[1]  = v1[1]*v2[0]   + v1[5]*v2[1]   + v1[9]*v2[2]   + v1[13]*v2[3];
+	vR[2]  = v1[2]*v2[0]   + v1[6]*v2[1]   + v1[10]*v2[2]  + v1[14]*v2[3];
+	vR[3]  = v1[3]*v2[0]   + v1[7]*v2[1]   + v1[11]*v2[2]  + v1[15]*v2[3];
 
-	vR[4]  = v1[0]*v2[4]  + v1[4]*v2[5]  + v1[8]*v2[6]  + v1[12]*v2[7];
-	vR[5]  = v1[1]*v2[4]  + v1[5]*v2[5]  + v1[9]*v2[6]  + v1[13]*v2[7];
-	vR[6]  = v1[2]*v2[4]  + v1[6]*v2[5]  + v1[10]*v2[6] + v1[14]*v2[7];
-	vR[7]  = v1[3]*v2[4]  + v1[7]*v2[5]  + v1[11]*v2[6] + v1[15]*v2[7];
+	vR[4]  = v1[0]*v2[4]   + v1[4]*v2[5]   + v1[8]*v2[6]   + v1[12]*v2[7];
+	vR[5]  = v1[1]*v2[4]   + v1[5]*v2[5]   + v1[9]*v2[6]   + v1[13]*v2[7];
+	vR[6]  = v1[2]*v2[4]   + v1[6]*v2[5]   + v1[10]*v2[6]  + v1[14]*v2[7];
+	vR[7]  = v1[3]*v2[4]   + v1[7]*v2[5]   + v1[11]*v2[6]  + v1[15]*v2[7];
 
-	vR[8]  = v1[0]*v2[8]  + v1[4]*v2[9]  + v1[8]*v2[10] + v1[12]*v2[11];
-	vR[9]  = v1[1]*v2[8]  + v1[5]*v2[9]  + v1[9]*v2[10] + v1[13]*v2[11];
-	vR[10] = v1[2]*v2[8]  + v1[6]*v2[9]  + v1[10]*v2[10]+ v1[14]*v2[11];
-	vR[11] = v1[3]*v2[8]  + v1[7]*v2[9]  + v1[11]*v2[10]+ v1[15]*v2[11];
+	vR[8]  = v1[0]*v2[8]   + v1[4]*v2[9]   + v1[8]*v2[10]  + v1[12]*v2[11];
+	vR[9]  = v1[1]*v2[8]   + v1[5]*v2[9]   + v1[9]*v2[10]  + v1[13]*v2[11];
+	vR[10] = v1[2]*v2[8]   + v1[6]*v2[9]   + v1[10]*v2[10] + v1[14]*v2[11];
+	vR[11] = v1[3]*v2[8]   + v1[7]*v2[9]   + v1[11]*v2[10] + v1[15]*v2[11];
 
-	vR[12] = v1[0]*v2[12] + v1[4]*v2[13] + v1[8]*v2[14] + v1[12]*v2[15];
-	vR[13] = v1[1]*v2[12] + v1[5]*v2[13] + v1[9]*v2[14] + v1[13]*v2[15];
-	vR[14] = v1[2]*v2[12] + v1[6]*v2[13] + v1[10]*v2[14]+ v1[14]*v2[15];
-	vR[15] = v1[3]*v2[12] + v1[7]*v2[13] + v1[11]*v2[14]+ v1[15]*v2[15];
+	vR[12] = v1[0]*v2[12]  + v1[4]*v2[13]  + v1[8]*v2[14]  + v1[12]*v2[15];
+	vR[13] = v1[1]*v2[12]  + v1[5]*v2[13]  + v1[9]*v2[14]  + v1[13]*v2[15];
+	vR[14] = v1[2]*v2[12]  + v1[6]*v2[13]  + v1[10]*v2[14] + v1[14]*v2[15];
+	vR[15] = v1[3]*v2[12]  + v1[7]*v2[13]  + v1[11]*v2[14] + v1[15]*v2[15];
 
 	CATMathTransformation oRMatrix;
 	oRMatrix.SetCoef(vR, 16);
@@ -398,11 +383,10 @@ CATMathTransformation AddDocDlg::TwoMatrixesMultiply(CATMathTransformation iMatr
 
 void AddDocDlg::ActOnOK(CATCommand* cmd, CATNotification* evt, CATCommandClientData data)
 {
-	// 获取所选路径并写入 Editor
 	CATUnicodeString fileName;
-	pDlgFile->GetSelection(fileName);
+	_pDlgFile->GetSelection(fileName);
 	_Editor005->SetText(fileName);
-	pDlgFile->SetVisibility(CATDlgHide);
+	_pDlgFile->SetVisibility(CATDlgHide);
 }
 
 void AddDocDlg::DocWindCloseNotification(CATCommand* cmd, CATNotification* evt, CATCommandClientData data)
@@ -410,12 +394,11 @@ void AddDocDlg::DocWindCloseNotification(CATCommand* cmd, CATNotification* evt, 
 	this->SetVisibility(CATDlgHide);
 }
 
-
 CATDlgSelectorList* AddDocDlg::GetSelectorList(int iValue)
 {
 	switch (iValue)
 	{
-	case 1: return _SelectorList029; // 返回 SelectorList
+	case 1: return _SelectorList029;
 	}
 	return NULL;
 }
@@ -424,16 +407,15 @@ CATDlgSpinner* AddDocDlg::GetSpinner(int iValue)
 {
 	switch (iValue)
 	{
-	case 1: return _Spinner020; // 返回 Spinner
-	case 2: return _Spinner022; // 返回 Spinner
-	case 3: return _Spinner023; // 返回 Spinner
-	case 4: return _Spinner024; // 返回 Spinner
-	case 5: return _Spinner027; // 返回 Spinner
-	case 6: return _Spinner026; // 返回 Spinner
+	case 1: return _Spinner020;
+	case 2: return _Spinner022;
+	case 3: return _Spinner023;
+	case 4: return _Spinner024;
+	case 5: return _Spinner027;
+	case 6: return _Spinner026;
 	}
 	return NULL;
 }
-
 
 void AddDocDlg::SetTargetProduct(CATIProduct_var iProd)
 {

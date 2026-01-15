@@ -1,0 +1,109 @@
+mkmk  -u -g  ExtractFeatureM.m
+2026/1/15 12:57:25
+
+## start step: CIbuild   at 01/15/2026-12:57:25
+## end   step: CIbuild   at 01/15/2026-12:57:26
+
+## start step: DataUpdate   at 01/15/2026-12:57:26
+# make:  TrainFramework\IdentityCard\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/15/2026-12:57:26
+
+## start step: DataUpdate   at 01/15/2026-12:57:26
+# make:  TrainFramework\ExtractFeatureM.m\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/15/2026-12:57:26
+
+## start step: CIcompilation   at 01/15/2026-12:57:26
+## end   step: CIcompilation   at 01/15/2026-12:57:26
+
+## start step: headerlist   at 01/15/2026-12:57:26
+## end   step: headerlist   at 01/15/2026-12:57:26
+
+## start step: headermap   at 01/15/2026-12:57:26
+## end   step: headermap   at 01/15/2026-12:57:26
+
+## start step: fwgrammar   at 01/15/2026-12:57:26
+## end   step: fwgrammar   at 01/15/2026-12:57:26
+
+## start step: grammar1st   at 01/15/2026-12:57:26
+## end   step: grammar1st   at 01/15/2026-12:57:26
+
+## start step: headerlist   at 01/15/2026-12:57:26
+## end   step: headerlist   at 01/15/2026-12:57:26
+
+## start step: headermap   at 01/15/2026-12:57:26
+## end   step: headermap   at 01/15/2026-12:57:26
+
+## start step: grammar2nd   at 01/15/2026-12:57:26
+## end   step: grammar2nd   at 01/15/2026-12:57:26
+
+## start step: typelibgrammar   at 01/15/2026-12:57:26
+## end   step: typelibgrammar   at 01/15/2026-12:57:26
+
+## start step: headerlist   at 01/15/2026-12:57:26
+## end   step: headerlist   at 01/15/2026-12:57:26
+
+## start step: headermap   at 01/15/2026-12:57:26
+## end   step: headermap   at 01/15/2026-12:57:26
+
+## start step: headerruler   at 01/15/2026-12:57:26
+## end   step: headerruler   at 01/15/2026-12:57:26
+
+## start step: compilation   at 01/15/2026-12:57:26
+# make:  TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp
+ExtractfeatureCmd.cpp
+D:\Program Files\Dassault Systemes\B18\.\DialogEngine\PublicInterfaces\CATStateCommand.h(742) : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(616) : error C2065: “_ConnectionPtr”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(616) : error C2146: 语法错误 : 缺少“;”(在标识符“pConn”的前面)
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(616) : error C2065: “pConn”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(618) : error C2065: “_bstr_t”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(618) : error C2146: 语法错误 : 缺少“;”(在标识符“queryStr”的前面)
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(618) : error C2065: “queryStr”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(620) : error C2065: “_RecordsetPtr”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(620) : error C2146: 语法错误 : 缺少“;”(在标识符“pRst”的前面)
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(620) : error C2065: “pRst”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(621) : error C2146: 语法错误 : 缺少“;”(在标识符“pRst2”的前面)
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(621) : error C2065: “pRst2”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(622) : error C2228: “.CreateInstance”的左边必须有类/结构/联合
+        类型是“'unknown-type'”
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(622) : error C2065: “Connection”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(623) : error C2227: “->Open”的左边必须指向类/结构/联合/泛型类型
+        类型是“'unknown-type'”
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(623) : error C2065: “adModeUnknown”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(625) : error C2228: “.CreateInstance”的左边必须有类/结构/联合
+        类型是“'unknown-type'”
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(625) : error C2065: “Recordset”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(634) : error C2227: “->Open”的左边必须指向类/结构/联合/泛型类型
+        类型是“'unknown-type'”
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(634) : error C2228: “.GetInterfacePtr”的左边必须有类/结构/联合
+        类型是“'unknown-type'”
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(634) : error C2065: “adOpenDynamic”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(634) : error C2065: “adLockOptimistic”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(634) : error C2065: “adCmdText”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(636) : error C2228: “.CreateInstance”的左边必须有类/结构/联合
+        类型是“'unknown-type'”
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(637) : error C2227: “->Execute”的左边必须指向类/结构/联合/泛型类型
+        类型是“'unknown-type'”
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(642) : error C2227: “->adoEOF”的左边必须指向类/结构/联合/泛型类型
+        类型是“'unknown-type'”
+D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(642) : fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+# make-ERROR: TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp
+## end   step: compilation   at 01/15/2026-12:57:26
+
+## start step: sourceruler   at 01/15/2026-12:57:26
+## end   step: sourceruler   at 01/15/2026-12:57:26
+
+## start step: link1st   at 01/15/2026-12:57:26
+# make: TrainFramework\ExtractFeatureM.m win_b64\code\lib\ExtractFeatureM.lib
+# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\ExtractFeatureM.m\Objects\win_b64\ExtractfeatureCmd.obj: No such file or directory
+# make-ERROR: win_b64\code\lib\ExtractFeatureM.lib
+## end   step: link1st   at 01/15/2026-12:57:26
+
+## start step: link2nd   at 01/15/2026-12:57:26
+# make: TrainFramework\ExtractFeatureM.m win_b64\code\bin\ExtractFeatureM.dll
+# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\ExtractFeatureM.m\Objects\win_b64\ExtractfeatureCmd.obj: No such file or directory
+# syst-ERROR: D:\CatiaWS\FeaG\.\win_b64\code\lib\ExtractFeatureM.exp: No such file or directory
+# make-ERROR: win_b64\code\bin\ExtractFeatureM.dll
+## end   step: link2nd   at 01/15/2026-12:57:26
+
+## start step: dummynls   at 01/15/2026-12:57:26
+## end   step: dummynls   at 01/15/2026-12:57:26
