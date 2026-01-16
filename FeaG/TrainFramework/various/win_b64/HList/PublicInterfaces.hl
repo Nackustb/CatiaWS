@@ -2,6 +2,7 @@
 @TrainFramework\PublicInterfaces
 AddDocCmd.h
 AxisPointCmd.h
+CalculateAllowanceM.h
 ExtractFeatureM.h
 PadCmd.h
 PointCmd.h

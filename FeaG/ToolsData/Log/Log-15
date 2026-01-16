@@ -1,79 +1,8 @@
-mkmk  -u -g  ExtractFeatureM.m
-2026/1/14 17:18:12
+mkCI -a
+2026/1/16 17:19:16
 
-## start step: CIbuild   at 01/14/2026-17:18:12
-## end   step: CIbuild   at 01/14/2026-17:18:12
+## start step: CIbuild   at 01/16/2026-17:19:16
+## end   step: CIbuild   at 01/16/2026-17:19:16
 
-## start step: DataUpdate   at 01/14/2026-17:18:12
-# make:  TrainFramework\IdentityCard\Objects\win_b64\.mkdata.mk
-## end   step: DataUpdate   at 01/14/2026-17:18:12
-
-## start step: DataUpdate   at 01/14/2026-17:18:12
-# make:  TrainFramework\ExtractFeatureM.m\Objects\win_b64\.mkdata.mk
-## end   step: DataUpdate   at 01/14/2026-17:18:12
-
-## start step: CIcompilation   at 01/14/2026-17:18:12
-## end   step: CIcompilation   at 01/14/2026-17:18:12
-
-## start step: headerlist   at 01/14/2026-17:18:12
-## end   step: headerlist   at 01/14/2026-17:18:12
-
-## start step: headermap   at 01/14/2026-17:18:12
-## end   step: headermap   at 01/14/2026-17:18:12
-
-## start step: fwgrammar   at 01/14/2026-17:18:12
-## end   step: fwgrammar   at 01/14/2026-17:18:12
-
-## start step: grammar1st   at 01/14/2026-17:18:12
-## end   step: grammar1st   at 01/14/2026-17:18:12
-
-## start step: headerlist   at 01/14/2026-17:18:12
-## end   step: headerlist   at 01/14/2026-17:18:12
-
-## start step: headermap   at 01/14/2026-17:18:12
-## end   step: headermap   at 01/14/2026-17:18:12
-
-## start step: grammar2nd   at 01/14/2026-17:18:12
-## end   step: grammar2nd   at 01/14/2026-17:18:12
-
-## start step: typelibgrammar   at 01/14/2026-17:18:12
-## end   step: typelibgrammar   at 01/14/2026-17:18:12
-
-## start step: headerlist   at 01/14/2026-17:18:12
-## end   step: headerlist   at 01/14/2026-17:18:12
-
-## start step: headermap   at 01/14/2026-17:18:12
-## end   step: headermap   at 01/14/2026-17:18:13
-
-## start step: headerruler   at 01/14/2026-17:18:13
-## end   step: headerruler   at 01/14/2026-17:18:13
-
-## start step: compilation   at 01/14/2026-17:18:13
-# make:  TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp
-ExtractfeatureCmd.cpp
-D:\Program Files\Dassault Systemes\B18\.\DialogEngine\PublicInterfaces\CATStateCommand.h(742) : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-D:\CatiaWS\FeaG\.\TrainFramework\ExtractFeatureM.m\LocalInterfaces\ExtractfeatureCmd.h(75) : error C2086: “CATIndicationAgent *ExtractfeatureCmd::_Indication”: 重定义
-        D:\CatiaWS\FeaG\.\TrainFramework\ExtractFeatureM.m\LocalInterfaces\ExtractfeatureCmd.h(61) : 参见“ExtractfeatureCmd::_Indication”的声明
-# make-ERROR: TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp
-# make:  TrainFramework\ExtractFeatureM.m\src\ExtractFeatureDlg.cpp
-ExtractFeatureDlg.cpp
-## end   step: compilation   at 01/14/2026-17:18:14
-
-## start step: sourceruler   at 01/14/2026-17:18:14
-## end   step: sourceruler   at 01/14/2026-17:18:14
-
-## start step: link1st   at 01/14/2026-17:18:14
-# make: TrainFramework\ExtractFeatureM.m win_b64\code\lib\ExtractFeatureM.lib
-# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\ExtractFeatureM.m\Objects\win_b64\ExtractfeatureCmd.obj: No such file or directory
-# make-ERROR: win_b64\code\lib\ExtractFeatureM.lib
-## end   step: link1st   at 01/14/2026-17:18:14
-
-## start step: link2nd   at 01/14/2026-17:18:14
-# make: TrainFramework\ExtractFeatureM.m win_b64\code\bin\ExtractFeatureM.dll
-# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\ExtractFeatureM.m\Objects\win_b64\ExtractfeatureCmd.obj: No such file or directory
-# syst-ERROR: D:\CatiaWS\FeaG\.\win_b64\code\lib\ExtractFeatureM.exp: No such file or directory
-# make-ERROR: win_b64\code\bin\ExtractFeatureM.dll
-## end   step: link2nd   at 01/14/2026-17:18:14
-
-## start step: dummynls   at 01/14/2026-17:18:14
-## end   step: dummynls   at 01/14/2026-17:18:14
+## start step: DataUpdate   at 01/16/2026-17:19:16
+## end   step: DataUpdate   at 01/16/2026-17:19:16

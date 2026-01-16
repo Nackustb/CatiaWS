@@ -1,0 +1,81 @@
+mkmk  -u -g  CalculateAllowanceM.m
+2026/1/16 16:56:24
+
+## start step: CIbuild   at 01/16/2026-16:56:25
+## end   step: CIbuild   at 01/16/2026-16:56:25
+
+## start step: DataUpdate   at 01/16/2026-16:56:25
+# make:  TrainFramework\IdentityCard\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/16/2026-16:56:27
+
+## start step: DataUpdate   at 01/16/2026-16:56:27
+# make:  TrainFramework\CalculateAllowanceM.m\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/16/2026-16:56:27
+
+## start step: CIcompilation   at 01/16/2026-16:56:27
+## end   step: CIcompilation   at 01/16/2026-16:56:27
+
+## start step: headerlist   at 01/16/2026-16:56:27
+# make:  TrainFramework\various\win_b64\HList\PublicInterfaces.hl
+## end   step: headerlist   at 01/16/2026-16:56:27
+
+## start step: headermap   at 01/16/2026-16:56:27
+# make:  TrainFramework\ImportedInterfaces\win_b64\.HeaderTable.map
+## end   step: headermap   at 01/16/2026-16:56:29
+
+## start step: fwgrammar   at 01/16/2026-16:56:29
+## end   step: fwgrammar   at 01/16/2026-16:56:29
+
+## start step: grammar1st   at 01/16/2026-16:56:29
+# make:  TrainFramework\CalculateAllowanceM.m\LocalGenerated\win_b64\mkCAAV5Licensing.cpp
+mkCAAV5Licensing.cpp.CPP
+## end   step: grammar1st   at 01/16/2026-16:56:30
+
+## start step: headerlist   at 01/16/2026-16:56:30
+## end   step: headerlist   at 01/16/2026-16:56:30
+
+## start step: headermap   at 01/16/2026-16:56:30
+## end   step: headermap   at 01/16/2026-16:56:30
+
+## start step: grammar2nd   at 01/16/2026-16:56:30
+## end   step: grammar2nd   at 01/16/2026-16:56:30
+
+## start step: typelibgrammar   at 01/16/2026-16:56:30
+## end   step: typelibgrammar   at 01/16/2026-16:56:30
+
+## start step: headerlist   at 01/16/2026-16:56:30
+## end   step: headerlist   at 01/16/2026-16:56:30
+
+## start step: headermap   at 01/16/2026-16:56:30
+## end   step: headermap   at 01/16/2026-16:56:30
+
+## start step: headerruler   at 01/16/2026-16:56:30
+# make:  TrainFramework\PublicInterfaces\CalculateAllowanceM.h
+## end   step: headerruler   at 01/16/2026-16:56:30
+
+## start step: compilation   at 01/16/2026-16:56:30
+# make:  TrainFramework\CalculateAllowanceM.m\src\CalculateAllowanceCmd.cpp
+CalculateAllowanceCmd.cpp
+D:\Program Files\Dassault Systemes\B18\.\DialogEngine\PublicInterfaces\CATStateCommand.h(742) : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+# make:  TrainFramework\CalculateAllowanceM.m\src\CalculateAllowanceDlg.cpp
+CalculateAllowanceDlg.cpp
+# make:  TrainFramework\CalculateAllowanceM.m\LocalGenerated\win_b64\mkCAAV5Licensing.cpp
+mkCAAV5Licensing.cpp
+## end   step: compilation   at 01/16/2026-16:56:32
+
+## start step: sourceruler   at 01/16/2026-16:56:32
+## end   step: sourceruler   at 01/16/2026-16:56:32
+
+## start step: link1st   at 01/16/2026-16:56:32
+# make: TrainFramework\CalculateAllowanceM.m win_b64\code\lib\CalculateAllowanceM.lib
+   正在创建库 D:\CatiaWS\FeaG\.\win_b64\code\lib\CalculateAllowanceM.lib 和对象 D:\CatiaWS\FeaG\.\win_b64\code\lib\CalculateAllowanceM.exp
+## end   step: link1st   at 01/16/2026-16:56:33
+
+## start step: link2nd   at 01/16/2026-16:56:33
+# make: TrainFramework\CalculateAllowanceM.m win_b64\code\bin\CalculateAllowanceM.dll
+## end   step: link2nd   at 01/16/2026-16:56:33
+
+## start step: dummynls   at 01/16/2026-16:56:33
+# make: TrainFramework TrainFramework\CNext\resources\msgcatalog\CalculateAllowanceCmd.CATNls
+# make: TrainFramework TrainFramework\CNext\resources\msgcatalog\CalculateAllowanceDlg.CATNls
+## end   step: dummynls   at 01/16/2026-16:56:33

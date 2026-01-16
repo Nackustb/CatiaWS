@@ -1,72 +1,92 @@
-mkmk  -u -g  ExtractFeatureM.m
-2026/1/15 15:47:30
+mkmk  -u -g  CalculateAllowanceM.m
+2026/1/16 17:06:49
 
-## start step: CIbuild   at 01/15/2026-15:47:30
-## end   step: CIbuild   at 01/15/2026-15:47:30
+## start step: CIbuild   at 01/16/2026-17:06:49
+## end   step: CIbuild   at 01/16/2026-17:06:49
 
-## start step: DataUpdate   at 01/15/2026-15:47:30
+## start step: DataUpdate   at 01/16/2026-17:06:49
 # make:  TrainFramework\IdentityCard\Objects\win_b64\.mkdata.mk
-## end   step: DataUpdate   at 01/15/2026-15:47:30
+## end   step: DataUpdate   at 01/16/2026-17:06:49
 
-## start step: DataUpdate   at 01/15/2026-15:47:30
-# make:  TrainFramework\ExtractFeatureM.m\Objects\win_b64\.mkdata.mk
-## end   step: DataUpdate   at 01/15/2026-15:47:30
+## start step: DataUpdate   at 01/16/2026-17:06:49
+# make:  TrainFramework\CalculateAllowanceM.m\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/16/2026-17:06:49
 
-## start step: CIcompilation   at 01/15/2026-15:47:30
-## end   step: CIcompilation   at 01/15/2026-15:47:30
+## start step: CIcompilation   at 01/16/2026-17:06:49
+## end   step: CIcompilation   at 01/16/2026-17:06:49
 
-## start step: headerlist   at 01/15/2026-15:47:30
-## end   step: headerlist   at 01/15/2026-15:47:30
+## start step: headerlist   at 01/16/2026-17:06:49
+## end   step: headerlist   at 01/16/2026-17:06:49
 
-## start step: headermap   at 01/15/2026-15:47:30
-## end   step: headermap   at 01/15/2026-15:47:30
+## start step: headermap   at 01/16/2026-17:06:49
+## end   step: headermap   at 01/16/2026-17:06:49
 
-## start step: fwgrammar   at 01/15/2026-15:47:30
-## end   step: fwgrammar   at 01/15/2026-15:47:30
+## start step: fwgrammar   at 01/16/2026-17:06:49
+## end   step: fwgrammar   at 01/16/2026-17:06:49
 
-## start step: grammar1st   at 01/15/2026-15:47:30
-## end   step: grammar1st   at 01/15/2026-15:47:30
+## start step: grammar1st   at 01/16/2026-17:06:49
+## end   step: grammar1st   at 01/16/2026-17:06:49
 
-## start step: headerlist   at 01/15/2026-15:47:30
-## end   step: headerlist   at 01/15/2026-15:47:30
+## start step: headerlist   at 01/16/2026-17:06:49
+## end   step: headerlist   at 01/16/2026-17:06:49
 
-## start step: headermap   at 01/15/2026-15:47:30
-## end   step: headermap   at 01/15/2026-15:47:30
+## start step: headermap   at 01/16/2026-17:06:49
+## end   step: headermap   at 01/16/2026-17:06:49
 
-## start step: grammar2nd   at 01/15/2026-15:47:30
-## end   step: grammar2nd   at 01/15/2026-15:47:30
+## start step: grammar2nd   at 01/16/2026-17:06:49
+## end   step: grammar2nd   at 01/16/2026-17:06:49
 
-## start step: typelibgrammar   at 01/15/2026-15:47:30
-## end   step: typelibgrammar   at 01/15/2026-15:47:30
+## start step: typelibgrammar   at 01/16/2026-17:06:49
+## end   step: typelibgrammar   at 01/16/2026-17:06:49
 
-## start step: headerlist   at 01/15/2026-15:47:30
-## end   step: headerlist   at 01/15/2026-15:47:30
+## start step: headerlist   at 01/16/2026-17:06:49
+## end   step: headerlist   at 01/16/2026-17:06:49
 
-## start step: headermap   at 01/15/2026-15:47:30
-## end   step: headermap   at 01/15/2026-15:47:30
+## start step: headermap   at 01/16/2026-17:06:49
+## end   step: headermap   at 01/16/2026-17:06:49
 
-## start step: headerruler   at 01/15/2026-15:47:30
-## end   step: headerruler   at 01/15/2026-15:47:30
+## start step: headerruler   at 01/16/2026-17:06:49
+## end   step: headerruler   at 01/16/2026-17:06:49
 
-## start step: compilation   at 01/15/2026-15:47:30
-# make:  TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp
-ExtractfeatureCmd.cpp
-D:\Program Files\Dassault Systemes\B18\.\DialogEngine\PublicInterfaces\CATStateCommand.h(742) : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-# make:  TrainFramework\ExtractFeatureM.m\src\ExtractFeatureDlg.cpp
-ExtractFeatureDlg.cpp
-## end   step: compilation   at 01/15/2026-15:47:31
+## start step: compilation   at 01/16/2026-17:06:49
+# make:  TrainFramework\CalculateAllowanceM.m\src\CalculateAllowanceCmd.cpp
+CalculateAllowanceCmd.cpp
+D:\CatiaWS\FeaG\TrainFramework\CalculateAllowanceM.m\src\CalculateAllowanceCmd.cpp(5) : error C2061: 语法错误 : 标识符“CalculateAllowanceCmd”
+D:\CatiaWS\FeaG\TrainFramework\CalculateAllowanceM.m\src\CalculateAllowanceCmd.cpp(7) : error C2653: “CalculateAllowanceCmd”: 不是类或命名空间名称
+D:\CatiaWS\FeaG\TrainFramework\CalculateAllowanceM.m\src\CalculateAllowanceCmd.cpp(7) : error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\CatiaWS\FeaG\TrainFramework\CalculateAllowanceM.m\src\CalculateAllowanceCmd.cpp(12) : error C2059: 语法错误 : “{”
+D:\CatiaWS\FeaG\TrainFramework\CalculateAllowanceM.m\src\CalculateAllowanceCmd.cpp(12) : error C2630: “;”在应是逗号分隔列表的位置找到了
+D:\CatiaWS\FeaG\TrainFramework\CalculateAllowanceM.m\src\CalculateAllowanceCmd.cpp(12) : error C2550: “CalculateAllowanceCmd”: 构造函数初始值设定项列表只能在构造函数定义中使用
+D:\CatiaWS\FeaG\TrainFramework\CalculateAllowanceM.m\src\CalculateAllowanceCmd.cpp(13) : error C2065: “_pDlg”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\CalculateAllowanceM.m\src\CalculateAllowanceCmd.cpp(13) : error C2061: 语法错误 : 标识符“ExtractFeatureDlg”
+D:\CatiaWS\FeaG\TrainFramework\CalculateAllowanceM.m\src\CalculateAllowanceCmd.cpp(14) : error C2227: “->Build”的左边必须指向类/结构/联合/泛型类型
+        类型是“'unknown-type'”
+D:\CatiaWS\FeaG\TrainFramework\CalculateAllowanceM.m\src\CalculateAllowanceCmd.cpp(15) : error C2227: “->SetVisibility”的左边必须指向类/结构/联合/泛型类型
+        类型是“'unknown-type'”
+D:\CatiaWS\FeaG\TrainFramework\CalculateAllowanceM.m\src\CalculateAllowanceCmd.cpp(15) : error C2065: “CATDlgShow”: 未声明的标识符
+D:\CatiaWS\FeaG\TrainFramework\CalculateAllowanceM.m\src\CalculateAllowanceCmd.cpp(16) : error C4508: “CalculateAllowanceCmd”: 函数应返回一个值；假定“void”返回类型
+D:\CatiaWS\FeaG\TrainFramework\CalculateAllowanceM.m\src\CalculateAllowanceCmd.cpp(19) : error C2653: “CalculateAllowanceCmd”: 不是类或命名空间名称
+D:\CatiaWS\FeaG\TrainFramework\CalculateAllowanceM.m\src\CalculateAllowanceCmd.cpp(19) : fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+# make-ERROR: TrainFramework\CalculateAllowanceM.m\src\CalculateAllowanceCmd.cpp
+# make:  TrainFramework\CalculateAllowanceM.m\src\CalculateAllowanceDlg.cpp
+CalculateAllowanceDlg.cpp
+## end   step: compilation   at 01/16/2026-17:06:50
 
-## start step: sourceruler   at 01/15/2026-15:47:31
-## end   step: sourceruler   at 01/15/2026-15:47:31
+## start step: sourceruler   at 01/16/2026-17:06:50
+## end   step: sourceruler   at 01/16/2026-17:06:50
 
-## start step: link1st   at 01/15/2026-15:47:31
-# make: TrainFramework\ExtractFeatureM.m win_b64\code\lib\ExtractFeatureM.lib
-   正在创建库 D:\CatiaWS\FeaG\.\win_b64\code\lib\ExtractFeatureM.lib 和对象 D:\CatiaWS\FeaG\.\win_b64\code\lib\ExtractFeatureM.exp
-## end   step: link1st   at 01/15/2026-15:47:31
+## start step: link1st   at 01/16/2026-17:06:50
+# make: TrainFramework\CalculateAllowanceM.m win_b64\code\lib\CalculateAllowanceM.lib
+# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\CalculateAllowanceM.m\Objects\win_b64\CalculateAllowanceCmd.obj: No such file or directory
+# make-ERROR: win_b64\code\lib\CalculateAllowanceM.lib
+## end   step: link1st   at 01/16/2026-17:06:50
 
-## start step: link2nd   at 01/15/2026-15:47:31
-# make: TrainFramework\ExtractFeatureM.m win_b64\code\bin\ExtractFeatureM.dll
-## end   step: link2nd   at 01/15/2026-15:47:31
+## start step: link2nd   at 01/16/2026-17:06:50
+# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\CalculateAllowanceM.m\Objects\win_b64\CalculateAllowanceCmd.obj: No such file or directory
+# syst-ERROR: D:\CatiaWS\FeaG\.\win_b64\code\lib\CalculateAllowanceM.exp: No such file or directory
+# make-ERROR: win_b64\code\bin\CalculateAllowanceM.dll
+# make: TrainFramework\CalculateAllowanceM.m win_b64\code\bin\CalculateAllowanceM.dll
+## end   step: link2nd   at 01/16/2026-17:06:50
 
-## start step: dummynls   at 01/15/2026-15:47:31
-## end   step: dummynls   at 01/15/2026-15:47:31
+## start step: dummynls   at 01/16/2026-17:06:50
+## end   step: dummynls   at 01/16/2026-17:06:50

@@ -1,0 +1,153 @@
+// DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+CATDlgDialog CalculateAllowanceDlg
+{
+  STYLE = CATDlgGridLayout;
+}
+
+CATDlgFrame Frame001
+{
+  FATHER = CalculateAllowanceDlg;
+  STYLE = CATDlgGridLayout;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor Editor006
+{
+  FATHER = Frame001;
+  STYLE = CATDlgEdtMultiline;
+  TW = 10;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgFrame Frame004
+{
+  FATHER = CalculateAllowanceDlg;
+  STYLE = CATDlgGridLayout;
+  GRID = { 0, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor Editor007
+{
+  FATHER = Frame004;
+  STYLE = CATDlgEdtMultiline;
+  TW = 10;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgFrame Frame008
+{
+  FATHER = CalculateAllowanceDlg;
+  STYLE = CATDlgGridLayout;
+  GRID = { 1, 0, 2, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label009
+{
+  FATHER = Frame008;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor Editor011
+{
+  FATHER = Frame008;
+  GRID = { 0, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label010
+{
+  FATHER = Frame008;
+  GRID = { 1, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor Editor012
+{
+  FATHER = Frame008;
+  GRID = { 1, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor Editor017
+{
+  FATHER = CalculateAllowanceDlg;
+  GRID = { 2, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor Editor018
+{
+  FATHER = CalculateAllowanceDlg;
+  GRID = { 3, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor Editor019
+{
+  FATHER = CalculateAllowanceDlg;
+  GRID = { 4, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgFrame Frame022
+{
+  FATHER = CalculateAllowanceDlg;
+  STYLE = CATDlgGridLayout;
+  GRID = { 6, 0, 2, 1, CATGRID_4SIDES };
+}
+
+CATDlgEditor Editor023
+{
+  FATHER = Frame022;
+  STYLE = CATDlgEdtMultiline;
+  TW = 20;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label025
+{
+  FATHER = CalculateAllowanceDlg;
+  STYLE = CATDlgLabCenter;
+  GRID = { 2, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label026
+{
+  FATHER = CalculateAllowanceDlg;
+  STYLE = CATDlgLabCenter;
+  GRID = { 3, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgLabel Label027
+{
+  FATHER = CalculateAllowanceDlg;
+  STYLE = CATDlgLabCenter;
+  GRID = { 4, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgFrame Frame028
+{
+  FATHER = CalculateAllowanceDlg;
+  STYLE = CATDlgGridLayout;
+  GRID = { 5, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgCheckButton CheckButton029
+{
+  FATHER = Frame028;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgCheckButton CheckButton030
+{
+  FATHER = Frame028;
+  GRID = { 0, 1, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgCheckButton CheckButton031
+{
+  FATHER = Frame028;
+  GRID = { 0, 2, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgPushButton PushButton024
+{
+  FATHER = CalculateAllowanceDlg;
+  GRID = { 5, 1, 1, 1, CATGRID_4SIDES };
+}
+
+// END WIZARD REPLACEMENT ZONE

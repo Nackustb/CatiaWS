@@ -177,6 +177,10 @@
 				>
 			</File>
 			<File
+				RelativePath="..\..\TrainFramework\PublicInterfaces\CalculateAllowanceM.h"
+				>
+			</File>
+			<File
 				RelativePath="..\..\TrainFramework\PublicInterfaces\ExtractFeatureM.h"
 				>
 			</File>
@@ -308,6 +312,18 @@
 					</File>
 					<File
 						RelativePath="..\..\TrainFramework\CNext\resources\msgcatalog\BITCreateAssemSndDlg.CATRsc"
+						>
+					</File>
+					<File
+						RelativePath="..\..\TrainFramework\CNext\resources\msgcatalog\CalculateAllowanceCmd.CATNls"
+						>
+					</File>
+					<File
+						RelativePath="..\..\TrainFramework\CNext\resources\msgcatalog\CalculateAllowanceDlg.CATNls"
+						>
+					</File>
+					<File
+						RelativePath="..\..\TrainFramework\CNext\resources\msgcatalog\CalculateAllowanceDlg.CATRsc"
 						>
 					</File>
 					<File

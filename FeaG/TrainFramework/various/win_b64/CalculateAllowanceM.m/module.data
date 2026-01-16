@@ -1,0 +1,5 @@
+!<mkRTViewData> v1.0.0
+INT/000/CUS .\win_b64\code\bin\CalculateAllowanceM.pdb|.\TrainFramework\CalculateAllowanceM.m
+RTV/001/CUS .\win_b64\code\bin\CalculateAllowanceM.dll|.\TrainFramework\CalculateAllowanceM.m
+INT/000/CUS .\win_b64\code\lib\CalculateAllowanceM.exp|.\TrainFramework\CalculateAllowanceM.m
+BTV/000/CUS .\win_b64\code\lib\CalculateAllowanceM.lib|.\TrainFramework\CalculateAllowanceM.m

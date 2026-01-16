@@ -1,0 +1,17 @@
+// DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+Title = "余量计算";
+Frame001.Title = "TCP测量位姿";
+Frame004.Title = "TCP归位位姿";
+Frame008.Title = "切割段端点坐标";
+Frame008.Label009.Title = "端点测量坐标";
+Frame008.Label010.Title = "端点归位坐标";
+Frame022.Title = "归位时切割点组坐标";
+Label025.Title = "长度偏差";
+Label026.Title = "导管半径";
+Label027.Title = "端面偏角";
+Frame028.Title = " ";
+Frame028.CheckButton029.Title = "反向";
+Frame028.CheckButton030.Title = "X向";
+Frame028.CheckButton031.Title = "Z向";
+PushButton024.Title = "导入数据";
+// END WIZARD REPLACEMENT ZONE

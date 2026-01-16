@@ -62,6 +62,7 @@ void TrainAddin::CreateCommands()
 	new TrainHeader("Pad生成", "PadCmd", "PadDlgCmd", (void*)NULL);
 	new TrainHeader("导入文件", "AddDocCmd", "AddDocCmd", (void*)NULL);
 	new TrainHeader("提取管路特征", "ExtractFeatureM", "ExtractfeatureCmd", (void*)NULL);
+	new TrainHeader("余量计算", "CalculateAllowanceM", "CalculateAllowanceCmd", (void*)NULL);
 }
 CATCmdContainer * TrainAddin::CreateToolbars()
 {
@@ -105,6 +106,10 @@ CATCmdContainer * TrainAddin::CreateToolbars()
 		NewAccess(CATCmdStarter, pCAATPMSCreateLineEigStr, CAATPMSCreateLineEigStr);
 		SetAccessCommand(pCAATPMSCreateLineEigStr,"提取管路特征");
 		SetAccessNext(pCAATPMSCreateLineSevStr, pCAATPMSCreateLineEigStr);
+
+		NewAccess(CATCmdStarter, pCAATPMSCreateLineNinStr, CAATPMSCreateLineNinStr);
+		SetAccessCommand(pCAATPMSCreateLineNinStr,"余量计算");
+		SetAccessNext(pCAATPMSCreateLineEigStr, pCAATPMSCreateLineNinStr);
 	//4。将工具条添加到视窗中
 	AddToolbarView(pCAAPMSTlb,1,Right);
 
@@ -147,6 +152,10 @@ CATCmdContainer * TrainAddin::CreateToolbars()
 			NewAccess(CATCmdStarter,pCAATPMuAixsAutoEigStr,CAATPMuAixsAutoEigStr);
 			SetAccessCommand(pCAATPMuAixsAutoEigStr,"提取管路特征");
 			SetAccessNext(pCAATPMuAixsAutoSevStr,pCAATPMuAixsAutoEigStr);
+
+			NewAccess(CATCmdStarter,pCAATPMuAixsAutoNinStr,CAATPMuAixsAutoNinStr);
+			SetAccessCommand(pCAATPMuAixsAutoNinStr,"余量计算");
+			SetAccessNext(pCAATPMuAixsAutoEigStr,pCAATPMuAixsAutoNinStr);
 
 		NewAccess(CATCmdSeparator, pCAATPMSCreateLineSepratorStr, CAATPMSCreateLineSepratorStr);
 		SetAccessNext(pCAATPMuAixsAutoSndStr, pCAATPMSCreateLineSepratorStr);

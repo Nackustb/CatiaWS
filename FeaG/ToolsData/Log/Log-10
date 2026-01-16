@@ -1,90 +1,69 @@
-mkmk  -u -g  ExtractFeatureM.m
-2026/1/14 16:13:36
+mkmk  -u -g  TrainModule.m
+2026/1/16 17:15:15
 
-## start step: CIbuild   at 01/14/2026-16:13:36
-## end   step: CIbuild   at 01/14/2026-16:13:36
+## start step: CIbuild   at 01/16/2026-17:15:16
+## end   step: CIbuild   at 01/16/2026-17:15:16
 
-## start step: DataUpdate   at 01/14/2026-16:13:36
+## start step: DataUpdate   at 01/16/2026-17:15:16
 # make:  TrainFramework\IdentityCard\Objects\win_b64\.mkdata.mk
-## end   step: DataUpdate   at 01/14/2026-16:13:36
+## end   step: DataUpdate   at 01/16/2026-17:15:16
 
-## start step: DataUpdate   at 01/14/2026-16:13:36
-# make:  TrainFramework\ExtractFeatureM.m\Objects\win_b64\.mkdata.mk
-## end   step: DataUpdate   at 01/14/2026-16:13:36
+## start step: DataUpdate   at 01/16/2026-17:15:16
+# make:  TrainFramework\TrainModule.m\Objects\win_b64\.mkdata.mk
+## end   step: DataUpdate   at 01/16/2026-17:15:17
 
-## start step: CIcompilation   at 01/14/2026-16:13:36
-## end   step: CIcompilation   at 01/14/2026-16:13:36
+## start step: CIcompilation   at 01/16/2026-17:15:17
+## end   step: CIcompilation   at 01/16/2026-17:15:17
 
-## start step: headerlist   at 01/14/2026-16:13:36
-## end   step: headerlist   at 01/14/2026-16:13:36
+## start step: headerlist   at 01/16/2026-17:15:17
+## end   step: headerlist   at 01/16/2026-17:15:17
 
-## start step: headermap   at 01/14/2026-16:13:36
-## end   step: headermap   at 01/14/2026-16:13:36
+## start step: headermap   at 01/16/2026-17:15:17
+## end   step: headermap   at 01/16/2026-17:15:17
 
-## start step: fwgrammar   at 01/14/2026-16:13:36
-## end   step: fwgrammar   at 01/14/2026-16:13:36
+## start step: fwgrammar   at 01/16/2026-17:15:17
+## end   step: fwgrammar   at 01/16/2026-17:15:17
 
-## start step: grammar1st   at 01/14/2026-16:13:36
-## end   step: grammar1st   at 01/14/2026-16:13:36
+## start step: grammar1st   at 01/16/2026-17:15:17
+## end   step: grammar1st   at 01/16/2026-17:15:18
 
-## start step: headerlist   at 01/14/2026-16:13:36
-## end   step: headerlist   at 01/14/2026-16:13:36
+## start step: headerlist   at 01/16/2026-17:15:18
+## end   step: headerlist   at 01/16/2026-17:15:18
 
-## start step: headermap   at 01/14/2026-16:13:36
-## end   step: headermap   at 01/14/2026-16:13:36
+## start step: headermap   at 01/16/2026-17:15:18
+## end   step: headermap   at 01/16/2026-17:15:18
 
-## start step: grammar2nd   at 01/14/2026-16:13:36
-## end   step: grammar2nd   at 01/14/2026-16:13:36
+## start step: grammar2nd   at 01/16/2026-17:15:18
+## end   step: grammar2nd   at 01/16/2026-17:15:18
 
-## start step: typelibgrammar   at 01/14/2026-16:13:36
-## end   step: typelibgrammar   at 01/14/2026-16:13:36
+## start step: typelibgrammar   at 01/16/2026-17:15:18
+## end   step: typelibgrammar   at 01/16/2026-17:15:18
 
-## start step: headerlist   at 01/14/2026-16:13:36
-## end   step: headerlist   at 01/14/2026-16:13:36
+## start step: headerlist   at 01/16/2026-17:15:18
+## end   step: headerlist   at 01/16/2026-17:15:18
 
-## start step: headermap   at 01/14/2026-16:13:36
-## end   step: headermap   at 01/14/2026-16:13:36
+## start step: headermap   at 01/16/2026-17:15:18
+## end   step: headermap   at 01/16/2026-17:15:18
 
-## start step: headerruler   at 01/14/2026-16:13:36
-## end   step: headerruler   at 01/14/2026-16:13:36
+## start step: headerruler   at 01/16/2026-17:15:18
+## end   step: headerruler   at 01/16/2026-17:15:18
 
-## start step: compilation   at 01/14/2026-16:13:36
-# make:  TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp
-ExtractfeatureCmd.cpp
-D:\Program Files\Dassault Systemes\B18\.\DialogEngine\PublicInterfaces\CATStateCommand.h(742) : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(81) : error C2039: “WindCloseNotification”: 不是“ExtractfeatureCmd”的成员
-        D:\CatiaWS\FeaG\.\TrainFramework\ExtractFeatureM.m\LocalInterfaces\ExtractfeatureCmd.h(36) : 参见“ExtractfeatureCmd”的声明
-D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(83) : error C2673: “WindCloseNotification”: 全局函数没有“this”指针
-D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp(83) : error C2227: “->SetVisibility”的左边必须指向类/结构/联合/泛型类型
-# make-ERROR: TrainFramework\ExtractFeatureM.m\src\ExtractfeatureCmd.cpp
-# make:  TrainFramework\ExtractFeatureM.m\src\ExtractFeatureDlg.cpp
-ExtractFeatureDlg.cpp
-D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractFeatureDlg.cpp(173) : error C2039: “OnDlgWindCloseNotification”: 不是“ExtractFeatureDlg”的成员
-        D:\CatiaWS\FeaG\.\TrainFramework\ExtractFeatureM.m\LocalInterfaces\ExtractFeatureDlg.h(34) : 参见“ExtractFeatureDlg”的声明
-D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractFeatureDlg.cpp(173) : error C2065: “OnDlgWindCloseNotification”: 未声明的标识符
-D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractFeatureDlg.cpp(178) : error C2653: “PointDlg”: 不是类或命名空间名称
-D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractFeatureDlg.cpp(180) : error C2673: “ExtractFeatureDlg”: 全局函数没有“this”指针
-D:\CatiaWS\FeaG\TrainFramework\ExtractFeatureM.m\src\ExtractFeatureDlg.cpp(180) : error C2227: “->SetVisibility”的左边必须指向类/结构/联合/泛型类型
-# make-ERROR: TrainFramework\ExtractFeatureM.m\src\ExtractFeatureDlg.cpp
-## end   step: compilation   at 01/14/2026-16:13:37
+## start step: compilation   at 01/16/2026-17:15:18
+# make:  TrainFramework\TrainModule.m\src\TrainAddin.cpp
+TrainAddin.cpp
+## end   step: compilation   at 01/16/2026-17:15:18
 
-## start step: sourceruler   at 01/14/2026-16:13:37
-## end   step: sourceruler   at 01/14/2026-16:13:37
+## start step: sourceruler   at 01/16/2026-17:15:18
+## end   step: sourceruler   at 01/16/2026-17:15:18
 
-## start step: link1st   at 01/14/2026-16:13:37
-# make: TrainFramework\ExtractFeatureM.m win_b64\code\lib\ExtractFeatureM.lib
-# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\ExtractFeatureM.m\Objects\win_b64\ExtractfeatureCmd.obj: No such file or directory
-# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\ExtractFeatureM.m\Objects\win_b64\ExtractFeatureDlg.obj: No such file or directory
-# make-ERROR: win_b64\code\lib\ExtractFeatureM.lib
-## end   step: link1st   at 01/14/2026-16:13:37
+## start step: link1st   at 01/16/2026-17:15:18
+# make: TrainFramework\TrainModule.m win_b64\code\lib\TrainModule.lib
+   正在创建库 D:\CatiaWS\FeaG\.\win_b64\code\lib\TrainModule.lib 和对象 D:\CatiaWS\FeaG\.\win_b64\code\lib\TrainModule.exp
+## end   step: link1st   at 01/16/2026-17:15:18
 
-## start step: link2nd   at 01/14/2026-16:13:37
-# make: TrainFramework\ExtractFeatureM.m win_b64\code\bin\ExtractFeatureM.dll
-# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\ExtractFeatureM.m\Objects\win_b64\ExtractfeatureCmd.obj: No such file or directory
-# syst-ERROR: D:\CatiaWS\FeaG\.\TrainFramework\ExtractFeatureM.m\Objects\win_b64\ExtractFeatureDlg.obj: No such file or directory
-# syst-ERROR: D:\CatiaWS\FeaG\.\win_b64\code\lib\ExtractFeatureM.exp: No such file or directory
-# make-ERROR: win_b64\code\bin\ExtractFeatureM.dll
-## end   step: link2nd   at 01/14/2026-16:13:37
+## start step: link2nd   at 01/16/2026-17:15:18
+# make: TrainFramework\TrainModule.m win_b64\code\bin\TrainModule.dll
+## end   step: link2nd   at 01/16/2026-17:15:19
 
-## start step: dummynls   at 01/14/2026-16:13:37
-## end   step: dummynls   at 01/14/2026-16:13:37
+## start step: dummynls   at 01/16/2026-17:15:19
+## end   step: dummynls   at 01/16/2026-17:15:19

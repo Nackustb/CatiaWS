@@ -1,8 +1,10 @@
 /TrainFramework
-SwapTextM.dll
+CalculateAllowanceM.dll
+ExtractFeatureM.dll
 TrainModule.dll
 AddDocCmd.dll
 PointCmd.dll
 AxisPointCmd.dll
 TrainModuleCmd.dll
 PadCmd.dll
+SwapTextM.dll

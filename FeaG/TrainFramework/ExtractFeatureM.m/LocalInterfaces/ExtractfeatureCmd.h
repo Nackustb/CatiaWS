@@ -24,78 +24,101 @@ class CATPathElementAgent;
 class CATDialogAgent;
 
 
-class ExtractfeatureCmd: public CATStateCommand
+class ExtractfeatureCmd : public CATStateCommand
 {
-  DeclareResource( ExtractfeatureCmd, CATStateCommand )
+	DeclareResource(ExtractfeatureCmd, CATStateCommand)
 
-  public:
+public:
+	ExtractfeatureCmd();
+	virtual ~ExtractfeatureCmd();
 
-  ExtractfeatureCmd();
+	virtual void BuildGraph();
 
-  virtual ~ExtractfeatureCmd();
+	// Select actions
+	CATBoolean GetCircleElement(void *data);
+	CATBoolean GetLineElement(void *data);
+	CATBoolean GetPlaneElement(void *data);
+	CATBoolean GetCPointElement(void *data);
+	CATBoolean GetProductElement(void *data);
 
-  CATBoolean GetCircleElement(void *data);
+	// Button-agent clear actions
+	CATBoolean CDlgAgentClear(void *data);
+	CATBoolean LDlgAgentClear(void *data);
+	CATBoolean PDlgAgentClear(void *data);
+	CATBoolean CPDlgAgentClear(void *data);
+	CATBoolean ProDlgAgentClear(void *data);
 
-  CATBoolean GetLineElement(void *data);
+	// Set parameters (write to members + UI)
+	void SetCircleParameter(double circleRadius, double circleCenterX, double circleCenterY, double circleCenterZ);
+	void SetPointParameter(double pointX, double pointY, double pointZ);
+	void SetLineDirection(double lineDirX, double lineDirY, double lineDirZ);
+	void SetPlaneParameter(double planeDir1X, double planeDir1Y, double planeDir1Z,
+		double planeDir2X, double planeDir2Y, double planeDir2Z);
+	void SetProductParameter(CATUnicodeString productPartNumber);
 
-  CATBoolean GetPlaneElement(void *data);
+	// Calculate / Save
+	void OnPushButton023PushBActivateNotification(CATCommand* cmd, CATNotification* evt, CATCommandClientData data);
+	void OnPushButton035PushBActivateNotification(CATCommand* cmd, CATNotification* evt, CATCommandClientData data);
 
-  CATBoolean GetCPointElement(void *data);
+private:
+	CATIndicationAgent* _Indication;
+	ExtractFeatureDlg*  _pDlg;
 
-  CATBoolean GetProductElement(void *data);
+	// Path selection agents
+	CATPathElementAgent* _CElementAgent;
+	CATPathElementAgent* _LElementAgent;
+	CATPathElementAgent* _PElementAgent;
+	CATPathElementAgent* _CPElementAgent;
+	CATPathElementAgent* _ProElementAgent;
 
-  CATBoolean CDlgAgentClear( void *data );
+	// Dialog/button agents
+	CATDialogAgent* _CDlgAgent;
+	CATDialogAgent* _LDlgAgent;
+	CATDialogAgent* _PDlgAgent;
+	CATDialogAgent* _CPDlgAgent;
+	CATDialogAgent* _ProDlgAgent;
+	CATDialogAgent* _CalDlgAgent;
+	CATDialogAgent* _SaveDlgAgent;
 
-  CATBoolean LDlgAgentClear( void *data );
+	// Circle
+	double circleRadius;
+	double circleCenterX;
+	double circleCenterY;
+	double circleCenterZ;
 
-  CATBoolean PDlgAgentClear( void *data );
+	// Point
+	double pointX;
+	double pointY;
+	double pointZ;
 
-  CATBoolean CPDlgAgentClear( void *data );
+	// Line direction
+	double lineDirX;
+	double lineDirY;
+	double lineDirZ;
 
-  CATBoolean ProDlgAgentClear( void *data );
+	// Plane normal (from cross product of 2 plane directions)
+	double planeNormal[3];
 
-  void SetCParameter(double r,double cx2,double cy2,double cz2);
+	// Product
+	CATUnicodeString productPartNumberText;
 
-  void SetCPParameter(double cx,double cy,double cz);
+	// UI text buffers (for atof / formatting)
+	CATUnicodeString CircleRadiusText;
+	CATUnicodeString CircleCenterXText;
+	CATUnicodeString CircleCenterYText;
+	CATUnicodeString CircleCenterZText;
 
-  void SetLParameter(double lx,double ly,double lz);
+	CATUnicodeString PointXText;
+	CATUnicodeString PointYText;
+	CATUnicodeString PointZText;
 
-  void SetPParameter(double px1,double py1,double pz1,double px2,double py2,double pz2);
+	CATUnicodeString LineDirXText;
+	CATUnicodeString LineDirYText;
+	CATUnicodeString LineDirZText;
 
-  void SetProParameter(CATUnicodeString name);
-
-  void OnPushButton023PushBActivateNotification(CATCommand* cmd, CATNotification* evt, CATCommandClientData data);
-
-  void OnPushButton035PushBActivateNotification(CATCommand* cmd, CATNotification* evt, CATCommandClientData data);
-
-  double GetCParameter();
-
-  double GetLParameter();
-
-  double GetPParameter();
-
-  double r,cx,cy,cz,cx2,cy2,cz2,lx,ly,lz,px1,py1,pz1,px2,py2,pz2,px,py,pz,A[3];
-
-  CATUnicodeString R,Cx,Cy,Cz,Cx2,Cy2,Cz2,Lx,Ly,Lz,Px,Py,Pz,A1,A2,A3,NAME;
-
-  virtual void     BuildGraph();
-
-  private:
-  ExtractFeatureDlg* _pDlg;
-  CATIndicationAgent	* _Indication;
-
-  CATDialogAgent * _CDlgAgent;
-  CATDialogAgent * _LDlgAgent;
-  CATDialogAgent * _PDlgAgent;
-  CATDialogAgent * _CPDlgAgent;
-  CATDialogAgent * _ProDlgAgent;
-  CATDialogAgent * _CalDlgAgent;
-  CATDialogAgent *_SaveDlgAgent;
-
-  CATPathElementAgent * _CElementAgent;
-  CATPathElementAgent * _LElementAgent;
-  CATPathElementAgent * _PElementAgent;
-  CATPathElementAgent * _CPElementAgent;
-  CATPathElementAgent * _ProElementAgent;
+	CATUnicodeString PlaneNormalXText;
+	CATUnicodeString PlaneNormalYText;
+	CATUnicodeString PlaneNormalZText;
 };
+
 #endif

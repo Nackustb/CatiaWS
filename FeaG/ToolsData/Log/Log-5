@@ -1,0 +1,4 @@
+mkcpl CalculateAllowanceCmd.cpp
+2026/1/16 17:11:07
+
+RequestLicensesFromSettings: error: InternalDS license found, not authorized for this product.
